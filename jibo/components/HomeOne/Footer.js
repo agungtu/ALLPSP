@@ -15,7 +15,7 @@ const testimonialData = [
 const kastoni = [
   {
     feedbackText: "Area Tengah ( Jateng, DIY, Kalimantan)",
-    image: "/images/client/1.png",
+    image: "/images/kastoni.png",
     name: "Kastoni",
     designation: "Sales",
   },
