@@ -5,16 +5,10 @@ import VisibilitySensor from "react-visibility-sensor";
 
 const sliderData = [
   {
-    // heading: "KATALOG PRODUK & SOLUSI GO DIGITAL",
     heading: "Solusi Go Digital Untuk Nasabah institusi",
     text: "Layanan Perbankan saat ini bukan hanya Funding - Lending saja, akan tetapi perlu layanan solusi teknologi yang terintegrasi dengan Open Banking Technology.",
     image: "/images/mobiles.png",
   }
-  // {
-  //   heading: "Awesome Jibo Mobile App",
-  //   text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  //   image: "/images/app-mockup-2.png",
-  // },
 ];
 
 
@@ -92,7 +86,7 @@ const Slider = () => {
                           </VisibilitySensor>
                         </div>
 
-                        <div className="col-md-12 col-lg-5">
+                        <div className="col-md-12 ">
                           <div className="welcome-phone">
                             <img src={value.image} alt="" style={{height : "90%", width : "200%"}} />
                           </div>
