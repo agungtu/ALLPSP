@@ -21,16 +21,16 @@ const Index = () => {
 
       <Slider />
 
-      <About />
+      {/* <About /> */}
 
 
-      <Features />
+      {/* <Features /> */}
 
       {/* <Counter /> */}
 
-      <Screenshots />
+      {/* <Screenshots />
 
-      <Testimonial />
+      <Testimonial /> */}
 
       {/* <Pricing /> */}
 
