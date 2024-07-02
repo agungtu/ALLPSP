@@ -59,7 +59,7 @@ const Navigation = () => {
           </AnchorLink>
         </li>
 
-        <li className="nav-item">
+        {/* <li className="nav-item">
           <AnchorLink
             onClick={toggleNavbar}
             offset={() => -30}
@@ -89,7 +89,7 @@ const Navigation = () => {
           >
             Documentation
           </AnchorLink>
-        </li>
+        </li> */}
 
         {/* <li className="nav-item">
           <AnchorLink

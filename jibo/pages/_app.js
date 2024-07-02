@@ -40,7 +40,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <title>
-          Platform Sekolah Pintar
+        JANGAN LUPA KOPI 
         </title>
 
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
