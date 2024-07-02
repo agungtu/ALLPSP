@@ -24,7 +24,7 @@ const Slider = () => {
         {sliderData &&
           sliderData.map((value, i) => (
             <SwiperSlide key={i}>
-              <div className="single-slider-item gradient-bg">
+              <div className="single-slider-item" style={{ backgroundColor : "red"}}>
                 <div className="slide-item-table">
                   <div className="slide-item-tablecell">
                     <div className="container">
