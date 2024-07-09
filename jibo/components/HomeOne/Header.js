@@ -24,12 +24,12 @@ const Slider = () => {
         {sliderData &&
           sliderData.map((value, i) => (
             <SwiperSlide key={i}>
-              <div className="single-slider-item" style={{ backgroundColor : "green"}}>
+              <div className="single-slider-item" style={{ backgroundColor : "gray"}}>
                 <div className="slide-item-table">
                   <div className="slide-item-tablecell">
                     <div className="container">
                       <div className="row align-items-center">
-                        <div className="col-md-12 col-lg-7">
+                        <div className="col-md-6">
                           <VisibilitySensor>
                             {({ isVisible }) => (
                               <div className="slider-text">
@@ -86,7 +86,7 @@ const Slider = () => {
                           </VisibilitySensor>
                         </div>
 
-                        <div className="col-md-12 ">
+                        <div className="col-md-6 ">
                           <div className="welcome-phone">
                             <img src={value.image} alt="" style={{height : "90%", width : "200%"}} />
                           </div>

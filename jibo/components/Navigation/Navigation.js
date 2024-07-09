@@ -58,7 +58,28 @@ const Navigation = () => {
             Home
           </AnchorLink>
         </li>
+        <li className="nav-item">
+          <AnchorLink
+            onClick={toggleNavbar}
+            offset={() => 100}
+            className="nav-link active"
+            href="#home"
+          >
+            About Us
+          </AnchorLink>
+        </li>
+        <li className="nav-item">
+          <AnchorLink
+            onClick={toggleNavbar}
+            offset={() => 100}
+            className="nav-link active"
+            href="#home"
+          >
+            Contact
+          </AnchorLink>
+        </li>
       </ul>
+      
     );
   };
 
@@ -77,7 +98,7 @@ const Navigation = () => {
       >
         <div className="container">
           <Image
-            src="/images/tki.svg"
+            src="/images/TELKOM.png"
             alt="App About Image"
             width={120}
             height={125}
