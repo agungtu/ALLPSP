@@ -21,7 +21,7 @@ const Index = () => {
 
       <Slider />
 
-      {/* <About /> */}
+      <About />
 
 
       {/* <Features /> */}
@@ -44,7 +44,7 @@ const Index = () => {
 
       {/* <ContactForm /> */}
 
-      <Footer />
+      {/* <Footer /> */}
     </>
   )
 }
