@@ -44,7 +44,7 @@ const Index = () => {
 
       {/* <ContactForm /> */}
 
-      {/* <Footer /> */}
+      <Footer />
     </>
   )
 }
