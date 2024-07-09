@@ -21,7 +21,7 @@ const Index = () => {
 
       <Slider />
 
-      {/* <About /> */}
+      <About />
 
 
       {/* <Features /> */}

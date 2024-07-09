@@ -104,7 +104,7 @@ const Testimonial = () => {
                       <h3 className="title">{value.name}</h3>
                       <Link
                         className="text-white"
-                        href="https://api.whatsapp.com/send/?phone=62895346018233&text&type=phone_number&app_absent=0"
+                       aa href="https://api.whatsapp.com/send/?phone=62895346018233&text&type=phone_number&app_absent=0"
                         target="_blank"
                       >
                         Hubungi Sales
@@ -126,7 +126,7 @@ const Testimonial = () => {
                     <div className="testimonial-content">
                       <div className="pic">
                         <Image
-                          src={value.image}
+                          src={value.images}
                           alt="client Image"
                           width={100}
                           height={100}
