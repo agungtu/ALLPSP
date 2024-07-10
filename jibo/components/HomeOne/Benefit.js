@@ -60,8 +60,8 @@ const Benefit = () => {
           <div className="row align-items-center">
             <div className="col-lg-6">
               <div className="hiw-feature-content">
-                {data &&
-                  data.map((value, i) => (
+              {howItWorksData.map((value, i) => (
+               
                     <div
                       className="single-hiw-feature"
                       data-aos="fade-in"
