@@ -7,9 +7,9 @@ import baseUrl from "../../utils/baseUrl";
 
 const alertContent = () => {
   MySwal.fire({
-    title: "Congratulations!",
-    text: "Your message was successfully send and will back to you soon",
-    icon: "success",
+    title: "Selamat!",
+    text: "Pesan Anda berhasil dikirim dan akan segera menghubungi Anda kembali",
+    icon: "berhasil",
     timer: 2000,
     timerProgressBar: true,
     showConfirmButton: false,
@@ -18,9 +18,9 @@ const alertContent = () => {
 
 // Form initial state
 const INITIAL_STATE = {
-  name: "",
+  nama: "",
   email: "",
-  number: "",
+  nomor: "",
   subject: "",
   text: "",
 };
@@ -38,8 +38,8 @@ const ContactForm = () => {
     e.preventDefault();
     try {
       const url = `${baseUrl}/api/contact`;
-      const { name, email, number, subject, text } = contact;
-      const payload = { name, email, number, subject, text };
+      const { nama, email, nomor, subject, text } = contact;
+      const payload = { nama, email, nomor, subject, text };
       const response = await axios.post(url, payload);
       console.log(response);
       setContact(INITIAL_STATE);
@@ -54,11 +54,12 @@ const ContactForm = () => {
       <section id="contact" className="contact-section gray-bg">
         <div className="container">
           <div className="section-title">
-            <h2>Get in Touch</h2>
+            <h2>contact</h2>
             <p>
-              Lorem ipsum madolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor coli incididunt ut labore Lorem ipsum madolor sit
-              amet, consectetur adipisicing incididunt.
+            Kami berkomitmen untuk merespons pesan Anda secepat mungkin dan memastikan bahwa setiap pertanyaan atau masalah yang Anda hadapi ditangani dengan baik. Terima kasih atas dukungan dan kepercayaan Anda kepada kami.
+            </p>
+            <p>
+            Kami sangat menghargai setiap masukan, pertanyaan, dan saran dari Anda. Jangan ragu untuk menghubungi kami melalui cara berikut:
             </p>
           </div>
 
@@ -66,24 +67,24 @@ const ContactForm = () => {
             <div className="col-md-4 col-lg-4 col-sm-6">
               <div className="single-contact-info">
                 <i className="icofont-location-pin"></i>
-                <h3>Office Address:</h3>
-                <p>2750 Quadra Street Victoria, Canada.</p>
+                <h3>Alamat kantor:</h3>
+                <p>Jl. Pamularsih Raya, Bongsari, Semarang Barat, Central Java</p>
               </div>
             </div>
 
             <div className="col-md-4 col-lg-4 col-sm-6">
               <div className="single-contact-info">
                 <i className="icofont-envelope"></i>
-                <h3>E-mail Address:</h3>
-                <p>jibo@gmail.com</p>
+                <h3>Alamat E-mail:</h3>
+                <p>fessbakery@gmail.com</p>
               </div>
             </div>
 
             <div className="col-md-4 col-lg-4 col-sm-6">
               <div className="single-contact-info">
                 <i className="icofont icofont-phone"></i>
-                <h3>Phone Number:</h3>
-                <p>+324-9442-515</p>
+                <h3>Nomor Telepon:</h3>
+                <p>085787653299</p>
               </div>
             </div>
           </div>
@@ -98,7 +99,7 @@ const ContactForm = () => {
                         <input
                           type="text"
                           name="name"
-                          placeholder="Name"
+                          placeholder="Nama"
                           className="form-control"
                           value={contact.name}
                           onChange={handleChange}
@@ -124,7 +125,7 @@ const ContactForm = () => {
                         <input
                           type="text"
                           name="number"
-                          placeholder="Phone number"
+                          placeholder="Nomor telepon"
                           className="form-control"
                           value={contact.number}
                           onChange={handleChange}
@@ -151,7 +152,7 @@ const ContactForm = () => {
                           name="text"
                           cols="30"
                           rows="6"
-                          placeholder="Write your message..."
+                          placeholder="Tulis pesan Anda..."
                           className="form-control"
                           value={contact.text}
                           onChange={handleChange}
@@ -161,7 +162,7 @@ const ContactForm = () => {
                     </div>
                     <div className="col-lg-12 col-sm-12 text-center">
                       <button type="submit" className="default-button">
-                        Send Message
+                      Kirim Pesan
                         <i className="icofont-arrow-right"></i>
                       </button>
                     </div>
