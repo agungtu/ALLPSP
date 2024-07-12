@@ -3,28 +3,28 @@ import React from "react";
 const funFactsData = [
   {
     icon: "icofont-users",
-    title: "Users",
+    title: "Pelanggan",
     number: "2900",
     duration: "800",
     delay: "100",
   },
   {
     icon: "icofont-simple-smile",
-    title: "Happy Clients",
+    title: "Respon Positif",
     number: "2099",
     duration: "800",
     delay: "200",
   },
   {
     icon: "icofont-ui-rating",
-    title: "Reviews",
+    title: "Review",
     number: "1999",
     duration: "800",
     delay: "300",
   },
   {
     icon: "icofont-cloud-download",
-    title: "App Downloads",
+    title: "Pengunjung",
     number: "7899",
     duration: "800",
     delay: "400",
@@ -34,14 +34,15 @@ const funFactsData = [
 const Counter = () => {
   return (
     <>
-      <div id="counter" className="counter-stats">
+    
+      <div id="counter" className="counter-stats" >
         <div className="container">
           <div className="row justify-content-center">
             {funFactsData &&
               funFactsData.map((value, i) => (
                 <div className="col-sm-6 col-lg-3" key={i}>
                   <div
-                    className="counter-box"
+                    className="counter-box" style={{ backgroundColor : "#FFB996"}}
                     data-aos="fade-in"
                     data-aos-duration={value.duration}
                     data-aos-delay={value.delay}
