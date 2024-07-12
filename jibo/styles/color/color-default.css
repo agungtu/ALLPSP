@@ -208,22 +208,22 @@
 
 .single-price-package .price-header .price-value {
   background: #6a11cb;
-  background: linear-gradient(to right, #6a11cb, #2575fc);
+  background: linear-gradient(to right, #FFB996, #FAA300);
 }
 
 .purchase-btn::before {
-  background: #6a11cb;
+  background: #FAA300;
   background: linear-gradient(to right, #6a11cb, #2575fc);
 }
 
 .personal-price-package .purchase-btn {
-  background: #6a11cb;
+  background: #00fa21;
   background: linear-gradient(to right, #6a11cb, #2575fc);
 }
 
 .single-price-package:hover .purchase-btn {
-  background: #6a11cb;
-  background: linear-gradient(to right, #6a11cb, #2575fc);
+  background: #FAA300;
+  background: linear-gradient(to right, #E57C04, #FF6201);
 }
 
 .faq-content .faq-title::before {
