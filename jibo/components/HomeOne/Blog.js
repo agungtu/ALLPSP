@@ -7,17 +7,17 @@ const Blog = () => {
     <>
       <section id="blog" className="blog-section">
         <div className="container">
+
           <div
             className="section-title"
             data-aos="fade-in"
             data-aos-duration="800"
             data-aos-delay="100"
           >
-            <h2>Latest Blog Post</h2>
+            <h2>TESTIMONI</h2>
             <p>
-              Lorem ipsum madolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor coli incididunt ut labore Lorem ipsum madolor sit
-              amet, consectetur adipisicing incididunt.
+            FESS Bakery tempat di mana cita rasa dan kelezatan berpadu menjadi satu. Kami adalah toko roti yang berkomitmen untuk menyajikan roti dan kue dengan kualitas terbaik 
+            yang dibuat dengan bahan-bahan pilihan dan resep tradisional.
             </p>
           </div>
 
@@ -27,7 +27,7 @@ const Blog = () => {
                 <div className="blog-img">
                   <Link href="/blog/details">
                     <Image
-                      src="/images/blog/post1.jpg"
+                      src="/images/gambar1.jfif"
                       alt="Blog Post Image"
                       width={100}
                       height={800}
@@ -40,29 +40,26 @@ const Blog = () => {
                 <div className="blog-info">
                   <h6 className="blog-title">
                     <Link href="/blog/details">
-                      Branding involves developing strategy to create a point of
-                      differentiation
+                     Agatha Clarissa
                     </Link>
                   </h6>
 
                   <ul className="post-admin">
                     <li>
-                      By <Link href="#">Admin</Link>
+                      03 <Link href="#">Februari</Link>
                     </li>
-                    <li>3 Comments</li>
-                    <li>10 Feb, 2024</li>
+                    <li>Sabtu</li>
+                    <li>2024</li>
                   </ul>
 
                   <p>
-                    Aliquet id lacinia ultricies odio, neque ipsum facilisis
-                    parturient. Erat tristique nonummy etiam, fusce est
-                    porttitor...
+                  "Sebagai pecinta roti, saya selalu mencari tempat dengan roti yang fresh dan enak, dan saya menemukannya di sini. Roti mereka adalah yang terbaik yang pernah saya coba. Atmosfer tokonya juga sangat nyaman untuk bersantai dan menikmati kopi. Sungguh pengalaman yang menyenangkan!"
                   </p>
 
-                  <Link href="/blog/details" className="default-button">
+                  {/* <Link href="/blog/details" className="default-button">
                     Read More
                     <i className="icofont-swoosh-right"></i>
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
             </div>
@@ -74,7 +71,7 @@ const Blog = () => {
                 <div className="blog-img">
                   <Link href="/blog/details">
                     <Image
-                      src="/images/blog/post2.jpg"
+                      src="/images/gambar2.jfif"
                       alt="Blog Post Image"
                       width={100}
                       height={800}
@@ -87,29 +84,26 @@ const Blog = () => {
                 <div className="blog-info">
                   <h6 className="blog-title">
                     <Link href="/blog/details">
-                      Design is a plan or specification for the construction of
-                      an object
+                     Anna Putri
                     </Link>
                   </h6>
 
                   <ul className="post-admin">
                     <li>
-                      By <Link href="#">Admin</Link>
+                      15 <Link href="#">April</Link>
                     </li>
-                    <li>3 Comments</li>
-                    <li>11 Feb, 2024</li>
+                    <li>Senin</li>
+                    <li>2024</li>
                   </ul>
 
                   <p>
-                    Aliquet id lacinia ultricies odio, neque ipsum facilisis
-                    parturient. Erat tristique nonummy etiam, fusce est
-                    porttitor...
+                  "Toko roti ini benar-benar permata tersembunyi! Roti croissant-nya luar biasa, renyah di luar dan lembut di dalam. Saya juga mencoba kue bolu mereka dan rasanya sangat lezat. Harga yang ditawarkan sangat terjangkau untuk kualitas yang didapat. Sangat direkomendasikan!"
                   </p>
-
+{/* 
                   <Link href="/blog/details" className="default-button">
                     Read More
                     <i className="icofont-swoosh-right"></i>
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
             </div>
@@ -121,7 +115,7 @@ const Blog = () => {
                 <div className="blog-img">
                   <Link href="/blog/details">
                     <Image
-                      src="/images/blog/post3.jpg"
+                      src="/images/gambar3.jfif"
                       alt="Blog Post Image"
                       width={100}
                       height={800}
@@ -134,29 +128,26 @@ const Blog = () => {
                 <div className="blog-info">
                   <h6 className="blog-title">
                     <Link href="/blog/details">
-                      The new minimum is a digital magazine with a header
-                      featuring a thin
+                      Nara Risya
                     </Link>
                   </h6>
 
                   <ul className="post-admin">
                     <li>
-                      By <Link href="#">Admin</Link>
+                      05 <Link href="#">Juni</Link>
                     </li>
-                    <li>3 Comments</li>
-                    <li>12 Feb, 2024</li>
+                    <li>Rabu</li>
+                    <li>2024</li>
                   </ul>
 
                   <p>
-                    Aliquet id lacinia ultricies odio, neque ipsum facilisis
-                    parturient. Erat tristique nonummy etiam, fusce est
-                    porttitor...
+                  "Saya sangat terkesan dengan kualitas roti di toko ini. Setiap gigitan terasa begitu lembut dan penuh rasa. Roti gandumnya adalah favorit saya karena sangat sehat dan tetap enak. Pelayanan di sini juga sangat ramah dan membantu. Saya pasti akan kembali lagi!"
                   </p>
 
-                  <Link href="/blog/details" className="default-button">
+                  {/* <Link href="/blog/details" className="default-button">
                     Read More
                     <i className="icofont-swoosh-right"></i>
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
             </div>
