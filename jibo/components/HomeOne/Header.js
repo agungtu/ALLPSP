@@ -5,9 +5,12 @@ import VisibilitySensor from "react-visibility-sensor";
 
 const sliderData = [
   {
-    heading: "Solusi Go Digital Untuk Nasabah institusi",
-    text: "Layanan Perbankan saat ini bukan hanya Funding - Lending saja, akan tetapi perlu layanan solusi teknologi yang terintegrasi dengan Open Banking Technology.",
-    image: "/images/mobiles.png",
+    
+    
+   heading: "Roti Segar, Senyum Lebar" ,
+    text: "Rasakan Aroma Kelezatan di FESS Bakery Temukan Pilihan Roti dan Kue Segar yang Menggugah Selera.",
+    image: "/images/icon.png",
+    
   }
 ];
 
@@ -24,7 +27,7 @@ const Slider = () => {
         {sliderData &&
           sliderData.map((value, i) => (
             <SwiperSlide key={i}>
-              <div className="single-slider-item" style={{ backgroundColor : "gray"}}>
+              <div className="single-slider-item" style={{ backgroundColor : "#D9EDBF"}}>
                 <div className="slide-item-table">
                   <div className="slide-item-tablecell">
                     <div className="container">
@@ -88,7 +91,7 @@ const Slider = () => {
 
                         <div className="col-md-6 ">
                           <div className="welcome-phone">
-                            <img src={value.image} alt="" style={{height : "90%", width : "200%"}} />
+                            <img src={value.image} alt="" style={{height : "100%", width : "200%"}} />
                           </div>
                         </div>
                       </div>
