@@ -3,73 +3,64 @@ import Image from "next/image";
 
 const teamMemberData = [
   {
-    image: "/images/team/1.jpg",
-    name: "Steve Roberts",
-    designation: "CEO & Fouder",
+    image: "/images/team/5.jpeg",
+    name: "Fauzi Saputra",
+    designation: "",
     shortText:
-      "Lorem ipsum madolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.",
+      "Semua Butuh Proses untuk mendapatkan kesuksesan,Buat Mie Instan aja butuh proses.",
     socialLinks: [
       {
-        icon: "icofont-facebook",
-        link: "https://www.facebook.com/",
-      },
-      {
-        icon: "icofont-twitter",
-        link: "https://www.twitter.com/",
-      },
-      {
-        icon: "icofont-linkedin",
-        link: "https://www.linkedin.com/",
+        icon: "icofont-instagram",
+        link: "https://www.instagram.com/that_verix?igsh=ejIxYnViYnlhazdq",
       },
     ],
     duration: "800",
     delay: "100",
   },
   {
-    image: "/images/team/2.jpg",
-    name: "John Marshall",
-    designation: "UI/UX Designer",
+    image: "/images/team/6.jpg",
+    name: "Salwa Aulia Azzahra",
+    designation: "",
     shortText:
       "Lorem ipsum madolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.",
     socialLinks: [
       {
-        icon: "icofont-facebook",
-        link: "https://www.facebook.com/",
-      },
-      {
-        icon: "icofont-twitter",
-        link: "https://www.twitter.com/",
-      },
-      {
-        icon: "icofont-linkedin",
-        link: "https://www.linkedin.com/",
+        icon: "icofont-instagram",
+        link: "https://www.instagram.com/slwazhrrrr?utm_source=qr&igsh=MTgxMmdsbW5oam5rNw==",
       },
     ],
     duration: "800",
     delay: "200",
   },
   {
-    image: "/images/team/3.jpg",
-    name: "Michael Cartney",
-    designation: "Front-End Developer",
+    image: "/images/team/7.jpg",
+    name: "Shintya Bayu Apta Andika",
+    designation: "",
     shortText:
       "Lorem ipsum madolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.",
     socialLinks: [
       {
-        icon: "icofont-facebook",
-        link: "https://www.facebook.com/",
-      },
-      {
-        icon: "icofont-twitter",
-        link: "https://www.twitter.com/",
-      },
-      {
-        icon: "icofont-linkedin",
-        link: "https://www.linkedin.com/",
+        icon: "icofont-instagram",
+        link: "https://www.instagram.com/shnt_yyy?igsh=MWFlNmg0bDVoMHYwaA%3D%3D&utm_source=qr",
       },
     ],
     duration: "800",
     delay: "300",
+  },
+  {
+    image: "/images/team/.jpeg",
+    name: "Elisa Ambarwati",
+    designation: "CEO & Fouder",
+    shortText:
+      "Lorem ipsum madolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.",
+    socialLinks: [
+      {
+        icon: "icofont-instagram",
+        link: "https://www.instagram.com/",
+      },
+    ],
+    duration: "800",
+    delay: "100",
   },
 ];
 
@@ -84,18 +75,22 @@ const Team = () => {
             data-aos-duration="800"
             data-aos-delay="100"
           >
-            <h2>Our Awesome Team</h2>
+            <h2>TIM KAMI YANG LUAR BIASA</h2>
             <p>
-              Lorem ipsum madolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor coli incididunt ut labore Lorem ipsum madolor sit
-              amet, consectetur adipisicing incididunt.
+              Tim kami terdiri dari sekelompok profesional berdedikasi yang
+              memiliki keahlian dan pengalaman luas di bidang pengembangan web.
+              Kami bekerja sama untuk menciptakan situs web yang inovatif,
+              fungsional, dan mudah digunakan. Dengan kombinasi keterampilan
+              teknis, kreativitas, dan perhatian terhadap detail, kami
+              berkomitmen untuk memberikan hasil terbaik bagi setiap proyek yang
+              kami tangani.
             </p>
           </div>
 
           <div className="row justify-content-center">
             {teamMemberData &&
               teamMemberData.map((value, i) => (
-                <div className="col-md-4 col-lg-4" key={i}>
+                <div className="col-md-3" key={i}>
                   <div
                     className="single-member"
                     data-aos="fade-in"

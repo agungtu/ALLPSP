@@ -227,8 +227,8 @@
 }
 
 .faq-content .faq-title::before {
-  background: #16c9f6;
-  background: linear-gradient(to right, #16c9f6, #3ccdbb);
+  background: #FAA300;
+  background: linear-gradient(to right, #E57C04, #FF6201);
 }
 .faq-content .faq-title.active {
   background: #16c9f6;

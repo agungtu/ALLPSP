@@ -227,22 +227,22 @@
 }
 
 .faq-content .faq-title::before {
-  background: #6a11cb;
-  background: linear-gradient(to right, #6a11cb, #2575fc);
+  background: #FAA300;
+  background: linear-gradient(to right, #E57C04, #FF6201);
 }
 .faq-content .faq-title.active {
-  background: #6a11cb;
-  background: linear-gradient(to right, #6a11cb, #2575fc);
+  background: #FAA300;
+  background: linear-gradient(to right, #E57C04, #E57C04);
 }
 
 .accordion__item.active .accordion-header {
-  background: #6a11cb;
-  background: linear-gradient(to right, #6a11cb, #2575fc);
+  background: #FAA300;
+  background: linear-gradient(to right, #E57C04, #E57C04);
 }
 
 .single-member .overlay {
-  background: #6a11cb;
-  background: linear-gradient(to right, #6a11cb, #2575fc);
+  background: #FAA300;
+  background: linear-gradient(to right, #E57C04, #FF6201);
 }
 
 .app-download-section::after {

@@ -241,8 +241,8 @@
 }
 
 .single-member .overlay {
-  background: #ee0979;
-  background: linear-gradient(to right, #ee0979, #ff6a00);
+  background: #FAA300;
+  background: linear-gradient(to right, #E57C04, #FF6201);
 }
 
 .app-download-section::after {
