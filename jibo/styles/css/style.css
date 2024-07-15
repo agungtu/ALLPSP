@@ -49,7 +49,7 @@ h5 {
 
 p {
   font-family: "Open Sans", sans-serif;
-  color: #646464;
+  color: #000;
   font-size: 14px;
   line-height: 28px;
 }
@@ -78,7 +78,8 @@ section {
 }
 
 .gray-bg {
-  background-color: #f5f7fb;
+  background: #FAA300;
+  background: linear-gradient(to right, #E57C04, #FF6201);
 }
 
 .mr-10 {
