@@ -11,7 +11,7 @@ import Faq from "../components/Common/Faq";
 import Team from "../components/HomeOne/Team";
 import AppDownload from "../components/HomeOne/AppDownload";
 import Blog from "../components/HomeOne/Blog";
-import ContactForm from "../components/Common/ContactForm";
+// import ContactForm from "../components/Common/ContactForm";
 import Footer from "../components/Common/Footer";
 
 
@@ -43,7 +43,7 @@ const Index = () => {
 
       <Blog />
 
-      <ContactForm />
+      {/* <ContactForm /> */}
 
     </>
   )
