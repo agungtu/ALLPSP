@@ -31,7 +31,7 @@ const GoTop = () => {
           display: showScroll ? "block" : "none",
         }}
       >
-        <i className="icofont-rocket"></i>
+        <i className="icofont-croissant"></i>
       </div>
     </>
   );
