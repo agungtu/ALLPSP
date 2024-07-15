@@ -169,7 +169,7 @@
 
 .counter-stats::after {
   background: #6a11cb;
-  background: linear-gradient(to right, #6a11cb, #2575fc);
+  background: #FFB996;
 }
 
 .screenshot-item:hover .screenshot-image::before {
@@ -195,7 +195,7 @@
 
 .testimonial-section::after {
   background: #6a11cb;
-  background: linear-gradient(to right, #6a11cb, #2575fc);
+  background: #FF0000;
 }
 
 .testimonial-item .icofont-quote-left {

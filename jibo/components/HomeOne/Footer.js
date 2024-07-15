@@ -6,25 +6,25 @@ import Link from "next/link";
 
 const testimonialData = [
   {
-    feedbackText: "Area Barat ( Jabar, Jabodetabek, Sumatra)",
+    feedbackText: "Rasakan kelezatan autentik kue tradisional, dibuat dengan resep turun-temurun dan bahan alami terbaik!",
     image: "/images/berrly.png",
-    name: "Galih Beryl",
+    name: "Kue Tradisional",
     designation: "Sales",
   },
 ];
 const kastoni = [
   {
-    feedbackText: "Area Tengah ( Jateng, DIY, Kalimantan)",
+    feedbackText: "Nikmati aneka kue modern dengan inovasi terbaru dan rasa tak terlupakan!",
     image: "/images/kastoni.png",
-    name: "Kastoni",
+    name: "Kue Modern",
     designation: "Sales",
   },
 ];
 const irwan = [
   {
-    feedbackText: "Area Timur (Jatim, Sulawesi, Balinusra)",
+    feedbackText: "Nikmati kue tart modern dengan desain kreatif dan cita rasa istimewa!",
     image: "/images/client/1.png",
-    name: "Irwan Sa'ban",
+    name: "Kue Tart",
     designation: "Sales",
   },
 ];

@@ -35,14 +35,14 @@ const Counter = () => {
   return (
     <>
     
-      <div id="counter" className="counter-stats" >
+      {/* <div id="counter" className="counter-stats">
         <div className="container">
-          <div className="row justify-content-center">
+          <div className="row justify-content-center" >
             {funFactsData &&
               funFactsData.map((value, i) => (
                 <div className="col-sm-6 col-lg-3" key={i}>
                   <div
-                    className="counter-box" style={{ backgroundColor : "#FFB996"}}
+                    className="counter-box" 
                     data-aos="fade-in"
                     data-aos-duration={value.duration}
                     data-aos-delay={value.delay}
@@ -55,7 +55,7 @@ const Counter = () => {
               ))}
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };
