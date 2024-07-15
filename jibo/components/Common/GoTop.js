@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
 
 const GoTop = () => {
   const [showScroll, setShowScroll] = useState(false);
@@ -31,7 +32,13 @@ const GoTop = () => {
           display: showScroll ? "block" : "none",
         }}
       >
-        <i className="icofont-paper-plane"></i>
+        <Image
+          src="/images/gambar1.jfif"
+          alt="Blog Post Image"
+          width={100}
+          height={500}
+          style={{ width: "50%", height: "50%" }}
+        />{" "}
       </div>
     </>
   );

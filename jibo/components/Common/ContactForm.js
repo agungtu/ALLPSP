@@ -51,16 +51,21 @@ const ContactForm = () => {
 
   return (
     <>
-    
-      <section id="contact" className="contact-section" style={{backgroundColor:"#deb887 "}}>
+      <section
+        id="contact"
+        className="contact-section"
+        style={{ backgroundColor: "#FFFFFF " }}
+      >
         <div className="container">
           <div className="section-title">
-            <h2>contact</h2>
+            <h2>HUbungi Kami</h2>
             <p>
-            Kami berkomitmen untuk merespons pesan Anda secepat mungkin dan memastikan bahwa setiap pertanyaan atau masalah yang Anda hadapi ditangani dengan baik. Terima kasih atas dukungan dan kepercayaan Anda kepada kami.
-            </p>
-            <p>
-            Kami sangat menghargai setiap masukan, pertanyaan, dan saran dari Anda. Jangan ragu untuk menghubungi kami melalui cara berikut:
+              Kami berkomitmen untuk merespons pesan Anda secepat mungkin dan
+              memastikan bahwa setiap pertanyaan atau masalah yang Anda hadapi
+              ditangani dengan baik. Terima kasih atas dukungan dan kepercayaan
+              Anda kepada kami.
+              Kami sangat menghargai setiap masukan, pertanyaan, dan saran dari
+              Anda. Jangan ragu untuk menghubungi kami melalui cara berikut :
             </p>
           </div>
 
@@ -69,7 +74,9 @@ const ContactForm = () => {
               <div className="single-contact-info">
                 <i className="icofont-location-pin"></i>
                 <h3>Alamat kantor:</h3>
-                <p>Jl. Pamularsih Raya, Bongsari, Semarang Barat, Central Java</p>
+                <p>
+                  Jl. Pamularsih Raya, Bongsari, Semarang Barat, Central Java
+                </p>
               </div>
             </div>
 
@@ -163,7 +170,7 @@ const ContactForm = () => {
                     </div>
                     <div className="col-lg-12 col-sm-12 text-center">
                       <button type="submit" className="default-button">
-                      Kirim Pesan
+                        Kirim Pesan
                         <i className="icofont-arrow-right"></i>
                       </button>
                     </div>

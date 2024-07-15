@@ -58,7 +58,7 @@ const Navigation = () => {
             Home
           </AnchorLink>
         </li>
-        <li className="nav-item">
+        {/* <li className="nav-item">
           <AnchorLink
             onClick={toggleNavbar}
             offset={() => 100}
@@ -77,7 +77,7 @@ const Navigation = () => {
           >
             Contact
           </AnchorLink>
-        </li>
+        </li> */}
       </ul>
       
     );

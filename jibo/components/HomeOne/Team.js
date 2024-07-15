@@ -5,7 +5,7 @@ const teamMemberData = [
   {
     image: "/images/team/5.jpeg",
     name: "Fauzi Saputra",
-    designation: "High Tier Web designer",
+    designation: "Specialist Front-End Developer",
     shortText:
       "Semua Butuh Proses untuk mendapatkan kesuksesan,Buat Mie Instan aja butuh proses.",
     socialLinks: [
@@ -20,7 +20,7 @@ const teamMemberData = [
   {
     image: "/images/team/6.jpg",
     name: "Salwa Aulia Azzahra",
-    designation: "Web designer",
+    designation: "Specialist Front-End Developer",
     shortText:
       "Lorem ipsum madolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.",
     socialLinks: [
@@ -35,7 +35,7 @@ const teamMemberData = [
   {
     image: "/images/team/7.jpg",
     name: "Shintya Bayu Apta Andika",
-    designation: "Web designer",
+    designation: "Specialist Front-End Developer",
     shortText:
       "Lorem ipsum madolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.",
     socialLinks: [
@@ -67,16 +67,13 @@ const teamMemberData = [
 const Team = () => {
   return (
     <>
-      <section id="team" className="team-section" style={{backgroundColor:"#E57C04"}}>
+      <section id="team" className="team-section">
         <div className="container">
           <div
             className="section-title"
-            data-aos="fade-in"
-            data-aos-duration="800"
-            data-aos-delay="100"
           >
-            <h2>TIM KAMI YANG LUAR BIASA</h2>
-            <p>
+            <h2 style={{color : "#FF8000"}}>Rekan Kerja</h2>
+            <p style={{color : "#FF8000"}}>
               Tim kami terdiri dari sekelompok profesional berdedikasi yang
               memiliki keahlian dan pengalaman luas di bidang pengembangan web.
               Kami bekerja sama untuk menciptakan situs web yang inovatif,
@@ -93,9 +90,7 @@ const Team = () => {
                 <div className="col-md-3" key={i}>
                   <div
                     className="single-member"
-                    data-aos="fade-in"
-                    data-aos-duration={value.duration}
-                    data-aos-delay={value.delay}
+                   
                   >
                     <div className="member-img">
                       <Image
@@ -119,8 +114,7 @@ const Team = () => {
                         </div>
                       </div>
                     </div>
-
-                    <h4 className="member-name">{value.name}</h4>
+                    <h4 className="member-name" style={{color : "#FF8000"}}>{value.name}</h4>
                     <p className="designation">{value.designation}</p>
                   </div>
                 </div>

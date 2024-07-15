@@ -5,17 +5,15 @@ import Link from "next/link";
 const Blog = () => {
   return (
     <>
-      <section id="blog" className="blog-section" style={{backgroundColor:"#deb887 "}}>
+      <section id="blog" className="blog-section" style={{backgroundColor:"#ff8000 "}}>
         <div className="container">
 
           <div
             className="section-title"
-            data-aos="fade-in"
-            data-aos-duration="800"
-            data-aos-delay="100"
+          
           >
-            <h2>TESTIMONI</h2>
-            <p>
+            <h2 className="text-white">TESTIMONI</h2>
+            <p className="text-white">
             FESS Bakery tempat di mana cita rasa dan kelezatan berpadu menjadi satu. Kami adalah toko roti yang berkomitmen untuk menyajikan roti dan kue dengan kualitas terbaik 
             yang dibuat dengan bahan-bahan pilihan dan resep tradisional.
             </p>
@@ -101,26 +99,23 @@ const Blog = () => {
                   <p>
                   "Toko roti ini benar-benar permata tersembunyi! Roti croissant-nya luar biasa, renyah di luar dan lembut di dalam. Saya juga mencoba kue bolu mereka dan rasanya sangat lezat. Harga yang ditawarkan sangat terjangkau untuk kualitas yang didapat. Sangat direkomendasikan!"
                   </p>
-{/* 
-                  <Link href="/blog/details" className="default-button">
-                    Read More
-                    <i className="icofont-swoosh-right"></i>
-                  </Link> */}
+
                 </div>
               </div>
             </div>
           </div>
-
+          
           <div className="horizontal-post single-blog-post">
             <div className="row align-items-center">
               <div className="col-lg-5">
                 <div className="blog-img">
                   <Link href="/blog/details">
                     <Image
-                      src="/images/gambar3.jfif"
+                      src="/images/gambar2.jfif"
                       alt="Blog Post Image"
                       width={100}
                       height={800}
+                      style={{width:"50%", height:"50%"}}
                     />
                   </Link>
                 </div>
@@ -130,30 +125,27 @@ const Blog = () => {
                 <div className="blog-info">
                   <h6 className="blog-title">
                     <Link href="/blog/details">
-                      Nara Risya
+                     Banna Putri
                     </Link>
                   </h6>
 
                   <ul className="post-admin">
                     <li>
-                      05 <Link href="#">Juni</Link>
+                      15 <Link href="#">April</Link>
                     </li>
-                    <li>Rabu</li>
+                    <li>Senin</li>
                     <li>2024</li>
                   </ul>
 
                   <p>
-                  "Saya sangat terkesan dengan kualitas roti di toko ini. Setiap gigitan terasa begitu lembut dan penuh rasa. Roti gandumnya adalah favorit saya karena sangat sehat dan tetap enak. Pelayanan di sini juga sangat ramah dan membantu. Saya pasti akan kembali lagi!"
+                  "Toko roti ini benar-benar permata tersembunyi! Roti croissant-nya luar biasa, renyah di luar dan lembut di dalam. Saya juga mencoba kue bolu mereka dan rasanya sangat lezat. Harga yang ditawarkan sangat terjangkau untuk kualitas yang didapat. Sangat direkomendasikan!"
                   </p>
 
-                  {/* <Link href="/blog/details" className="default-button">
-                    Read More
-                    <i className="icofont-swoosh-right"></i>
-                  </Link> */}
                 </div>
               </div>
             </div>
           </div>
+          
         </div>
       </section>
     </>
@@ -161,3 +153,5 @@ const Blog = () => {
 };
 
 export default Blog;
+
+ 

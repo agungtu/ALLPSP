@@ -11,16 +11,15 @@ import Image from "next/image";
 const Faq = () => {
   return (
     <>
-      <section id="faqs" className="faqs-section gray-bg">
+      <section id="faqs" className="faqs-section" style={{backgroundColor:"#FF8000"}}>
         <div className="container">
           <div
             className="section-title"
-            data-aos="fade-in"
-            data-aos-duration="800"
-            data-aos-delay="100"
+           
+     
           >
-            <h2>Pertanyaan yang Sering Diajukan</h2>
-            <p>
+            <h2 className="text-white">Tanya jawab </h2>
+            <p className="text-white">
               Selamat datang di Toko Roti Fess! Kami senang Anda mengunjungi
               toko kami. Berikut ini adalah beberapa pertanyaan yang sering
               diajukan oleh pelanggan kami beserta jawabannya untuk memudahkan
@@ -32,9 +31,7 @@ const Faq = () => {
             <div className="col-lg-5">
               <div
                 className="text-center"
-                data-aos="fade-in"
-                data-aos-duration="800"
-                data-aos-delay="200"
+              
               >
                 <Image
                   src="/images/donut.png"
@@ -48,9 +45,7 @@ const Faq = () => {
             <div className="col-lg-7">
               <div
                 className="faq-content"
-                data-aos="fade-in"
-                data-aos-duration="800"
-                data-aos-delay="300"
+                
               >
                 <Accordion preExpanded={["a"]}>
                   <AccordionItem uuid="a">

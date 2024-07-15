@@ -5,7 +5,7 @@ import Slider from "../components/HomeOne/Header";
 // import Features from "../components/HomeOne/Productandsolution";
 import Counter from "../components/HomeOne/Counter";
 // import Screenshots from "../components/Common/Documentation";
-import Testimonial from "../components/HomeOne/Footer";
+// import Testimonial from "../components/HomeOne/Footer";
 import Pricing from "../components/HomeOne/Pricing";
 import Faq from "../components/Common/Faq";
 import Team from "../components/HomeOne/Team";
@@ -27,11 +27,11 @@ const Index = () => {
 
       {/* <Features /> */}
 
-      <Counter />
+      {/* <Counter /> */}
 
       {/* <Screenshots /> */}
 
-      <Testimonial />
+      {/* <Testimonial /> */}
 
       <Pricing />
 
@@ -39,7 +39,7 @@ const Index = () => {
 
       <Team />
 
-      <AppDownload />
+      {/* <AppDownload /> */}
 
       <Blog />
 
