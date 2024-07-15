@@ -12,12 +12,12 @@
 }
 
 .section-title h2::after {
-  background: #6a11cb;
-  background: linear-gradient(to right, #6a11cb, #2575fc);
+  background: #000000;
+  background: linear-gradient(to right, #4c4747, #ffffff);
 }
 .section-title h2::before {
-  background: #6a11cb;
-  background: linear-gradient(to right, #6a11cb, #2575fc);
+  background: #000000;
+  background: linear-gradient(to right, #4c4747, #ffffff);
 }
 
 /* Preloader style */
@@ -232,17 +232,17 @@
 }
 .faq-content .faq-title.active {
   background: #FAA300;
-  background: linear-gradient(to right, #E57C04, #E57C04);
+  background: linear-gradient(to right, #E57C04, #FF6201);
 }
 
 .accordion__item.active .accordion-header {
   background: #FAA300;
-  background: linear-gradient(to right, #E57C04, #E57C04);
+  background: linear-gradient(to right, #E57C04, #FF6201);
 }
 
 .single-member .overlay {
-  background: #FAA300;
-  background: linear-gradient(to right, #E57C04, #FF6201);
+  background: #bb0bcb;
+  background: linear-gradient(to bottom, #b40d34, #FF6201);
 }
 
 .app-download-section::after {
@@ -392,7 +392,7 @@
 }
 
 .back-top-button i {
-  color: #6a11cb;
+  color: #512912;
 }
 
 .screenshot-slider .swiper-pagination .swiper-pagination-bullet {

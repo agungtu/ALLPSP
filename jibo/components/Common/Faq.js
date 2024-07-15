@@ -56,7 +56,7 @@ const Faq = () => {
                   <AccordionItem uuid="a">
                     <AccordionItemHeading>
                       <AccordionItemButton>
-                        <span>1.</span> Jam operasional Toko Roti Fess?
+                        <span>1.</span> Jam operasional Toko Roti Fess&#128339;?
                       </AccordionItemButton>
                     </AccordionItemHeading>
                     <AccordionItemPanel>
@@ -71,7 +71,7 @@ const Faq = () => {
                     <AccordionItemHeading>
                       <AccordionItemButton>
                         <span>2.</span> Apakah Toko Roti Fess menerima pesanan
-                        khusus?
+                        khusus&#127874;?
                       </AccordionItemButton>
                     </AccordionItemHeading>
                     <AccordionItemPanel>
@@ -87,7 +87,7 @@ const Faq = () => {
                   <AccordionItem uuid="c">
                     <AccordionItemHeading>
                       <AccordionItemButton>
-                        <span>3.</span> Bagaimana cara memesan secara online?
+                        <span>3.</span> Bagaimana cara memesan secara online&#128241;?
                       </AccordionItemButton>
                     </AccordionItemHeading>
                     <AccordionItemPanel>
@@ -95,7 +95,7 @@ const Faq = () => {
                         Ya, kami menyediakan layanan pengiriman untuk wilayah
                         sekitar toko. Untuk informasi lebih lanjut mengenai area
                         pengiriman dan biaya, silakan hubungi kami
-                        support@fessbakery.com..
+                        support@fessbakery.com.
                       </p>
                     </AccordionItemPanel>
                   </AccordionItem>
@@ -104,7 +104,7 @@ const Faq = () => {
                     <AccordionItemHeading>
                       <AccordionItemButton>
                         <span>4.</span> Apakah Toko Roti Fess menyediakan
-                        layanan pesan antar (takeaway)?
+                        layanan pesan antar (takeaway&#128666;)?
                       </AccordionItemButton>
                     </AccordionItemHeading>
                     <AccordionItemPanel>
@@ -119,8 +119,8 @@ const Faq = () => {
                   <AccordionItem uuid="e">
                     <AccordionItemHeading>
                       <AccordionItemButton>
-                        <span>5.</span> Apakah ada rekomendasi produk terbaru
-                        atau favorit dari Toko Roti Fess?
+                        <span>5.</span> Apakah ada rekomendasi produk
+                        atau favorit dari Toko Roti Fess&#127849;?
                       </AccordionItemButton>
                     </AccordionItemHeading>
                     <AccordionItemPanel>
@@ -137,7 +137,7 @@ const Faq = () => {
                     <AccordionItemHeading>
                       <AccordionItemButton>
                         <span>6.</span> Bagaimana cara menghubungi Toko Roti
-                        Fess jika saya memiliki pertanyaan atau keluhan?
+                        Fess jika saya memiliki pertanyaan atau keluhan&#128226;?
                       </AccordionItemButton>
                     </AccordionItemHeading>
                     <AccordionItemPanel>

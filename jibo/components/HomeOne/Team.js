@@ -5,7 +5,7 @@ const teamMemberData = [
   {
     image: "/images/team/5.jpeg",
     name: "Fauzi Saputra",
-    designation: "",
+    designation: "High Tier Web designer",
     shortText:
       "Semua Butuh Proses untuk mendapatkan kesuksesan,Buat Mie Instan aja butuh proses.",
     socialLinks: [
@@ -20,7 +20,7 @@ const teamMemberData = [
   {
     image: "/images/team/6.jpg",
     name: "Salwa Aulia Azzahra",
-    designation: "",
+    designation: "Web designer",
     shortText:
       "Lorem ipsum madolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.",
     socialLinks: [
@@ -35,7 +35,7 @@ const teamMemberData = [
   {
     image: "/images/team/7.jpg",
     name: "Shintya Bayu Apta Andika",
-    designation: "",
+    designation: "Web designer",
     shortText:
       "Lorem ipsum madolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.",
     socialLinks: [
@@ -50,7 +50,7 @@ const teamMemberData = [
   {
     image: "/images/team/.jpeg",
     name: "Elisa Ambarwati",
-    designation: "CEO & Fouder",
+    designation: "Web designer",
     shortText:
       "Lorem ipsum madolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.",
     socialLinks: [
@@ -67,7 +67,7 @@ const teamMemberData = [
 const Team = () => {
   return (
     <>
-      <section id="team" className="team-section">
+      <section id="team" className="team-section" style={{backgroundColor:"#E57C04"}}>
         <div className="container">
           <div
             className="section-title"
