@@ -51,7 +51,8 @@ const ContactForm = () => {
 
   return (
     <>
-      <section id="contact" className="contact-section gray-bg">
+    
+      <section id="contact" className="contact-section" style={{backgroundColor:"#deb887 "}}>
         <div className="container">
           <div className="section-title">
             <h2>contact</h2>
@@ -84,7 +85,7 @@ const ContactForm = () => {
               <div className="single-contact-info">
                 <i className="icofont icofont-phone"></i>
                 <h3>Nomor Telepon:</h3>
-                <p>085787653299</p>
+                <p>+6285787653299</p>
               </div>
             </div>
           </div>

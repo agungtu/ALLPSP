@@ -4,20 +4,20 @@
 }
 
 .default-button {
-  background: #6a11cb;
-  background: linear-gradient(to right, #6a11cb, #2575fc);
+  background: #cba011;
+  background: linear-gradient(to right, #c27c2c, #fc7425);
 }
 .default-button:hover {
   box-shadow: 0 0 10px #6a11cb;
 }
 
 .section-title h2::after {
-  background: #000000;
-  background: linear-gradient(to right, #4c4747, #ffffff);
+  background: #e68326;
+  background: linear-gradient(to right, #cb1168, #fc2525);
 }
 .section-title h2::before {
-  background: #000000;
-  background: linear-gradient(to right, #4c4747, #ffffff);
+  background: #e68326;
+  background: linear-gradient(to right, #cb1168, #fc2525);
 }
 
 /* Preloader style */
@@ -312,8 +312,8 @@
 }
 
 .single-contact-info i {
-  background: #6a11cb;
-  background: linear-gradient(to right, #6a11cb, #2575fc);
+  background: #cb6511;
+  background: linear-gradient(to right, #cb9011, #fc5025);
 }
 
 .error-page-content {

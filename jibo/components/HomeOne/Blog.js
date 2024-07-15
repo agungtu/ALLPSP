@@ -5,7 +5,7 @@ import Link from "next/link";
 const Blog = () => {
   return (
     <>
-      <section id="blog" className="blog-section">
+      <section id="blog" className="blog-section" style={{backgroundColor:"#deb887 "}}>
         <div className="container">
 
           <div
@@ -30,7 +30,8 @@ const Blog = () => {
                       src="/images/gambar1.jfif"
                       alt="Blog Post Image"
                       width={100}
-                      height={800}
+                      height={500}
+                      style={{width:"50%", height:"50%"}}
                     />
                   </Link>
                 </div>
@@ -75,6 +76,7 @@ const Blog = () => {
                       alt="Blog Post Image"
                       width={100}
                       height={800}
+                      style={{width:"50%", height:"50%"}}
                     />
                   </Link>
                 </div>
