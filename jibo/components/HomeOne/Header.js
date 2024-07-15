@@ -7,9 +7,9 @@ const sliderData = [
   {
     
     
-   heading: "Roti Segar, Senyum Lebar" ,
-    text: "Rasakan Aroma Kelezatan di FESS Bakery Temukan Pilihan Roti dan Kue Segar yang Menggugah Selera.",
-    image: "/images/icon.png",
+    heading: <span style={{ color: '#380f17', fontSize: '70px', fontFamily :"Pacifico"}}>Roti Segar, Senyum Lebar</span>,
+    text: <span style={{color: '#380f17' , fontFamily :"Pacifico"}}>"Rasakan Aroma Kelezatan di FESS Bakery Temukan Pilihan Roti dan Kue Segar yang Menggugah Selera."</span>,
+    image: "/images/logo.png",
     
   }
 ];
@@ -27,7 +27,7 @@ const Slider = () => {
         {sliderData &&
           sliderData.map((value, i) => (
             <SwiperSlide key={i}>
-              <div className="single-slider-item" style={{ backgroundColor : "#D9EDBF"}}>
+              <div className="single-slider-item" style={{ backgroundColor : "#FFA27F"}}>
                 <div className="slide-item-table">
                   <div className="slide-item-tablecell">
                     <div className="container">
@@ -89,9 +89,9 @@ const Slider = () => {
                           </VisibilitySensor>
                         </div>
 
-                        <div className="col-md-6 ">
+                        <div className="col-md-6">
                           <div className="welcome-phone">
-                            <img src={value.image} alt="" style={{height : "100%", width : "200%"}} />
+                            <img src={value.image} alt="logo" style={{height : "200%", width : "400%"}} />
                           </div>
                         </div>
                       </div>
