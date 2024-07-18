@@ -11,7 +11,7 @@ import Image from "next/image";
 const Faq = () => {
   return (
     <>
-      <section id="faqs" className="faqs-section" style={{backgroundColor:"#FF8000"}}>
+      <section id="faqs" className="faqs-section">
         <div className="container">
           <div
             className="section-title"

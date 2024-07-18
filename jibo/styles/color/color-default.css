@@ -4,11 +4,16 @@
 }
 
 .default-button {
-  background: #cba011;
-  background: linear-gradient(to right, #c27c2c, #fc7425);
+  background: #987654;
+  background: linear-gradient(to right, #c19a6b, #f4a460);
 }
 .default-button:hover {
-  box-shadow: 0 0 10px #6a11cb;
+  box-shadow: 0 0 10px #000;
+}
+
+.single-slider-item {
+  background: #987654;
+  background: linear-gradient(to right, #c19a6b, #f4a460);
 }
 
 .section-title h2::after {
@@ -91,23 +96,24 @@
 /* End Preloader style */
 @media only screen and (min-width: 768px) {
   .top-menu.menu-shrink {
-    background: #6a11cb;
-    background: linear-gradient(to right, #6a11cb, #2575fc);
+    background: #987654;
+  background: linear-gradient(to right, #c19a6b, #f4a460);
+   
   }
 }
 .navbar-white .navbar-nav .nav-item .nav-link:focus, .navbar-white .navbar-nav .nav-item .nav-link:hover {
   color: #6a11cb !important;
 }
 .navbar-white .navbar-nav .nav-item .nav-link::before {
-  background: #6a11cb;
-  background: linear-gradient(to right, #6a11cb, #2575fc);
+  background: #FF8000;
+  
 }
 .navbar-white .navbar-nav .nav-item .active > a, .navbar-white .navbar-nav .nav-item .active > a:focus, .navbar-white .navbar-nav .nav-item .active > a:hover {
   color: #6a11cb !important;
 }
 
 .slider-item-img-bg::before {
-  background: #6a11cb;
+  background: #FF8000;
   background: linear-gradient(to right, #6a11cb, #2575fc);
 }
 
@@ -207,24 +213,28 @@
 }
 
 .single-price-package .price-header .price-value {
-  background: #FF8000;
+  background: #987654;
+  background: linear-gradient(to right, #c19a6b, #f4a460);
 }
 
 .purchase-btn::before {
-  background: #FAA300;
-  background: linear-gradient(to right, #6a11cb, #2575fc);
+  background: #987654;
+  background: linear-gradient(to right, #c19a6b, #f4a460);
 }
 
 .personal-price-package .purchase-btn {
-  background: #00fa21;
-  background: linear-gradient(to right, #6a11cb, #2575fc);
+  background: #987654;
+  background: linear-gradient(to right, #c19a6b, #f4a460);
 }
 
 .single-price-package:hover .purchase-btn {
-  background: #FAA300;
-  background: linear-gradient(to right, #E57C04, #FF6201);
+  background: #987654;
+  background: linear-gradient(to right, #c19a6b, #f4a460);
 }
-
+.faqs-section {
+  background: #987654;
+  background: linear-gradient(to right, #c19a6b, #f4a460);
+}
 .faq-content .faq-title::before {
   background: #FAA300;
   background: linear-gradient(to right, #E57C04, #FF6201);
@@ -240,8 +250,8 @@
 }
 
 .single-member .overlay {
-  background: #bb0bcb;
-  background: linear-gradient(to bottom, #b40d34, #FF6201);
+  background: #987654;
+  background: linear-gradient(to right, #c19a6b, #f4a460);
 }
 
 .app-download-section::after {
@@ -249,6 +259,11 @@
   background: linear-gradient(to right, #6a11cb, #2575fc);
 }
 
+.blog-section
+{
+  background: #987654;
+  background: linear-gradient(to right, #c19a6b, #f4a460);
+}
 .single-blog-post .blog-date {
   background: #6a11cb;
   background: linear-gradient(to right, #6a11cb, #2575fc);
@@ -311,8 +326,8 @@
 }
 
 .single-contact-info i {
-  background: #cb6511;
-  background: linear-gradient(to right, #cb9011, #fc5025);
+  background: #987654;
+  background: linear-gradient(to right, #c19a6b, #f4a460);
 }
 
 .error-page-content {

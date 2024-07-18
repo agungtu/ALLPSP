@@ -5,7 +5,7 @@ import Link from "next/link";
 const Blog = () => {
   return (
     <>
-      <section id="blog" className="blog-section" style={{backgroundColor:"#ff8000 "}}>
+      <section id="blog" className="blog-section">
         <div className="container">
 
           <div
@@ -25,11 +25,11 @@ const Blog = () => {
                 <div className="blog-img">
                   <Link href="/blog/details">
                     <Image
-                      src="/images/gambar1.jfif"
+                      src="/images/gambar1.jpg"
                       alt="Blog Post Image"
                       width={100}
                       height={500}
-                      style={{width:"50%", height:"50%"}}
+                      style={{width:"100%", height:"100%"}}
                     />
                   </Link>
                 </div>
@@ -70,11 +70,11 @@ const Blog = () => {
                 <div className="blog-img">
                   <Link href="/blog/details">
                     <Image
-                      src="/images/gambar2.jfif"
+                      src="/images/gambar2.jpg"
                       alt="Blog Post Image"
                       width={100}
                       height={800}
-                      style={{width:"50%", height:"50%"}}
+                      style={{width:"100%", height:"100%"}}
                     />
                   </Link>
                 </div>
@@ -111,11 +111,11 @@ const Blog = () => {
                 <div className="blog-img">
                   <Link href="/blog/details">
                     <Image
-                      src="/images/gambar2.jfif"
+                      src="/images/gambar3.jfif"
                       alt="Blog Post Image"
                       width={100}
                       height={800}
-                      style={{width:"50%", height:"50%"}}
+                      style={{width:"100%", height:"100%"}}
                     />
                   </Link>
                 </div>

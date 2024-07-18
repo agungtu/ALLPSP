@@ -98,7 +98,7 @@ const Navigation = () => {
       >
         <div className="container">
           <Image
-            src="/images/TELKOM.png"
+            src="/images/Asset.svg"
             alt="App About Image"
             width={120}
             height={125}

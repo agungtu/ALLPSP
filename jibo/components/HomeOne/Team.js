@@ -5,7 +5,7 @@ const teamMemberData = [
   {
     image: "/images/team/5.jpeg",
     name: "Fauzi Saputra",
-    designation: "Specialist Front-End Developer",
+    designation: "Pembuat Roti",
     shortText:
       "Semua Butuh Proses untuk mendapatkan kesuksesan,Buat Mie Instan aja butuh proses.",
     socialLinks: [
@@ -20,9 +20,9 @@ const teamMemberData = [
   {
     image: "/images/team/6.jpg",
     name: "Salwa Aulia Azzahra",
-    designation: "Specialist Front-End Developer",
+    designation: "Pengembang Rasa",
     shortText:
-      "Lorem ipsum madolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.",
+      "Hidup itu kayak es krim, nikmatilah sebelum meleleh.",
     socialLinks: [
       {
         icon: "icofont-instagram",
@@ -33,30 +33,15 @@ const teamMemberData = [
     delay: "200",
   },
   {
-    image: "/images/team/7.jpg",
-    name: "Shintya Bayu Apta Andika",
-    designation: "Specialist Front-End Developer",
-    shortText:
-      "Lorem ipsum madolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.",
-    socialLinks: [
-      {
-        icon: "icofont-instagram",
-        link: "https://www.instagram.com/shnt_yyy?igsh=MWFlNmg0bDVoMHYwaA%3D%3D&utm_source=qr",
-      },
-    ],
-    duration: "800",
-    delay: "300",
-  },
-  {
-    image: "/images/team/.jpeg",
+    image: "/images/team/8.png",
     name: "Elisa Ambarwati",
-    designation: "Web designer",
+    designation: "Chef",
     shortText:
-      "Lorem ipsum madolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.",
+      "Hidup ini seperti naik sepeda. Untuk menjaga keseimbangan, Anda harus terus bergerak maju..",
     socialLinks: [
       {
         icon: "icofont-instagram",
-        link: "https://www.instagram.com/",
+        link: "https://www.instagram.com/thvllla?igsh=MTh4bnhlY205bDM4NQ==",
       },
     ],
     duration: "800",
@@ -72,15 +57,9 @@ const Team = () => {
           <div
             className="section-title"
           >
-            <h2 style={{color : "#FF8000"}}>Rekan Kerja</h2>
-            <p style={{color : "#FF8000"}}>
-              Tim kami terdiri dari sekelompok profesional berdedikasi yang
-              memiliki keahlian dan pengalaman luas di bidang pengembangan web.
-              Kami bekerja sama untuk menciptakan situs web yang inovatif,
-              fungsional, dan mudah digunakan. Dengan kombinasi keterampilan
-              teknis, kreativitas, dan perhatian terhadap detail, kami
-              berkomitmen untuk memberikan hasil terbaik bagi setiap proyek yang
-              kami tangani.
+            <h2 style={{color : "#c19a6b"}}>Rekan Kerja</h2>
+            <p style={{color : "#c19a6b"}}>
+            Toko Roti Fess, didirikan pada tahun 2024, menghadirkan pengalaman luas dalam memenuhi pesanan roti dengan kapasitas yang fleksibel, siap menghadapi tantangan dalam skala apapun. Kami berkomitmen untuk menjaga kualitas produk dan layanan demi kepuasan pelanggan setia kami. Dengan berbagai pilihan produk yang lezat dan inovatif, Toko Roti Fess tidak hanya menawarkan kepuasan rasa, tetapi juga jaminan garansi uang kembali hingga 100% jika Anda tidak sepenuhnya puas dengan pengalaman berbelanja bersama kami.
             </p>
           </div>
 
@@ -114,7 +93,7 @@ const Team = () => {
                         </div>
                       </div>
                     </div>
-                    <h4 className="member-name" style={{color : "#FF8000"}}>{value.name}</h4>
+                    <h4 className="member-name" style={{color : "#c19a6b"}}>{value.name}</h4>
                     <p className="designation">{value.designation}</p>
                   </div>
                 </div>
