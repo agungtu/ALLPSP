@@ -16,7 +16,7 @@ const alertContent = () => {
   });
 };
 
-// Form initial state
+  // Form initial state
 const INITIAL_STATE = {
   nama: "",
   email: "",

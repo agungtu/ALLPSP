@@ -51,7 +51,7 @@ const Pricing = () => {
 
                   <div className="col-md-4">
                     <Image
-                      src="/images/pricing/brownies.png"
+                      src="/images/pricing/brwnies.png"
                       alt="Faq Image"
                       className="rounded-5"
                       width={200}
@@ -240,7 +240,7 @@ const Pricing = () => {
                     width={200}
                     height={1083}
                   />
-                 <li></li>
+                 <li>sagu keju</li>
                   </div>
 
                   <div className="col-md-4">
@@ -252,7 +252,7 @@ const Pricing = () => {
                     width={200}
                     height={1083}
                   />
-                  <li></li>
+                  <li>nastar</li>
                   </div>
 
                   <div className="col-md-4">
@@ -263,7 +263,7 @@ const Pricing = () => {
                     width={200}
                     height={1083}
                   />
-                  <li></li>
+                  <li>kastangel</li>
                   </div>
                   </div>
 
@@ -276,7 +276,7 @@ const Pricing = () => {
                     width={200}
                     height={1083}
                   />
-                  <li></li>
+                  <li>thumbprint</li>
                   </div>
 
                   <div className="col-md-4">
@@ -287,7 +287,7 @@ const Pricing = () => {
                     width={200}
                     height={1083}
                   />
-                  <li></li>
+                  <li>kue semprit</li>
                   </div>
 
                   <div className="col-md-4">
@@ -298,7 +298,7 @@ const Pricing = () => {
                     width={200}
                     height={1083}
                   />
-                  <li></li>
+                  <li>kue sus kering</li>
                   </div>
                   </div>
                   

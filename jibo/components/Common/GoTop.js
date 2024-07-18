@@ -29,7 +29,7 @@ const GoTop = () => {
         className="back-top-button"
         onClick={scrollTop}
         style={{
-          display: showScroll ? "block" : "none", right: "-100px", width: "300px", border: "3px" , padding: "6px", 
+          display: showScroll ? "block" : "none", right: "-100px", width: "300px", border: "3px" , padding: "60px", 
         }}
       >
         <Image
