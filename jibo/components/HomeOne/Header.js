@@ -55,7 +55,7 @@ const Slider = () => {
             <SwiperSlide key={i}>
               <div
                 className="single-slider-item"
-                style={{ backgroundColor: "#FF8000" }}
+                style={{ backgroundColor: "#d2b48c " }}
               >
                 <div className="slide-item-table">
                   <div className="slide-item-tablecell">

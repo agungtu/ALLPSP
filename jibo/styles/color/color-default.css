@@ -1,6 +1,6 @@
 .gradient-bg {
-  background: #6a11cb;
-  background: linear-gradient(to right, #6a11cb, #2575fc);
+  background: #c19a6b;
+  background: linear-gradient(to right, #c19a6b, #c19a6b);
 }
 
 .default-button {
@@ -119,6 +119,11 @@
 .homes-bg-img::after {
   background: #6a11cb;
   background: linear-gradient(to right, #6a11cb, #2575fc);
+}
+
+.gradient-color {
+  background: #665536;
+  background: linear-gradient(to right, #8a8885, #FF6201);
 }
 
 .particle-bg {

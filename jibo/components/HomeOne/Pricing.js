@@ -14,7 +14,7 @@ const Pricing = () => {
             data-aos-delay="100"
           >
             <h2 style={{ color: '#FF8000' }}>FESS Cake & Bakery</h2>
-            <p className="mt-4 justify-content-center" style={{ color: '#FF8000' }}> 
+            <p className="mt-4 justify-content-center" style={{ color: '#ea6b2e' }}> 
               Di FESS Cake & Bakery, Kami menyajikan berbagai kue dan roti lezat
               dengan kualitas premium, serta harga yang sangat terjangkau,
               Karena kami percaya kelezatan sejati tidak harus menguras kantong anda!
@@ -132,11 +132,13 @@ const Pricing = () => {
                 // data-aos-delay="200"
               >
                 <div className="price-header">
-                  <h3 style={{ color: '#FF8000' }}>Ukuran Menengah</h3>
+                  <div classname="gradient-color">
+                  <h3 >Ukuran Menengah</h3>
                   <h4 className="price-value">
                     <sup className="text-bottom">Rp</sup>&nbsp;
                     <span className="text-large">25.000</span>&nbsp;
                   </h4>
+                  </div>
                 </div>
 
                 <div className="d-flex mt-4">
@@ -217,7 +219,7 @@ const Pricing = () => {
               </div>
             </div>
 
-            <div className="col-md-12">
+            <div className="col-md-12">  
               <div
                 className="single-price-package"
                 data-aos-duration="800"
@@ -232,14 +234,7 @@ const Pricing = () => {
                 </div>
 
                 <div className="d-flex mt-4">
-                <div className="col-md-4">
-                  <Image
-                    src="/images/pricing/roticiabatta.jpg"
-                    alt="Faq Image"
-                    className="rounded-5"
-                    width={200}
-                    height={1083}
-                  />
+                <div className="col-md-4">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
                   <li>Roti Ciabatta</li>
                   </div>
 
