@@ -14,7 +14,7 @@ const Footer = () => {
             <div className="row">
               <div className="col-md-6 col-lg-6">
                 <p className="copyright">
-                  Copyright {CurrentYears} Jibo. all rights by{" "}
+                  Copyright {currentYear} Jibo. all rights by{" "}
                   <a href="http://envytheme.com/" target="_blank">
                     EnvyTheme
                   </a>
