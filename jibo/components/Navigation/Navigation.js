@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import Image from "next/image";
+import Link from "next/link";
 
 const Navigation = () => {
   const [collapsed, setCollapsed] = useState(true);
@@ -21,28 +22,28 @@ const Navigation = () => {
 
     const mainNavLinks = document.querySelectorAll("nav ul li a");
 
-    const handleActiveLink = () => {
-      const fromTop = window.scrollY;
-      mainNavLinks.forEach((link) => {
-        const section = document.querySelector(link.hash);
-        if (
-          section?.offsetTop <= fromTop &&
-          section?.offsetTop + section.offsetHeight > fromTop
-        ) {
-          link.classList.add("active");
-        } else {
-          link.classList.remove("active");
-        }
-      });
-    };
+    // // const handleActiveLink = () => {
+    // //   const fromTop = window.scrollY;
+    // //   mainNavLinks.forEach((link) => {
+    // //     const section = document.querySelector(link.hash);
+    // //     if (
+    // //       section?.offsetTop <= fromTop &&
+    // //       section?.offsetTop + section.offsetHeight > fromTop
+    // //     ) {
+    // //       link.classList.add("active");
+    // //     } else {
+    // //       link.classList.remove("active");
+    // //     }
+    // //   });
+    // // };
 
-    document.addEventListener("scroll", handleScroll);
-    window.addEventListener("scroll", handleActiveLink);
+    // document.addEventListener("scroll", handleScroll);
+    // window.addEventListener("scroll", handleActiveLink);
 
-    return () => {
-      document.removeEventListener("scroll", handleScroll);
-      window.removeEventListener("scroll", handleActiveLink);
-    };
+    // return () => {
+    //   document.removeEventListener("scroll", handleScroll);
+    //   window.removeEventListener("scroll", handleActiveLink);
+    // };
   }, []);
 
   const renderMenus = () => {
@@ -57,6 +58,16 @@ const Navigation = () => {
           >
             Home
           </AnchorLink>
+        </li>
+        <li className="nav-item">
+          <Link
+            onClick={toggleNavbar}
+            offset={() => 100}
+            className="nav-link active"
+            href="/blog/details"
+          >
+            Promosi
+          </Link>
         </li>
         {/* <li className="nav-item">
           <AnchorLink
@@ -79,7 +90,6 @@ const Navigation = () => {
           </AnchorLink>
         </li> */}
       </ul>
-      
     );
   };
 
