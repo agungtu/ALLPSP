@@ -1,13 +1,15 @@
 import React from "react"; 
 
 const NewsletterForm = () => {
-  return (
+  // return (
     <>
-      <div className="footer-top">
+    
+              
+      <div className="footer-top" >
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
-              <div className="subscribe-text">
+               <div className="subscribe-text">
                 <h3>Subscribe for our Newsletter</h3>
                 <p>
                   Lorem ipsum madolor sit amet, consectetur adipisicing elit,
@@ -30,13 +32,13 @@ const NewsletterForm = () => {
                     <i className="icofont-paper-plane"></i>
                   </button>
                 </form>
-              </div>
+              </div> 
             </div>
           </div>
         </div>
-      </div>
+      </div> 
     </>
-  );
+  // );
 };
 
 export default NewsletterForm;
