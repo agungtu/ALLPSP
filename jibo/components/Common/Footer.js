@@ -17,6 +17,7 @@ const Footer = () => {
                   Copyright {currentYear} Jibo. all rights by{" "}
                   <a href="http://envytheme.com/" target="_blank" style={{color:'#FFFF'}}>
                     EnvyTheme
+                    
                   </a>
                 </p>
               </div>
