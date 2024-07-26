@@ -76,7 +76,6 @@ const BlogDetailsContent = () => {
                       </p>
                     </div>
                   </div>
-
                   <aside className="contact-form-wrapper">
                     <h4 className="comment-title">Hubungi Kami</h4>
                     <form method="post" action="#">
