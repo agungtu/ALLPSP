@@ -8,7 +8,7 @@ const BlogOne = () => {
     <>
       <div
         className="top-banner-area"
-        style={{ backgroundImage: `url("/images/top-banner-area-bg.jpg")` }}
+        style={{ backgroundImage: `url("/images/banner-wow.png")` }}
       >
         <div className="container">
           <div className="header">
