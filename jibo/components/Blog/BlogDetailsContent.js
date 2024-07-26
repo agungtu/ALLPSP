@@ -14,7 +14,7 @@ const BlogDetailsContent = () => {
               {/* <Sidebar /> */}
             </div>
 
-            <div className="col-md-8 col-lg-8">
+            <div className="col-md-9">
               <div className="single-blog-details">
                 <h3 className="single-blog-title" style={{color:'#8D493A'}}>Promo</h3>
                 <div className="single-post-admin">
@@ -24,8 +24,8 @@ const BlogDetailsContent = () => {
                   <Image
                     src="/images/blog/promo1.jpg"
                     alt="blog"
-                    width={1000}
-                    height={800}
+                    width={500}
+                    height={300}
                   />
                   {/* <div className="single-blog-date">10 Feb, 2024</div> */}
                   <h3 style={{color:'#8D493A'}}>Promo Khusus Member (FEES Voucher): Harga Spesial Untuk Baguette, Croissant, Pain Chocolat </h3>
@@ -179,6 +179,7 @@ const BlogDetailsContent = () => {
               </div>
 
               {/* <div className="all-comments-content">
+              {/* <div className="all-comments-content">
                 <h4 className="comment-title">Comments (03)</h4>
                 <div className="comment mb-50">
                   <Image
@@ -248,6 +249,7 @@ const BlogDetailsContent = () => {
               </div> */}
 
               {/* <div className="comment-form">
+              {/* <div className="comment-form">
                 <h4 className="comment-title">Post Your Comment</h4>
                 <form method="post" action="#">
                   <div className="row">
@@ -309,6 +311,47 @@ const BlogDetailsContent = () => {
           </div>
         </div>
       </section>
+
+      <style jsx>{`
+        .content-wrapper {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+        }
+
+        .details-text {
+          flex: 1;
+          margin-right: 20px;
+        }
+
+        .contact-form-wrapper {
+          flex: 0;
+        }
+
+        .contact-form-wrapper img {
+          width: 100%;
+          height: auto;
+        }
+
+        .form-control {
+          margin-bottom: 15px;
+          width: 400%;
+          padding: 8px;
+          box-sizing: border-box;
+        }
+
+        .text-center {
+          text-align: center;
+        }
+
+        .default-button {
+          padding: 10px 20px;
+          background-color: #007bff;
+          border: none;
+          color: white;
+          cursor: pointer;
+        }
+      `}</style>
     </>
   );
 };
