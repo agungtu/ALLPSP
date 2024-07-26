@@ -25,6 +25,7 @@ const BlogDetailsContent = () => {
                   />
                 </div>
 
+
                 <div className="content-wrapper">
                   <div className="details-text">
                     <h3 className="single-blog-title">
