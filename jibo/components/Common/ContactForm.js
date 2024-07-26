@@ -16,7 +16,7 @@ const alertContent = () => {
   });
 };
 
-// Form initial state
+  // Form initial state
 const INITIAL_STATE = {
   nama: "",
   email: "",
@@ -97,7 +97,7 @@ const ContactForm = () => {
             </div>
           </div>
 
-          <div className="row">
+         {/* <div className="row">
             <div className="col-lg-12 col-md-12">
               <div className="contact-form">
                 <form onSubmit={handleSubmit}>
@@ -178,7 +178,7 @@ const ContactForm = () => {
                 </form>
               </div>
             </div>
-          </div>
+          </div>*/}
         </div>
       </section>
     </>

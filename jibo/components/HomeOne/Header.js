@@ -5,6 +5,8 @@ import VisibilitySensor from "react-visibility-sensor";
 
 const sliderData = [
   {
+    
+    
     heading: "Roti Segar, Senyum Lebar",
     text: "FESS Bakery adalah surga bagi pecinta roti dan kue, menawarkan berbagai pilihan roti segar, kue tart, dan pastry yang dibuat dengan bahan berkualitas tinggi dan resep rahasia. Setiap produk dibuat dengan cinta dan perhatian terhadap detail, menghadirkan kelezatan yang memanjakan lidah. Dengan suasana toko yang hangat dan ramah, kami berkomitmen untuk memberikan pengalaman belanja yang menyenangkan dan memuaskan bagi setiap pelanggan",
     image: "/images/logo.png",
@@ -55,7 +57,6 @@ const Slider = () => {
             <SwiperSlide key={i}>
               <div
                 className="single-slider-item"
-                style={{ backgroundColor: "#d2b48c " }}
               >
                 <div className="slide-item-table">
                   <div className="slide-item-tablecell">

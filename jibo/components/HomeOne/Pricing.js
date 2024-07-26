@@ -6,15 +6,15 @@ const Pricing = () => {
   return (
     <>
       <section id="pricing" className="pricing-section">
-        <div className="container">
+        <div className="container" >
           <div
             className="section-title"
             data-aos="fade-up"
             data-aos-duration="800"
             data-aos-delay="100"
           >
-            <h2 style={{ color: '#FF8000' }}>FESS Cake & Bakery</h2>
-            <p className="mt-4 justify-content-center" style={{ color: '#ea6b2e' }}> 
+            <h2 style={{ color: '#c19a6b' }}>FESS Cake & Bakery</h2>
+            <p className="mt-4 justify-content-center" style={{ color: '#c19a6b' }}> 
               Di FESS Cake & Bakery, Kami menyajikan berbagai kue dan roti lezat
               dengan kualitas premium, serta harga yang sangat terjangkau,
               Karena kami percaya kelezatan sejati tidak harus menguras kantong anda!
@@ -29,81 +29,81 @@ const Pricing = () => {
                 data-aos-duration="800"
                 data-aos-delay="200"
               >
-                <div className="price-header">
-                  <h3 style={{ color: '#FF8000' }}>Ukuran Kecil</h3>
+                <div className="price-header" >
+                  <h3 style={{ color: '#c19a6b' }}>Menu</h3>
                   <h4 className="price-value">
-                    <sup className="text-bottom">Rp</sup> &nbsp;
-                    <span className="text-large">10.000</span> &nbsp;
+                    
+                    <span className="h3">MAKANAN RINGAN</span> &nbsp;
                   </h4>
                 </div>
 
                 <div className="d-flex mt-4">
                   <div className="col-md-4">
                     <Image
-                      src="/images/pricing/cookies.png"
+                      src="/images/pricing/cpcs.png"
                       alt="Faq Image"
                       className="rounded-5"
                       width={200}
                       height={500}
                     />
-                    <li>Cookies</li>
+                    <li>cookies</li>
                   </div>
 
                   <div className="col-md-4">
                     <Image
-                      src="/images/pricing/croissantt.jpg"
+                      src="/images/pricing/brwnies.png"
                       alt="Faq Image"
                       className="rounded-5"
                       width={200}
                       height={500}
                     />
-                    <li>croissant</li>
+                    <li>brownies</li>
                   </div>
 
                   <div className="col-md-4">
                     <Image
-                      src="/images/pricing/muffin.jpg"
+                      src="/images/pricing/mffin.png"
                       alt="Faq Image"
                       className="rounded-5"
                       width={200}
                       height={400}
                     />
-                    <li>Muffin</li>
+                    <li>muffin</li>
                   </div>
                 </div>
 
                   <div className="d-flex">
                   <div className="col-md-4">
                     <Image
-                      src="/images/pricing/Briochebuns.jpg"
+                      src="/images/pricing/croisant.png"
                       alt="Faq Image"
                       className="rounded-5"
                       width={200}
                       height={1083}
                     />
-                    <li>Brioche Buns</li>
+                    <li>croisant</li>
                   </div>
 
                   <div className="col-md-4">
                     <Image
-                      src="/images/pricing/Cupcakes.jpg"
+                      src="/images/pricing/cupcik.png"
                       alt="Faq Image"
                       className="rounded-5"
                       width={200}
                       height={1200}
                     />
-                    <li>Cupcakes</li>
+                    <li>cupcakes</li>
                   </div>
 
                   <div className="col-md-4">
                     <Image
-                      src="/images/pricing/Minicheesecake.jpg"
+                      src="/images/pricing/crmbln.png"
                       alt="Faq Image"
                       width={200}
                       className="rounded-5"
                       height={1083}
                     />
-                    <li>Mini Cheesecake</li>
+                    <li>cromboloni</li>
                   </div>
                   {/* <Image
                     src="/images/pricing/macaron.jpg"
@@ -132,11 +132,10 @@ const Pricing = () => {
                 // data-aos-delay="200"
               >
                 <div className="price-header">
-                  <div classname="gradient-color">
-                  <h3 >Ukuran Menengah</h3>
+                  <h3 style={{ color: '#c19a6b' }}>MENU</h3>
                   <h4 className="price-value">
-                    <sup className="text-bottom">Rp</sup>&nbsp;
-                    <span className="text-large">25.000</span>&nbsp;
+                    
+                    <span className="h3">CAKE</span>&nbsp;
                   </h4>
                   </div>
                 </div>
@@ -144,70 +143,70 @@ const Pricing = () => {
                 <div className="d-flex mt-4">
                 <div className="col-md-4">
                   <Image
-                    src="/images/pricing/rotigandum.jpg"
+                    src="/images/pricing/berry.png"
                     alt="Faq Image"
                     className="rounded-5"
                     width={200}
                     height={1083}
                   />
-                  <li>Roti gandum</li>
+                  <li>berry</li>
                   </div>
 
                   <div className="col-md-4">
                   <Image
-                    src="/images/pricing/danishpastry.jpg"
+                    src="/images/pricing/vanilla.png"
                     alt="Faq Image"
                     className="rounded-5"
                     width={200}
                     height={1083}
                   />
-                  <li>Danish Pastry</li>
+                  <li>vanilla</li>
                   </div>
 
                   <div className="col-md-4">
                   <Image
-                    src="/images/pricing/tartitalian.jpg"
+                    src="/images/pricing/lotus.png"
                     alt="Faq Image"
                     className="rounded-5"
                     width={200}
                     height={1083}
                   />
-                  <li>Tart italian</li>
+                  <li>lotus</li>
                   </div>
                   </div>
 
                   <div className="d-flex">
                   <div className="col-md-4">
                   <Image
-                    src="/images/pricing/Cheesecakeplain.jpg"
+                    src="/images/pricing/tiramisu.png"
                     alt="Faq Image"
                     className="rounded-5"
                     width={200}
                     height={1083}
                   />
-                  <li>Cheesecake plain</li>
+                  <li>tiramissu</li>
                   </div>
 
                   <div className="col-md-4">
                   <Image
-                    src="/images/pricing/lapislegit.jpg"
+                    src="/images/pricing/cake.png"
                     alt="Faq Image"
                     className="rounded-5"
                     width={200}
                     height={1083}
                   />
-                  <li>Lapis legit</li>
+                  <li>redvelvet</li>
                   </div>
 
                   <div className="col-md-4">
                   <Image
-                    src="/images/pricing/Baguette.jpg"
+                    src="/images/pricing/matchaa.png"
                     alt="Faq Image"
                     className="rounded-5"
                     width={200}
                     height={300}
                   />
-                  <li>Roti Baguette</li>
+                  <li>matcha</li>
                   </div>
                   </div>
 
@@ -226,74 +225,81 @@ const Pricing = () => {
                 data-aos-delay="200"
               >
                 <div className="price-header">
-                  <h3 style={{ color: '#FF8000' }}>Ukuran Besar</h3>
+                  <h3 style={{ color: '#c19a6b' }}>Menu</h3>
                   <h4 className="price-value">
-                    <sup>Rp</sup> &nbsp;
-                    <span className="text-large">50.000</span>
+                    
+                    <span className="h3">KUE KERING</span>
                   </h4>
                 </div>
 
                 <div className="d-flex mt-4">
-                <div className="col-md-4">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
-                  <li>Roti Ciabatta</li>
+                <div className="col-md-4">
+                  <Image
+                    src="/images/pricing/Capture.PNG"
+                    alt="Faq Image"
+                    className="rounded-5"
+                    width={200}
+                    height={1083}
+                  />
+                 <li>sagu keju</li>
                   </div>
 
                   <div className="col-md-4">
                   <Image
-                    src="/images/pricing/tartmousse.jpg"
+                    src="/images/pricing/lebaran1.png"
                     alt="Faq Image"
                     className="rounded-5"
 
                     width={200}
                     height={1083}
                   />
-                  <li>Tart mousse</li>
+                  <li>nastar</li>
                   </div>
 
                   <div className="col-md-4">
                   <Image
-                    src="/images/pricing/natalcake.jpg"
+                    src="/images/pricing/lebaran2.png"
                     alt="Faq Image"
                     className="rounded-5"
                     width={200}
                     height={1083}
                   />
-                  <li>Christmas Cake</li>
+                  <li>kastangel</li>
                   </div>
                   </div>
 
                   <div className="d-flex">
                   <div className="col-md-4">
                   <Image
-                    src="/images/pricing/kuehias.jpg"
+                    src="/images/pricing/lbrn5.png"
                     alt="Faq Image"
                     className="rounded-5"
                     width={200}
                     height={1083}
                   />
-                  <li>Kue Hias (seperti cake topper tema, kue berbentuk khusus)</li>
+                  <li>thumbprint</li>
                   </div>
 
                   <div className="col-md-4">
                   <Image
-                    src="/images/pricing/kueultah.jpg"
+                    src="/images/pricing/kuecoklat.jpg"
                     alt="Faq Image"
                     className="rounded-5"
                     width={200}
                     height={1083}
                   />
-                  <li>Kue Ulang Tahun (dengan berbagai tema dan dekorasi)</li>
+                  <li>kue semprit</li>
                   </div>
 
                   <div className="col-md-4">
                   <Image
-                    src="/images/pricing/donatbox.jpg"
+                    src="/images/pricing/Soes Kering Mini Isi Coklat.png"
                     alt="Faq Image"
                     className="rounded-5"
                     width={200}
                     height={1083}
                   />
-                  <li>Donut Box</li>
+                  <li>kue sus kering</li>
                   </div>
                   </div>
                   
@@ -305,7 +311,6 @@ const Pricing = () => {
               </div>
             </div>
           </div>
-        </div>
       </section>
     </>
   );
