@@ -14,9 +14,11 @@ const BlogDetailsContent = () => {
               {/* <Sidebar /> */}
             </div>
 
-            <div className="col-md-9">
+            <div className="col-md-6">
               <div className="single-blog-details">
-                <h3 className="single-blog-title" style={{color:'#8D493A'}}>Promo</h3>
+                <h3 className="single-blog-title" style={{ color: "#8D493A" }}>
+                  Promo
+                </h3>
                 <div className="single-post-admin">
                   {/* <h3>Promo FEES BAKERY  Juli 2024  </h3> */}
                 </div>
@@ -28,57 +30,36 @@ const BlogDetailsContent = () => {
                     height={300}
                   />
                   {/* <div className="single-blog-date">10 Feb, 2024</div> */}
-                  <h3 style={{color:'#8D493A'}}>Promo Khusus Member (FEES Voucher): Harga Spesial Untuk Baguette, Croissant, Pain Chocolat </h3>
+                  <h3 style={{ color: "#8D493A" }}>
+                    Promo Khusus Member (FEES Voucher): Harga Spesial Untuk
+                    Baguette, Croissant, Pain Chocolat{" "}
+                  </h3>
                 </div>
 
                 <div className="details-text-area">
-                <h4  style={{ color: '#c19a6b' }}>
-                    Ketentuan :
-                  </h4>
+                  <h4 style={{ color: "#c19a6b" }}>Ketentuan :</h4>
 
-                  <ol style={{ color: '#c19a6b' }}>
-                    <li>Promo berlaku mulai tanggal 1  hingga 31 Juli  2024..</li>
-                    <li>Produk yang sudah dibeli dengan harga diskon tidak dapat dikembalikan atau ditukar.</li>
-                    <li>Satu pelanggan hanya dapat menggunakan promo ini sekali per transaksi.</li>
-                    <li>Apabila ditemukan kecurangan dalam penggunaan promo, toko berhak untuk membatalkan transaksi tersebut.</li>
-                    <li>Diskon tidak dapat digabungkan dengan promo atau diskon lainnya./</li>
-
+                  <ol style={{ color: "#c19a6b" }}>
+                    <li>Promo berlaku mulai tanggal 1 hingga 31 Juli 2024..</li>
+                    <li>
+                      Produk yang sudah dibeli dengan harga diskon tidak dapat
+                      dikembalikan atau ditukar.
+                    </li>
+                    <li>
+                      Satu pelanggan hanya dapat menggunakan promo ini sekali
+                      per transaksi.
+                    </li>
+                    <li>
+                      Apabila ditemukan kecurangan dalam penggunaan promo, toko
+                      berhak untuk membatalkan transaksi tersebut.
+                    </li>
+                    <li>
+                      Diskon tidak dapat digabungkan dengan promo atau diskon
+                      lainnya./
+                    </li>
                   </ol>
 
-                  
-                  {/* <p>
-                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-                    odit aut fugit, sed quia consequuntur magni dolores eos qui
-                    ratione voluptatem sequi nesciunt. Neque porro quisquam est,
-                    qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
-                    velit, sed quia non numquam eius modi tempora incidunt ut
-                    labore et dolore magnam aliquam quaerat voluptatem.
-                  </p>
-                  <p>
-                    Ut enim ad minima veniam, quis nostrum exercitationem ullam
-                    corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
-                    consequatur? Quis autem vel eum iure reprehenderit qui in ea
-                    voluptate velit esse quam nihil molestiae consequatur, vel
-                    illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-                  </p>
-                  <p>
-                    Nulla dapibus dui placerat nisl non dis rhoncus cum. Dui
-                    pharetra faucibus sed sed sapien eget vestibulum ante.
-                    Hendrerit magna dis sagittis risus. Penatibus cubilia
-                    vivamus accumsan aenean Montes aliquet neque parturient.
-                    Feugiat vehicula. Risus, curae; nunc inceptos integer
-                    penatibus sollicitudin est. Dictumst dui enim proin
-                    ridiculus venenatis. Praesent pulvinar Nisl habitant nisl
-                    sed gravida venenatis Ac metus id nullam dignissim nam nisl.
-                    Aenean platea auctor fringilla. Porttitor elit curabitur vel
-                    praesent et orci purus rhoncus eros inceptos et ad torquent,
-                    conubia suscipit amet felis bibendum vulputate. Sapien
-                    proin, primis.
-                  </p> */}
-                  
-                  <div className="single-post-admin">
-                    
-                  </div>
+                  <div className="single-post-admin"></div>
                   <div className="single-blog-img">
                     <Image
                       src="/images/blog/PROMO KE 2.svg"
@@ -87,32 +68,42 @@ const BlogDetailsContent = () => {
                       height={800}
                     />
                     {/* <div className="single-blog-date">10 Feb, 2024</div> */}
-                    <h3 style={{color:' #8D493A'}}>Spesial Promo  Ulang Tahun FESS Bakery  Diskon 25%! </h3>
+                    <h3 style={{ color: " #8D493A" }}>
+                      Spesial Promo Ulang Tahun FESS Bakery Diskon 25%!{" "}
+                    </h3>
                   </div>
                   <div className="details-text-area">
-                  <h4  style={{ color: '#c19a6b' }}>
-                      Ketentuan :
-                    </h4>
+                    <h4 style={{ color: "#c19a6b" }}>Ketentuan :</h4>
 
-                    <ol style={{ color: '#c19a6b' }}>
-                      <li>Promo berlaku mulai tanggal 5  hingga 10 Agustus  2024..</li>
+                    <ol style={{ color: "#c19a6b" }}>
+                      <li>
+                        Promo berlaku mulai tanggal 5 hingga 10 Agustus 2024..
+                      </li>
                       <li>Promo berlaku untuk pembelian langsung di toko </li>
-                      <li>Diskon tidak dapat digabungkan dengan promo atau diskon lainnya.</li>
-                      <li>Minimum pembelian untuk mendapatkan diskon adalah Rp50.000.</li>
-                      <li>Berlaku satu kali per pelanggan selama periode promo.</li>
-                      <li>Produk yang sudah dibeli dengan harga diskon tidak dapat dikembalikan atau ditukar.</li>
-                      
+                      <li>
+                        Diskon tidak dapat digabungkan dengan promo atau diskon
+                        lainnya.
+                      </li>
+                      <li>
+                        Minimum pembelian untuk mendapatkan diskon adalah
+                        Rp50.000.
+                      </li>
+                      <li>
+                        Berlaku satu kali per pelanggan selama periode promo.
+                      </li>
+                      <li>
+                        Produk yang sudah dibeli dengan harga diskon tidak dapat
+                        dikembalikan atau ditukar.
+                      </li>
                     </ol>
-                    <h4  style={{ color: '#c19a6b' }}>
-                      Bonus Tambahan :
-                    </h4>
+                    <h4 style={{ color: "#c19a6b" }}>Bonus Tambahan :</h4>
 
-                    
-                      <li style={{ color: '#c19a6b' }}>Pembelian di atas Rp400.000 berhak mendapatkan hadiah spesial dari FESS Bakery. </li>
-                      
-                    
+                    <li style={{ color: "#c19a6b" }}>
+                      Pembelian di atas Rp400.000 berhak mendapatkan hadiah
+                      spesial dari FESS Bakery.{" "}
+                    </li>
                   </div>
-                 
+
                   <div className="single-post-admin">
                     {/* <h3>Promo Beli 2 Gratis 1 di Happy Bread Bakery </h3> */}
                   </div>
@@ -124,194 +115,41 @@ const BlogDetailsContent = () => {
                       height={800}
                     />
                     {/* <div className="single-blog-date">10 Feb, 2024</div> */}
-                    <h3 style={{color:'#8D493A'}}>Promo Hingga 25% untuk Pembelian 5 Item  Cake</h3>
+                    <h3 style={{ color: "#8D493A" }}>
+                      Promo Hingga 25% untuk Pembelian 5 Item Cake
+                    </h3>
                   </div>
-                  <div className="details-text-area" >
-                    <h4  style={{ color: '#c19a6b' }}>
-                      Ketentuan :
-                    </h4>
-                    
-                    <ol style={{ color: '#c19a6b' }}>
-                      <li>Promo berlaku mulai tanggal 28 hingga 30 Juli  2024..</li>
-                      <li>Satu pelanggan hanya dapat memanfaatkan promo ini sekali per hari.</li>
-                      <li>Roti yang sudah dibeli dengan promo ini tidak dapat dikembalikan atau ditukar.</li>
-                      <li>Tidak dapat digabungkan dengan promo atau diskon lainnya.</li>
-                      <li>Diskon tidak dapat digabungkan dengan promo atau diskon lainnya./</li>
+                  <div className="details-text-area">
+                    <h4 style={{ color: "#c19a6b" }}>Ketentuan :</h4>
+
+                    <ol style={{ color: "#c19a6b" }}>
+                      <li>
+                        Promo berlaku mulai tanggal 28 hingga 30 Juli 2024..
+                      </li>
+                      <li>
+                        Satu pelanggan hanya dapat memanfaatkan promo ini sekali
+                        per hari.
+                      </li>
+                      <li>
+                        Roti yang sudah dibeli dengan promo ini tidak dapat
+                        dikembalikan atau ditukar.
+                      </li>
+                      <li>
+                        Tidak dapat digabungkan dengan promo atau diskon
+                        lainnya.
+                      </li>
+                      <li>
+                        Diskon tidak dapat digabungkan dengan promo atau diskon
+                        lainnya./
+                      </li>
                     </ol>
                   </div>
                 </div>
- 
-                <aside className="contact-form-wrapper">
-                    <h4 className="comment-title">Hubungi Kami</h4>
-                    <form method="post" action="#">
-                      <div className="row">
-                        <div className="col-lg-6">
-                          <input
-                            className="form-control"
-                            id="name"
-                            name="name"
-                            placeholder="Name"
-                            type="text"
-                            required
-                          />
-                        </div>
-
-                        <div className="col-lg-6">
-                          <input
-                            className="form-control"
-                            id="email"
-                            name="email"
-                            placeholder="Email"
-                            type="email"
-                            required
-                          />
-                        </div>
-
-                        <div className="col-lg-12">
-                          <input
-                            className="form-control"
-                            id="telepon"
-                            name="telepon"
-                            placeholder="Telepon"
-                            type="text"
-                            required
-                          />
-                        </div>
-
-                        <div className="col-lg-12">
-                          <textarea
-                            className="form-control"
-                            rows="5"
-                            id="message"
-                            name="message"
-                            placeholder="Type Comments..."
-                            required
-                          />
-                        </div>
-
-                        <div className="col-lg-12">
-                          <div className="text-center">
-                            <button type="submit" className="default-button">
-                              Kirimkan Pesan
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </form>
-                  </aside>
-                </div>
-                {/* <div className="post-tag-media">
-                  <div className="row">
-                    <div className="col-md-8">
-                      <ul className="tag">
-                        <li>
-                          <span>Tags:</span>
-                        </li>
-                        <li>
-                          <Link href="#">Android</Link>
-                        </li>
-                        <li>
-                          <Link href="#">Mobile App</Link>
-                        </li>
-                        <li>
-                          <Link href="#">Ios</Link>
-                        </li>
-                      </ul>
-                    </div>
-
-                    <div className="col-md-4">
-                      <div className="post-social-media">
-                        <a href="https://www.facebook.com/" target="_blank">
-                          <i className="icofont-facebook"></i>
-                        </a>
-                        <a href="https://www.twitter.com/" target="_blank">
-                          <i className="icofont-twitter"></i>
-                        </a>
-                        <a href="https://www.google.com/" target="_blank">
-                          <i className="icofont-google-plus"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/" target="_blank">
-                          <i className="icofont-linkedin"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div> */}
               </div>
-
-              {/* <div className="all-comments-content">
-              {/* <div className="all-comments-content">
-                <h4 className="comment-title">Comments (03)</h4>
-                <div className="comment mb-50">
-                  <Image
-                    src="/images/blog/comment-person1.jpg"
-                    alt="blog"
-                    width={70}
-                    height={70}
-                  />
-                  <div className="comment-details">
-                    <h5>
-                      Jonson Smith <span>20 Mar 2019 at 11.00 AM</span>
-                    </h5>
-                    <p>
-                      ed ut perspiciatis unde omnis iste natus error sit
-                      voluptatem accusantium doloremque laudantium, totam rem
-                      aperiam.
-                    </p>
-                    <Link href="#" className="replay">
-                      <i className="icofont-reply"></i> Replay
-                    </Link>
-                  </div>
-                </div>
-
-                <div className="comment mb-50 reply-comment">
-                  <Image
-                    src="/images/blog/comment-person2.jpg"
-                    alt="blog"
-                    width={70}
-                    height={70}
-                  />
-                  <div className="comment-details reply-comment-details">
-                    <h5>
-                      Jonson Smith <span>20 Mar 2024 at 11.00 AM</span>
-                    </h5>
-                    <p>
-                      ed ut perspiciatis unde omnis iste natus error sit
-                      voluptatem accusantium doloremque laudantium, totam rem
-                      aperiam.
-                    </p>
-                    <Link href="#" className="replay">
-                      <i className="icofont-reply"></i> Replay
-                    </Link>
-                  </div>
-                </div>
-
-                <div className="comment">
-                  <Image
-                    src="/images/blog/comment-person3.jpg"
-                    alt="blog"
-                    width={70}
-                    height={70}
-                  />
-                  <div className="comment-details">
-                    <h5>
-                      Jonson Smith <span>20 Mar 2024 at 11.00 AM</span>
-                    </h5>
-                    <p>
-                      ed ut perspiciatis unde omnis iste natus error sit
-                      voluptatem accusantium doloremque laudantium, totam rem
-                      aperiam.
-                    </p>
-                    <Link href="#" className="replay">
-                      <i className="icofont-reply"></i> Replay
-                    </Link>
-                  </div>
-                </div>
-              </div> */}
-
-              {/* <div className="comment-form">
-              {/* <div className="comment-form">
-                <h4 className="comment-title">Post Your Comment</h4>
+            </div>
+            <div className="col-lg-6">
+              <aside className="contact-form-wrapper">
+                <h4 className="comment-title">Hubungi Kami</h4>
                 <form method="post" action="#">
                   <div className="row">
                     <div className="col-lg-6">
@@ -339,9 +177,9 @@ const BlogDetailsContent = () => {
                     <div className="col-lg-12">
                       <input
                         className="form-control"
-                        id="website_url"
-                        name="website_url"
-                        placeholder="Website URL"
+                        id="telepon"
+                        name="telepon"
+                        placeholder="Telepon"
                         type="text"
                         required
                       />
@@ -361,16 +199,16 @@ const BlogDetailsContent = () => {
                     <div className="col-lg-12">
                       <div className="text-center">
                         <button type="submit" className="default-button">
-                          Post Comment
+                          Kirimkan Pesan
                         </button>
                       </div>
                     </div>
                   </div>
                 </form>
-              </div> */}
+              </aside>
             </div>
           </div>
-        
+        </div>
       </section>
 
       <style jsx>{`
