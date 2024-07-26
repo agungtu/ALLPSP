@@ -44,6 +44,8 @@ const BlogDetailsContent = () => {
                     <li>Diskon tidak dapat digabungkan dengan promo atau diskon lainnya./</li>
 
                   </ol>
+
+                  
                   {/* <p>
                     Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
                     odit aut fugit, sed quia consequuntur magni dolores eos qui
@@ -138,7 +140,66 @@ const BlogDetailsContent = () => {
                     </ol>
                   </div>
                 </div>
+ 
+                <aside className="contact-form-wrapper">
+                    <h4 className="comment-title">Hubungi Kami</h4>
+                    <form method="post" action="#">
+                      <div className="row">
+                        <div className="col-lg-6">
+                          <input
+                            className="form-control"
+                            id="name"
+                            name="name"
+                            placeholder="Name"
+                            type="text"
+                            required
+                          />
+                        </div>
 
+                        <div className="col-lg-6">
+                          <input
+                            className="form-control"
+                            id="email"
+                            name="email"
+                            placeholder="Email"
+                            type="email"
+                            required
+                          />
+                        </div>
+
+                        <div className="col-lg-12">
+                          <input
+                            className="form-control"
+                            id="telepon"
+                            name="telepon"
+                            placeholder="Telepon"
+                            type="text"
+                            required
+                          />
+                        </div>
+
+                        <div className="col-lg-12">
+                          <textarea
+                            className="form-control"
+                            rows="5"
+                            id="message"
+                            name="message"
+                            placeholder="Type Comments..."
+                            required
+                          />
+                        </div>
+
+                        <div className="col-lg-12">
+                          <div className="text-center">
+                            <button type="submit" className="default-button">
+                              Kirimkan Pesan
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </aside>
+                </div>
                 {/* <div className="post-tag-media">
                   <div className="row">
                     <div className="col-md-8">
@@ -309,7 +370,7 @@ const BlogDetailsContent = () => {
               </div> */}
             </div>
           </div>
-        </div>
+        
       </section>
 
       <style jsx>{`
@@ -325,7 +386,7 @@ const BlogDetailsContent = () => {
         }
 
         .contact-form-wrapper {
-          flex: 0;
+          flex: 1;
         }
 
         .contact-form-wrapper img {
@@ -335,7 +396,7 @@ const BlogDetailsContent = () => {
 
         .form-control {
           margin-bottom: 15px;
-          width: 400%;
+          width: 100%;
           padding: 8px;
           box-sizing: border-box;
         }
