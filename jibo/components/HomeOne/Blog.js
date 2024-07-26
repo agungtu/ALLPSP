@@ -68,7 +68,7 @@ const Blog = () => {
             </div>
           </div>
 
-          <div className="horizontal-post single-blog-post">
+          <div className="horizontal-post sin gle-blog-post">
             <div className="row align-items-center">
               <div className="col-lg-5">
                 <div className="blog-img">
