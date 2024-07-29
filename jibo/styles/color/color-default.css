@@ -4,8 +4,8 @@
 }
 
 .default-button {
-  background: #987654;
-  background: linear-gradient(to right, #c19a6b, #f4a460);
+  background: #ff0000;
+  background: linear-gradient(to right, #d23115, #ff7300);
 }
 .default-button:hover {
   box-shadow: 0 0 10px #000;
@@ -270,8 +270,8 @@
   background: linear-gradient(to right, #c19a6b, #f4a460);
 }
 .single-blog-post .blog-date {
-  background: #6a11cb;
-  background: linear-gradient(to right, #6a11cb, #2575fc);
+  background: #987654;
+  background: linear-gradient(to right, #c19a6b, #f4a460);
 }
 .single-blog-post .blog-title a:hover {
   color: #6a11cb;
@@ -292,8 +292,8 @@
 }
 
 .single-blog-img .single-blog-date {
-  background: #6a11cb;
-  background: linear-gradient(to right, #6a11cb, #2575fc);
+  background: #987654;
+  background: linear-gradient(to right, #c19a6b, #f4a460);
 }
 
 .post-category .single-category:hover {
@@ -307,8 +307,8 @@
 }
 
 .comment-title::before {
-  background: #6a11cb;
-  background: linear-gradient(to right, #6a11cb, #2575fc);
+  background: #987654;
+  background: linear-gradient(to right, #c19a6b, #f4a460);
 }
 
 .popular-tags a:hover {
@@ -326,8 +326,8 @@
 }
 
 .top-banner-area::before {
-  background: #6a11cb;
-  background: linear-gradient(to right, #6a11cb, #2575fc);
+  background: #987654;
+  background: linear-gradient(to right, #c19a6b, #f4a460);
 }
 
 .single-contact-info i {

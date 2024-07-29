@@ -1,9 +1,9 @@
 import React from "react";
 import Link from "next/link";
 import Footer from "../../../components/Common/Footer";
-import BlogDetailsContent from "../../../components/Blog/BlogDetailsContent";
+import BranchContent from "../../../components/Branch/BranchContent";
 
-const DetailsOne = () => {
+const branch = () => {
   return (
     <>
       <section
@@ -14,20 +14,20 @@ const DetailsOne = () => {
             <div className="row align-items-center">
               <div className="col-lg-6">
                 <Link href="/" className="logo">
-                  FESS Bakery
+                  Cabang
                 </Link>
-                <h2 className="banner-title">Blog Details With right Sidebar</h2>
+                <h2 className="banner-title">Page Branch</h2>
               </div>
 
               <div className="col-6 text-end">
-                <Link href="/blog/details/" className="nav-text">
-                  Promo
+                <Link href="/blog/branch/" className="nav-text">
+                  Cabang
                 </Link>
                 <ol className="breadcrumb">
                 <li>
                   <Link href="/">Home</Link>
                 </li>
-                <li className="active">Blog Details right Sidebar</li>
+                <li className="active">Page Branch</li>
               </ol>
               </div>
             </div>
@@ -49,11 +49,11 @@ const DetailsOne = () => {
         </div> 
       </section>
 
-      <BlogDetailsContent />
+      <BranchContent />
 
       <Footer />
     </>
   );
 };
 
-export default DetailsOne;
+export default branch;
