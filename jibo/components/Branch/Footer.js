@@ -9,7 +9,7 @@ const App = () => {
                 <div className="container">
 
                     <div className="row" style={{ display: "flex" }}>
-                        <div className="col-md-4">
+                        <div className="col-md-auto">
                             <div className="Image" style={{ maxWidth: '40%', marginBottom: '10px' }}>
                                 <img src="/images/Asset.svg" alt="Store Icon" />
                             </div>
@@ -33,7 +33,7 @@ const App = () => {
 
                             </div>
                         </div>
-                        <div className="col-md-4">
+                        <div className="col-md-auto">
 
                             <div className="social-media" style={{ textAlign: 'center', marginTop: "100px" }}>
                                 <h3 style={{ marginBottom: "20px", color: "#FCFFE0" }}>SOSIAL MEDIA KAMI</h3>
@@ -50,7 +50,7 @@ const App = () => {
                                 </ul>
                             </div>
                         </div>
-                        <div className="col-md-4">
+                        <div className="col-md-auto">
 
                             <div className="order-online" style={{ textAlign: 'center', marginTop: "100px" }}>
                                 <h3 style={{ marginBottom: "20px", color: "#FCFFE0" }}>PEMESANAN ONLINE</h3>
