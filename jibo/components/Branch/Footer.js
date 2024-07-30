@@ -4,7 +4,8 @@ import React from 'react';
 const App = () => {
     return (
         <>
-            <section className="Footer " style={{ background: "#deb887", padding: "10px 0", color: "#333" }}>
+
+            <section className="Footer" style={{ background: "#deb887", padding: "10px 0", color: "#333" }}>
 
                 <div className="container">
 
@@ -56,7 +57,9 @@ const App = () => {
                                 <h3 style={{ marginBottom: "20px", color: "#FCFFE0" }}>PEMESANAN ONLINE</h3>
                                 <ul>
                                     <li>
-                                        <a href="#">Shopee Food</a>
+                                        <a href="#">Shopee Food
+                                            
+                                        </a>
                                     </li>
                                     <li>
                                         <a href="#">Grab Food</a>
@@ -74,7 +77,7 @@ const App = () => {
                             <div className="copyright" style={{ textAlign: 'right' }}>
                                 <p>
                                     Copyright 2024 Jibo. all rights by{" "}
-                                    <a href="http://envytheme.com/" target="_blank" style={{ color: "#FCFFE0"  }}>
+                                    <a href="http://envytheme.com/" target="_blank" style={{ color: "#FCFFE0" }}>
                                         EnvyTheme
                                     </a>
                                 </p>
@@ -145,6 +148,8 @@ a:hover {
   margin-right: 10px;
   color: #007bff;
 }
+  
+
         `}</style>
         </>
     );
