@@ -5,10 +5,7 @@ import Image from "next/image";
 const App = () => {
   return (
     <>
-      <section
-        className="branch-content"
-      >
-
+      <section className="branch-content">
         <div className="container">
           <div className="header">
             <h1>FESS BAKERY & PASTRY</h1>
@@ -20,7 +17,7 @@ const App = () => {
                 <img src="/images/kedai.png" alt="Store Icon" />
               </div>
               <h3>CANDI</h3>
-              <p> Jl. Sultan Agung No. 127, Semarang.</p>
+              <p>Jl. Sultan Agung No. 127, Semarang.</p>
               <p>Kota Semarang, 50232</p>
               <button className="location-button">LOKASI</button>
             </div>
@@ -29,7 +26,7 @@ const App = () => {
                 <img src="/images/kedai.png" alt="Store Icon" />
               </div>
               <h3>BANGKONG</h3>
-              <p> Jl. MT. Haryono No. 711, Semarang.</p>
+              <p>Jl. MT. Haryono No. 711, Semarang.</p>
               <p>Kota Semarang, 50242</p>
               <button className="location-button">LOKASI</button>
             </div>
@@ -39,7 +36,7 @@ const App = () => {
               </div>
               <h3>PANDANARAN</h3>
               <p>Jl. Pandanaran No. 127, Semarang.</p>
-              <p>Kota Semarang,  50241</p>
+              <p>Kota Semarang, 50241</p>
               <button className="location-button">LOKASI</button>
             </div>
             <div className="store">
@@ -47,7 +44,7 @@ const App = () => {
                 <img src="/images/kedai.png" alt="Store Icon" />
               </div>
               <h3>PETERONGAN</h3>
-              <p> Jl. MT. Haryono No. 556, Semarang</p>
+              <p>Jl. MT. Haryono No. 556, Semarang</p>
               <p>Kota Semarang, 50241</p>
               <button className="location-button">LOKASI</button>
             </div>
@@ -74,79 +71,114 @@ const App = () => {
       </section>
 
       <style jsx>{`
-      .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
-      }
-      
-      .header {
-        text-align: center;
-        margin-bottom: 40px;
-      }
-      
-      .header h1 {
-        font-size: 2.5rem;
-        font-weight: bold;
-        margin-bottom: 10px;
-      }
-      
-      .header h2 {
-        font-size: 1.5rem;
-        font-weight: normal;
-      }
-      
-      .stores {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        gap: 20px;
-      }
-      
-      .store {
-        background-color: #fff;
-        border-radius: 10px;
-        padding: 20px;
-        width: calc(33.33% - 20px);
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        text-align: center;
-      }
-      
-      .store-icon {
-        width: 100px;
-        height: 100px;
-        margin: 0 auto 20px;
-      }
-      
-      .store-icon img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-      }
-      
-      .store h3 {
-        font-size: 1.5rem;
-        font-weight: bold;
-        margin-bottom: 10px;
-      }
-      
-      .store p {
-        margin-bottom: 10px;
-      }
-      
-      .location-button {
-        background-color: #ff7f50;
-        color: #fff;
-        border: none;
-        border-radius: 5px;
-        padding: 10px 20px;
-        font-size: 1rem;
-        font-weight: bold;
-        cursor: pointer;
-      }
-    
-    `}</style>
+        .container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 20px;
+          max-width: 1200px;
+          margin: 0 auto;
+        }
+
+        .header {
+          text-align: center;
+          margin-bottom: 40px;
+        }
+
+        .header h1 {
+          font-size: 2.5rem;
+          font-weight: bold;
+          margin-bottom: 10px;
+          color: #333;
+        }
+
+        .header h2 {
+          font-size: 1.5rem;
+          font-weight: normal;
+          color: #555;
+        }
+
+        .stores {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          gap: 20px;
+        }
+
+        .store {
+          background-color: #fff;
+          border-radius: 10px;
+          padding: 20px;
+          width: calc(33.33% - 20px);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          text-align: center;
+          transition: transform 0.3s;
+        }
+
+        .store:hover {
+          transform: translateY(-10px);
+        }
+
+        .store-icon {
+          width: 100px;
+          height: 100px;
+          margin: 0 auto 20px;
+        }
+
+        .store-icon img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+
+        .store h3 {
+          font-size: 1.5rem;
+          font-weight: bold;
+          margin-bottom: 10px;
+          color: #333;
+        }
+
+        .store p {
+          margin-bottom: 10px;
+          color: #555;
+        }
+
+        .location-button {
+          background-color: #ff7f50;
+          color: #fff;
+          border: none;
+          border-radius: 5px;
+          padding: 10px 20px;
+          font-size: 1rem;
+          font-weight: bold;
+          cursor: pointer;
+          transition: background-color 0.3s;
+        }
+ 
+        .location-button:hover {
+          background-color: #ff6347;
+        }
+
+        @media (max-width: 768px) {
+          .store {
+            width: calc(50% - 20px);
+          }
+        }
+
+        @media (max-width: 480px) {
+          .store {
+            width: 100%;
+          }
+
+          .header h1 {
+            font-size: 2rem;
+          }
+
+          .header h2 {
+            font-size: 1.25rem;
+          }
+        }
+      `}</style>
     </>
   );
 };
