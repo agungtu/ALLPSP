@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import Footer from "../../../components/Common/Footer";
+import Footer from "../../../components/Branch/Footer";
 import BranchContent from "../../../components/Branch/BranchContent";
 
 const branch = () => {
