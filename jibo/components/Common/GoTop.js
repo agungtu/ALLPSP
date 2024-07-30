@@ -33,7 +33,7 @@ const GoTop = () => {
         }}
       >
         <Image
-          src="/images/donat.png"
+          src="/images/icon.donat.png"
           alt="Blog Post Image"
           width={100}
           height={500}
