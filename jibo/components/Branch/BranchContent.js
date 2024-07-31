@@ -19,14 +19,13 @@ const App = () => {
               <h3>CANDI</h3>
               <p>Jl. Sultan Agung No. 127, Semarang.</p>
               <p>Kota Semarang, 50232</p>
-              <button className="location-button">
-                <a 
+              <a
                 href="https://maps.app.goo.gl/ToziFxnrpLojYshg8"
+                target="_blank"
                 style={{ color: "#fff" }}
-               >
-                 LOKASI
-                 </a> 
-                 </button>
+              >
+                <button className="location-button">LOKASI</button>
+              </a>
             </div>
             <div className="store">
               <div className="store-icon">
@@ -35,14 +34,13 @@ const App = () => {
               <h3>BANGKONG</h3>
               <p>Jl. MT. Haryono No. 711, Semarang.</p>
               <p>Kota Semarang, 50242</p>
-              <button className="location-button">
               <a
-              href="https://maps.app.goo.gl/6LKBhjzCZoC7JKGT8"
-              style={{ color: "#fff" }}
+                href="https://maps.app.goo.gl/6LKBhjzCZoC7JKGT8"
+                target="_blank"
+                style={{ color: "#fff" }}
               >
-                 LOKASI
-                 </a>
-                 </button>
+                <button className="location-button">LOKASI</button>
+              </a>
             </div>
             <div className="store">
               <div className="store-icon">
@@ -51,14 +49,13 @@ const App = () => {
               <h3>PANDANARAN</h3>
               <p>Jl. Pandanaran No. 127, Semarang.</p>
               <p>Kota Semarang, 50241</p>
-              <button className="location-button">
-                <a
+              <a
                 href="https://maps.app.goo.gl/7t8UzDqvjvGAGHYp6"
+                target="_blank"
                 style={{ color: "#fff" }}
-                >
-                LOKASI
-                </a>
-                </button>
+              >
+                <button className="location-button">LOKASI</button>
+              </a>
             </div>
             <div className="store">
               <div className="store-icon">
@@ -67,14 +64,13 @@ const App = () => {
               <h3>PETERONGAN</h3>
               <p>Jl. MT. Haryono No. 556, Semarang</p>
               <p>Kota Semarang, 50241</p>
-              <button className="location-button">
-                <a 
+              <a
                 href="https://maps.app.goo.gl/Kx1ZtAyVUV1J64oX6"
+                target="_blank"
                 style={{ color: "#fff" }}
-                >
-                LOKASI
-                </a>
-                </button>
+              >
+                <button className="location-button">LOKASI</button>
+              </a>
             </div>
             <div className="store">
               <div className="store-icon">
@@ -83,14 +79,13 @@ const App = () => {
               <h3>GAJAH MADA</h3>
               <p>Jl. Gajah Mada No. 90, Semarang</p>
               <p>Kota Semarang, 50134</p>
-              <button className="location-button">
-                <a
+              <a
                 href="https://maps.app.goo.gl/UtZzd2kShSahK3jd7"
+                target="_blank"
                 style={{ color: "#fff" }}
-                >
-                LOKASI
-                </a>
-                </button>
+              >
+                <button className="location-button">LOKASI</button>
+              </a>
             </div>
             <div className="store">
               <div className="store-icon">
@@ -99,14 +94,13 @@ const App = () => {
               <h3>TLOGOSARI</h3>
               <p>Jl. Tlogosari Raya No. 61, Semarang</p>
               <p>Kota Semarang, 50196</p>
-              <button className="location-button">
-                <a 
+              <a
                 href="https://maps.app.goo.gl/bMjAc43yz8n3vN9K8"
+                target="_blank"
                 style={{ color: "#fff" }}
-                >
-                LOKASI
-                </a>
-                </button>
+              >
+                <button className="location-button">LOKASI</button>
+              </a>
             </div>
           </div>
         </div>
@@ -196,7 +190,7 @@ const App = () => {
           cursor: pointer;
           transition: background-color 0.3s;
         }
- 
+
         .location-button:hover {
           background-color: #ff6347;
         }
