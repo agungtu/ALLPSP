@@ -125,98 +125,6 @@ const Pricing = () => {
                 <br></br>
               </div>
             </div>
-
-            <div className="col-md-12 ">
-              <div
-                className="single-price-package"
-                // data-aos="fade-in"
-                // data-aos-duration="800"
-                // data-aos-delay="200"
-              >
-                <div className="price-header">
-                  <h3 style={{ color: "#c19a6b" }}>MENU</h3>
-                  <h4 className="price-value">
-                    <span className="h3">CAKE</span>&nbsp;
-                  </h4>
-                </div>
-              </div>
-
-              <div className="d-flex mt-4">
-                <div className="col-md-4">
-                  <Image
-                    src="/images/pricing/berry.png"
-                    alt="Faq Image"
-                    className="rounded-5"
-                    width={200}
-                    height={1083}
-                  />
-                  <li>berry</li>
-                </div>
-
-                <div className="col-md-4">
-                  <Image
-                    src="/images/pricing/vanilla.png"
-                    alt="Faq Image"
-                    className="rounded-5"
-                    width={200}
-                    height={1083}
-                  />
-                  <li>vanilla</li>
-                </div>
-
-                <div className="col-md-4">
-                  <Image
-                    src="/images/pricing/lotus.png"
-                    alt="Faq Image"
-                    className="rounded-5"
-                    width={200}
-                    height={1083}
-                  />
-                  <li>lotus</li>
-                </div>
-              </div>
-
-              <div className="d-flex">
-                <div className="col-md-4">
-                  <Image
-                    src="/images/pricing/tiramisu.png"
-                    alt="Faq Image"
-                    className="rounded-5"
-                    width={200}
-                    height={1083}
-                  />
-                  <li>tiramissu</li>
-                </div>
-
-                <div className="col-md-4">
-                  <Image
-                    src="/images/pricing/cake.png"
-                    alt="Faq Image"
-                    className="rounded-5"
-                    width={200}
-                    height={1083}
-                  />
-                  <li>redvelvet</li>
-                </div>
-
-                <div className="col-md-4">
-                  <Image
-                    src="/images/pricing/matchaa.png"
-                    alt="Faq Image"
-                    className="rounded-5"
-                    width={200}
-                    height={1083}
-                  />
-                  <li>matcha</li>
-                </div>
-              </div>
-
-              <div className="btn button">
-                <Link href="#" className="purchase-btn">
-                  Checkout
-                </Link>
-              </div>
-            </div>
           </div>
 
           <div className="col-md-12">
@@ -305,6 +213,98 @@ const Pricing = () => {
               <div className="btn button">
                 <Link href="#" className="purchase-btn">
                   checkout
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-md-12 ">
+            <div
+              className="single-price-package"
+              // data-aos="fade-in"
+              // data-aos-duration="800"
+              // data-aos-delay="200"
+            >
+              <div className="price-header">
+                <h3 style={{ color: "#c19a6b" }}>MENU</h3>
+                <h4 className="price-value">
+                  <span className="h3">CAKE</span>&nbsp;
+                </h4>
+              </div>
+
+              <div className="d-flex mt-4">
+                <div className="col-md-4">
+                  <Image
+                    src="/images/pricing/berry.png"
+                    alt="Faq Image"
+                    className="rounded-5"
+                    width={200}
+                    height={1083}
+                  />
+                  <li>berry</li>
+                </div>
+
+                <div className="col-md-4">
+                  <Image
+                    src="/images/pricing/vanilla.png"
+                    alt="Faq Image"
+                    className="rounded-5"
+                    width={200}
+                    height={1083}
+                  />
+                  <li>vanilla</li>
+                </div>
+
+                <div className="col-md-4">
+                  <Image
+                    src="/images/pricing/lotus.png"
+                    alt="Faq Image"
+                    className="rounded-5"
+                    width={200}
+                    height={1083}
+                  />
+                  <li>lotus</li>
+                </div>
+              </div>
+
+              <div className="d-flex">
+                <div className="col-md-4">
+                  <Image
+                    src="/images/pricing/tiramisu.png"
+                    alt="Faq Image"
+                    className="rounded-5"
+                    width={200}
+                    height={1083}
+                  />
+                  <li>tiramissu</li>
+                </div>
+
+                <div className="col-md-4">
+                  <Image
+                    src="/images/pricing/cake.png"
+                    alt="Faq Image"
+                    className="rounded-5"
+                    width={200}
+                    height={1083}
+                  />
+                  <li>redvelvet</li>
+                </div>
+
+                <div className="col-md-4">
+                  <Image
+                    src="/images/pricing/matchaa.png"
+                    alt="Faq Image"
+                    className="rounded-5"
+                    width={200}
+                    height={1083}
+                  />
+                  <li>matcha</li>
+                </div>
+              </div>
+
+              <div className="btn button">
+                <Link href="#" className="purchase-btn">
+                  Checkout
                 </Link>
               </div>
             </div>
