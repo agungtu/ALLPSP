@@ -80,6 +80,16 @@ const Navigation = () => {
             Cabang
           </Link>
         </li>
+        <li className="nav-item">
+          <Link
+            onClick={toggleNavbar}
+            offset={() => 100}
+            className="nav-link active"
+            href="/blog/About"
+          >
+            Tentang Kami
+          </Link>
+        </li>
       </ul>
     );
   };
