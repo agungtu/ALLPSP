@@ -19,6 +19,7 @@ const branch = () => {
                 <h2 className="banner-title">Page Branch</h2>
               </div>
 
+
               <div className="col-6 text-end">
                 <Link href="/blog/branch/" className="nav-text">
                   Cabang
