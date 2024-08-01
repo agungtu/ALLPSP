@@ -205,11 +205,12 @@ const Pricing = () => {
                     alt="Faq Image"
                     className="rounded-5"
                     width={200}
-                    height={300}
+                    height={1083}
                   />
                   <li>matcha</li>
                 </div>
               </div>
+
               <div className="btn button">
                 <Link href="#" className="purchase-btn">
                   Checkout
