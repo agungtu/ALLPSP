@@ -6,18 +6,22 @@ const Pricing = () => {
   return (
     <>
       <section id="pricing" className="pricing-section">
-        <div className="container" >
+        <div className="container">
           <div
             className="section-title"
             data-aos="fade-up"
             data-aos-duration="800"
             data-aos-delay="100"
           >
-            <h2 style={{ color: '#c19a6b' }}>FESS Cake & Bakery</h2>
-            <p className="mt-4 justify-content-center" style={{ color: '#c19a6b' }}> 
+            <h2 style={{ color: "#c19a6b" }}>FESS Cake & Bakery</h2>
+            <p
+              className="mt-4 justify-content-center"
+              style={{ color: "#c19a6b" }}
+            >
               Di FESS Cake & Bakery, Kami menyajikan berbagai kue dan roti lezat
               dengan kualitas premium, serta harga yang sangat terjangkau,
-              Karena kami percaya kelezatan sejati tidak harus menguras kantong anda!
+              Karena kami percaya kelezatan sejati tidak harus menguras kantong
+              anda!
             </p>
           </div>
 
@@ -29,10 +33,9 @@ const Pricing = () => {
                 data-aos-duration="800"
                 data-aos-delay="200"
               >
-                <div className="price-header" >
-                  <h3 style={{ color: '#c19a6b' }}>Menu</h3>
+                <div className="price-header">
+                  <h3 style={{ color: "#c19a6b" }}>Menu</h3>
                   <h4 className="price-value">
-                    
                     <span className="h3">MAKANAN RINGAN</span> &nbsp;
                   </h4>
                 </div>
@@ -72,7 +75,7 @@ const Pricing = () => {
                   </div>
                 </div>
 
-                  <div className="d-flex">
+                <div className="d-flex">
                   <div className="col-md-4">
                     <Image
                       src="/images/pricing/croisant.png"
@@ -112,19 +115,18 @@ const Pricing = () => {
                     height={1083}
                   />
                   <li>Macaron</li> */}
-
                 </div>
 
                 <div className="btn button">
-                    <Link href="#" className="purchase-btn">
-                      Checkout
-                    </Link>
-                  </div>
-                  <br></br>
+                  <Link href="#" className="purchase-btn">
+                    Checkout
+                  </Link>
+                </div>
+                <br></br>
               </div>
             </div>
 
-              <div className="col-md-12 ">
+            <div className="col-md-12 ">
               <div
                 className="single-price-package"
                 // data-aos="fade-in"
@@ -132,15 +134,14 @@ const Pricing = () => {
                 // data-aos-delay="200"
               >
                 <div className="price-header">
-                  <h3 style={{ color: '#c19a6b' }}>MENU</h3>
+                  <h3 style={{ color: "#c19a6b" }}>MENU</h3>
                   <h4 className="price-value">
-                    
                     <span className="h3">CAKE</span>&nbsp;
                   </h4>
-                  </div>
                 </div>
+              </div>
 
-                <div className="d-flex mt-4">
+              <div className="d-flex mt-4">
                 <div className="col-md-4">
                   <Image
                     src="/images/pricing/berry.png"
@@ -150,9 +151,9 @@ const Pricing = () => {
                     height={1083}
                   />
                   <li>berry</li>
-                  </div>
+                </div>
 
-                  <div className="col-md-4">
+                <div className="col-md-4">
                   <Image
                     src="/images/pricing/vanilla.png"
                     alt="Faq Image"
@@ -161,9 +162,9 @@ const Pricing = () => {
                     height={1083}
                   />
                   <li>vanilla</li>
-                  </div>
+                </div>
 
-                  <div className="col-md-4">
+                <div className="col-md-4">
                   <Image
                     src="/images/pricing/lotus.png"
                     alt="Faq Image"
@@ -172,11 +173,11 @@ const Pricing = () => {
                     height={1083}
                   />
                   <li>lotus</li>
-                  </div>
-                  </div>
+                </div>
+              </div>
 
-                  <div className="d-flex">
-                  <div className="col-md-4">
+              <div className="d-flex">
+                <div className="col-md-4">
                   <Image
                     src="/images/pricing/tiramisu.png"
                     alt="Faq Image"
@@ -185,9 +186,9 @@ const Pricing = () => {
                     height={1083}
                   />
                   <li>tiramissu</li>
-                  </div>
+                </div>
 
-                  <div className="col-md-4">
+                <div className="col-md-4">
                   <Image
                     src="/images/pricing/cake.png"
                     alt="Faq Image"
@@ -196,9 +197,9 @@ const Pricing = () => {
                     height={1083}
                   />
                   <li>redvelvet</li>
-                  </div>
+                </div>
 
-                  <div className="col-md-4">
+                <div className="col-md-4">
                   <Image
                     src="/images/pricing/matchaa.png"
                     alt="Faq Image"
@@ -207,32 +208,30 @@ const Pricing = () => {
                     height={300}
                   />
                   <li>matcha</li>
-                  </div>
-                  </div>
-
-                <div className="btn button">
-                  <Link href="#" className="purchase-btn">
-                    Checkout
-                  </Link>
                 </div>
               </div>
+              <div className="btn button">
+                <Link href="#" className="purchase-btn">
+                  Checkout
+                </Link>
+              </div>
             </div>
+          </div>
 
-            <div className="col-md-12">  
-              <div
-                className="single-price-package"
-                data-aos-duration="800"
-                data-aos-delay="200"
-              >
-                <div className="price-header">
-                  <h3 style={{ color: '#c19a6b' }}>Menu</h3>
-                  <h4 className="price-value">
-                    
-                    <span className="h3">KUE KERING</span>
-                  </h4>
-                </div>
+          <div className="col-md-12">
+            <div
+              className="single-price-package"
+              data-aos-duration="800"
+              data-aos-delay="200"
+            >
+              <div className="price-header">
+                <h3 style={{ color: "#c19a6b" }}>Menu</h3>
+                <h4 className="price-value">
+                  <span className="h3">KUE KERING</span>
+                </h4>
+              </div>
 
-                <div className="d-flex mt-4">
+              <div className="d-flex mt-4">
                 <div className="col-md-4">
                   <Image
                     src="/images/pricing/Capture.PNG"
@@ -241,22 +240,21 @@ const Pricing = () => {
                     width={200}
                     height={1083}
                   />
-                 <li>sagu keju</li>
-                  </div>
+                  <li>sagu keju</li>
+                </div>
 
-                  <div className="col-md-4">
+                <div className="col-md-4">
                   <Image
                     src="/images/pricing/lebaran1.png"
                     alt="Faq Image"
                     className="rounded-5"
-
                     width={200}
                     height={1083}
                   />
                   <li>nastar</li>
-                  </div>
+                </div>
 
-                  <div className="col-md-4">
+                <div className="col-md-4">
                   <Image
                     src="/images/pricing/lebaran2.png"
                     alt="Faq Image"
@@ -265,11 +263,11 @@ const Pricing = () => {
                     height={1083}
                   />
                   <li>kastangel</li>
-                  </div>
-                  </div>
+                </div>
+              </div>
 
-                  <div className="d-flex">
-                  <div className="col-md-4">
+              <div className="d-flex">
+                <div className="col-md-4">
                   <Image
                     src="/images/pricing/lbrn5.png"
                     alt="Faq Image"
@@ -278,9 +276,9 @@ const Pricing = () => {
                     height={1083}
                   />
                   <li>thumbprint</li>
-                  </div>
+                </div>
 
-                  <div className="col-md-4">
+                <div className="col-md-4">
                   <Image
                     src="/images/pricing/kuecoklat.jpg"
                     alt="Faq Image"
@@ -289,9 +287,9 @@ const Pricing = () => {
                     height={1083}
                   />
                   <li>kue semprit</li>
-                  </div>
+                </div>
 
-                  <div className="col-md-4">
+                <div className="col-md-4">
                   <Image
                     src="/images/pricing/Soes Kering Mini Isi Coklat.png"
                     alt="Faq Image"
@@ -300,17 +298,17 @@ const Pricing = () => {
                     height={1083}
                   />
                   <li>kue sus kering</li>
-                  </div>
-                  </div>
-                  
-                <div className="btn button">
-                  <Link href="#" className="purchase-btn">
-                    checkout
-                  </Link>
                 </div>
+              </div>
+
+              <div className="btn button">
+                <Link href="#" className="purchase-btn">
+                  checkout
+                </Link>
               </div>
             </div>
           </div>
+        </div>
       </section>
     </>
   );
