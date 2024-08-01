@@ -179,6 +179,7 @@ const App = () => {
           color: #555;
         }
 
+        
         .location-button {
           background-color: #ff7f50;
           color: #fff;
