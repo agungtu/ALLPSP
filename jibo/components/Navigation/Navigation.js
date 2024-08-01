@@ -73,6 +73,16 @@ const Navigation = () => {
             onClick={toggleNavbar}
             offset={() => 100}
             className="nav-link active"
+            href="/blog/branch"
+          >
+            Cabang
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link
+            onClick={toggleNavbar}
+            offset={() => 100}
+            className="nav-link active"
             href="/blog/About"
           >
             Tentang Kami
