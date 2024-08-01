@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-
 const Navigation = () => {
   const [collapsed, setCollapsed] = useState(true);
 
@@ -76,7 +75,7 @@ const Navigation = () => {
             className="nav-link active"
             href="/blog/About"
           >
-            Tentang Kamigit
+            Tentang Kami
           </Link>
         </li>
       </ul>
