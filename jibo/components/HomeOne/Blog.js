@@ -1,21 +1,18 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 
 const Blog = () => {
   return (
     <>
       <section id="blog" className="blog-section">
         <div className="container">
-
-          <div
-            className="section-title"
-          
-          >
+          <div className="section-title">
             <h2 className="text-white">TESTIMONI</h2>
             <p className="text-white">
-            FESS Bakery tempat di mana cita rasa dan kelezatan berpadu menjadi satu. Kami adalah toko roti yang berkomitmen untuk menyajikan roti dan kue dengan kualitas terbaik 
-            yang dibuat dengan bahan-bahan pilihan dan resep tradisional.
+              FESS Bakery tempat di mana cita rasa dan kelezatan berpadu menjadi
+              satu. Kami adalah toko roti yang berkomitmen untuk menyajikan roti
+              dan kue dengan kualitas terbaik yang dibuat dengan bahan-bahan
+              pilihan dan resep tradisional.
             </p>
           </div>
 
@@ -29,7 +26,7 @@ const Blog = () => {
                       alt="Blog Post Image"
                       width={100}
                       height={500}
-                      style={{width:"100%", height:"100%"}}
+                      style={{ width: "100%", height: "100%" }}
                     />
                   </Link>
                 </div>
@@ -38,9 +35,7 @@ const Blog = () => {
               <div className="col-lg-7">
                 <div className="blog-info">
                   <h6 className="blog-title">
-                    <Link href="/blog/details">
-                     Agatha Clarissa
-                    </Link>
+                    <Link href="/blog/details">Agatha Clarissa</Link>
                   </h6>
 
                   <ul className="post-admin">
@@ -52,7 +47,11 @@ const Blog = () => {
                   </ul>
 
                   <p>
-                  "Sebagai pecinta roti, saya selalu mencari tempat dengan roti yang fresh dan enak, dan saya menemukannya di sini. Roti mereka adalah yang terbaik yang pernah saya coba. Atmosfer tokonya juga sangat nyaman untuk bersantai dan menikmati kopi. Sungguh pengalaman yang menyenangkan!"
+                    "Sebagai pecinta roti, saya selalu mencari tempat dengan
+                    roti yang fresh dan enak, dan saya menemukannya di sini.
+                    Roti mereka adalah yang terbaik yang pernah saya coba.
+                    Atmosfer tokonya juga sangat nyaman untuk bersantai dan
+                    menikmati kopi. Sungguh pengalaman yang menyenangkan!"
                   </p>
 
                   {/* <Link href="/blog/details" className="default-button">
@@ -74,7 +73,7 @@ const Blog = () => {
                       alt="Blog Post Image"
                       width={100}
                       height={800}
-                      style={{width:"100%", height:"100%"}}
+                      style={{ width: "100%", height: "100%" }}
                     />
                   </Link>
                 </div>
@@ -83,9 +82,7 @@ const Blog = () => {
               <div className="col-lg-7">
                 <div className="blog-info">
                   <h6 className="blog-title">
-                    <Link href="/blog/details">
-                     Anna Putri
-                    </Link>
+                    <Link href="/blog/details">Anna Putri</Link>
                   </h6>
 
                   <ul className="post-admin">
@@ -97,14 +94,17 @@ const Blog = () => {
                   </ul>
 
                   <p>
-                  "Toko roti ini benar-benar permata tersembunyi! Roti croissant-nya luar biasa, renyah di luar dan lembut di dalam. Saya juga mencoba kue bolu mereka dan rasanya sangat lezat. Harga yang ditawarkan sangat terjangkau untuk kualitas yang didapat. Sangat direkomendasikan!"
+                    "Toko roti ini benar-benar permata tersembunyi! Roti
+                    croissant-nya luar biasa, renyah di luar dan lembut di
+                    dalam. Saya juga mencoba kue bolu mereka dan rasanya sangat
+                    lezat. Harga yang ditawarkan sangat terjangkau untuk
+                    kualitas yang didapat. Sangat direkomendasikan!"
                   </p>
-
                 </div>
               </div>
             </div>
           </div>
-          
+
           <div className="horizontal-post single-blog-post">
             <div className="row align-items-center">
               <div className="col-lg-5">
@@ -115,7 +115,7 @@ const Blog = () => {
                       alt="Blog Post Image"
                       width={100}
                       height={800}
-                      style={{width:"100%", height:"100%"}}
+                      style={{ width: "100%", height: "100%" }}
                     />
                   </Link>
                 </div>
@@ -124,9 +124,7 @@ const Blog = () => {
               <div className="col-lg-7">
                 <div className="blog-info">
                   <h6 className="blog-title">
-                    <Link href="/blog/details">
-                     Banna Putri
-                    </Link>
+                    <Link href="/blog/details">Banna Putri</Link>
                   </h6>
 
                   <ul className="post-admin">
@@ -138,14 +136,16 @@ const Blog = () => {
                   </ul>
 
                   <p>
-                  "Toko roti ini benar-benar permata tersembunyi! Roti croissant-nya luar biasa, renyah di luar dan lembut di dalam. Saya juga mencoba kue bolu mereka dan rasanya sangat lezat. Harga yang ditawarkan sangat terjangkau untuk kualitas yang didapat. Sangat direkomendasikan!"
+                    "Toko roti ini benar-benar permata tersembunyi! Roti
+                    croissant-nya luar biasa, renyah di luar dan lembut di
+                    dalam. Saya juga mencoba kue bolu mereka dan rasanya sangat
+                    lezat. Harga yang ditawarkan sangat terjangkau untuk
+                    kualitas yang didapat. Sangat direkomendasikan!"
                   </p>
-
                 </div>
               </div>
             </div>
           </div>
-          
         </div>
       </section>
     </>
@@ -153,5 +153,3 @@ const Blog = () => {
 };
 
 export default Blog;
-
- 

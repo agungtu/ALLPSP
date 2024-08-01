@@ -1,7 +1,4 @@
 import React, { useState, useEffect } from "react";
-import AnchorLink from "react-anchor-link-smooth-scroll";
-import Image from "next/image";
-import Link from "next/link";
 
 const Navigation = () => {
   const [collapsed, setCollapsed] = useState(true);
@@ -69,18 +66,6 @@ const Navigation = () => {
             Promosi
           </Link>
         </li>
-        <li className="nav-item">
-          <Link
-            onClick={toggleNavbar}
-            offset={() => 100}
-            className="nav-link active"
-            href="/blog/branch"
-          >
-            Cabang
-          </Link>
-        </li>
-        
-       
       </ul>
     );
   };
