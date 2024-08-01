@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
+import Link from "next/link";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const Navigation = () => {
   const [collapsed, setCollapsed] = useState(true);
