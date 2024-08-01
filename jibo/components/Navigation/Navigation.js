@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import AnchorLink from "react-anchor-link-smooth-scroll";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -50,14 +49,14 @@ const Navigation = () => {
     return (
       <ul className="navbar-nav ms-auto">
         <li className="nav-item">
-          <AnchorLink
+          <Link
             onClick={toggleNavbar}
             offset={() => 100}
             className="nav-link active"
             href="#home"
           >
             Home
-          </AnchorLink>
+          </Link>
         </li>
         <li className="nav-item">
           <Link
@@ -74,13 +73,11 @@ const Navigation = () => {
             onClick={toggleNavbar}
             offset={() => 100}
             className="nav-link active"
-            href="/blog/branch"
+            href="/blog/About"
           >
-            Cabang
+            Tentang Kami
           </Link>
         </li>
-        
-       
       </ul>
     );
   };
