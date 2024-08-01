@@ -1,11 +1,15 @@
 import React, { useState, useEffect } from "react";
+import Image from "next/image"; 
+import Link from "next/link";
 
 const Navigation = () => {
-  const [collapsed, setCollapsed] = useState(true);
+  const [collapsed, setCollapsed] = useState(true); 
 
+   
   const toggleNavbar = () => {
     setCollapsed(!collapsed);
   };
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -47,14 +51,14 @@ const Navigation = () => {
     return (
       <ul className="navbar-nav ms-auto">
         <li className="nav-item">
-          <AnchorLink
+          <Link
             onClick={toggleNavbar}
             offset={() => 100}
             className="nav-link active"
             href="#home"
           >
             Home
-          </AnchorLink>
+          </Link>
         </li>
         <li className="nav-item">
           <Link
@@ -64,6 +68,16 @@ const Navigation = () => {
             href="/blog/details"
           >
             Promosi
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link
+            onClick={toggleNavbar}
+            offset={() => 100}
+            className="nav-link active"
+            href="/blog/branch"
+          >
+            Cabang
           </Link>
         </li>
       </ul>
