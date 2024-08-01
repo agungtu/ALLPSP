@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
-import AnchorLink from "react-anchor-link-smooth-scroll";
 import Image from "next/image";
-import Link from "next/link";
 
 const Navigation = () => {
   const [collapsed, setCollapsed] = useState(true);
@@ -79,8 +77,6 @@ const Navigation = () => {
             Cabang
           </Link>
         </li>
-        
-       
       </ul>
     );
   };
