@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import Image from "next/image"; 
+import Image from "next/image";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 import Link from "next/link";
 
 const Navigation = () => {
