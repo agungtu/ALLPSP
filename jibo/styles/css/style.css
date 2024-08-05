@@ -187,6 +187,8 @@ section {
 /* End Default style */
 /* Navbar style */
 .top-menu {
+  background: #987654;
+  background: linear-gradient(to right, #c19a6b, #f4a460);
   background-color: rgba(0, 0, 0, 0);
   border: medium none;
   border-radius: 0;

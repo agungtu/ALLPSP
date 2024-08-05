@@ -50,7 +50,7 @@ const Navigation = () => {
 
   const renderMenus = () => {
     return (
-      <ul className="navbar-nav ms-auto">
+      <ul className="navbar-nav ms-auto" >
         <li className="nav-item">
           <Link
             onClick={toggleNavbar}

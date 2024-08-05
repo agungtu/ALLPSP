@@ -238,7 +238,7 @@ const BlogDetailsContent = () => {
           padding: 8px;
           box-sizing: border-box;
         }
-
+ 
         .text-center {
           text-align: center;
         }
