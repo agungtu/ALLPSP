@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import AboutContent from  "../../../components/About/AboutContent";
-import Footer from "../../../components/common/Footer";
+import Footer from "../../../components/Common/Footer";
 
 const About = () => {
   return (
