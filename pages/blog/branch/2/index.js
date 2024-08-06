@@ -1,14 +1,12 @@
 import React from "react";
 import Link from "next/link";
-import Footer from "../../../components/Branch/Footer";
-import BranchContent from "../../../components/Branch/BranchContent";
+// import Footer from "../../../components/Branch/Footer";
+// import BranchContent from "../../../components/Branch/BranchContent";
 
 const branch = () => {
   return (
     <>
-      <section
-        className="top-banner-area"
-      >
+      <section className="top-banner-area">
         <div className="container">
           <div className="header">
             <div className="row align-items-center">
@@ -24,11 +22,11 @@ const branch = () => {
                   Cabang
                 </Link>
                 <ol className="breadcrumb">
-                <li>
-                  <Link href="/">Home</Link>
-                </li>
-                <li className="active">Page Branch</li>
-              </ol>
+                  <li>
+                    <Link href="/">Home</Link>
+                  </li>
+                  <li className="active">Page Branch</li>
+                </ol>
               </div>
             </div>
           </div>
@@ -46,7 +44,7 @@ const branch = () => {
               </ol>
             </div>
           </div>*/}
-        </div> 
+        </div>
       </section>
 
       <BranchContent />

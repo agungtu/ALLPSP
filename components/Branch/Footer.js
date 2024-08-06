@@ -3,7 +3,7 @@ import React from "react";
 const App = () => {
   return (
     <>
-      {/* <section
+      <section
         className="Footer "
         style={{ background: "#deb887", padding: "10px 0", color: "#333" }}
       >
@@ -158,7 +158,7 @@ const App = () => {
           margin-right: 10px;
           color: #007bff;
         }
-      `}</style> */}
+      `}</style>
     </>
   );
 };
