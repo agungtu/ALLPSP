@@ -38,7 +38,7 @@ const App = () => {
           <div className="content">
             <div className="image-container">
               <Image
-                src="/images/Bread-visi.png"
+                src="/images/bread-visi.png"
                 width={400}
                 height={400}
                 alt="Bakery Store"
