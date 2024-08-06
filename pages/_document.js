@@ -12,7 +12,7 @@ export default function Document() {
           href="https://fonts.googleapis.com/css?family=Open+Sans:400,600"
           rel="stylesheet"
         />
-        <link rel="icon" type="image/png" href="/images/favicon.ico"></link>
+        {/* <link rel="icon" type="image/png" href="/images/favicon.ico"></link> */}
       </Head>
       <body>
         <Main />
