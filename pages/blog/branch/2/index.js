@@ -47,7 +47,7 @@ const branch = () => {
         </div>
       </section>
 
-      <BranchContent />
+      {/* <BranchContent /> */}
 
       <Footer />
     </>
