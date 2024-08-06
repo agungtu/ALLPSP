@@ -34,41 +34,43 @@ const App = () => {
           </div>
         </div>
 
-        <div className="visi-misi-container">
-          <div className="image-container">
-            <Image
-              src="/images/Bread-visi.png"
-              width={400}
-              height={400}
-              alt="Bakery Store"
-            />
-          </div>
-          <div className="visi">
-            <h3>Visi Dan Misi Kami</h3>
-            <p>
-              Menjadi pilihan utama dalam industri roti dan kue dengan
-              menghadirkan produk berkualitas tinggi, inovatif, dan bernutrisi
-              yang dapat dinikmati oleh semua kalangan.
-            </p>
-            <ul>
-              <li>
-                Menggunakan bahan-bahan berkualitas tinggi dan segar untuk
-                menghasilkan roti dan kue yang lezat dan sehat.
-              </li>
-              <li>
-                Mengembangkan resep-resep baru yang inovatif dan mengikuti tren
-                kuliner terkini untuk memenuhi kebutuhan dan selera pelanggan.
-              </li>
-              <li>
-                Memberikan pelayanan yang ramah, cepat, dan profesional untuk
-                memastikan kepuasan pelanggan.
-              </li>
-              <li>
-                Menciptakan lingkungan kerja yang positif dan mendukung
-                pengembangan karir karyawan, sehingga mereka dapat memberikan
-                kontribusi terbaik bagi perusahaan.
-              </li>
-            </ul>
+        <div className="container mt-5">
+          <div className="content">
+            <div className="image-container">
+              <Image
+                src="/images/Bread-visi.png"
+                width={400}
+                height={400}
+                alt="Bakery Store"
+              />
+            </div>
+            <div className="description">
+              <h3>Visi Dan Misi Kami</h3>
+              <p>
+                Menjadi pilihan utama dalam industri roti dan kue dengan
+                menghadirkan produk berkualitas tinggi, inovatif, dan bernutrisi
+                yang dapat dinikmati oleh semua kalangan.
+              </p>
+              <ul>
+                <li>
+                  Menggunakan bahan-bahan berkualitas tinggi dan segar untuk
+                  menghasilkan roti dan kue yang lezat dan sehat.
+                </li>
+                <li>
+                  Mengembangkan resep-resep baru yang inovatif dan mengikuti tren
+                  kuliner terkini untuk memenuhi kebutuhan dan selera pelanggan.
+                </li>
+                <li>
+                  Memberikan pelayanan yang ramah, cepat, dan profesional untuk
+                  memastikan kepuasan pelanggan.
+                </li>
+                <li>
+                  Menciptakan lingkungan kerja yang positif dan mendukung
+                  pengembangan karir karyawan, sehingga mereka dapat memberikan
+                  kontribusi terbaik bagi perusahaan.
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -105,6 +107,7 @@ const App = () => {
         .description {
           flex: 1;
           margin-right: 20px;
+          margin-left: 20px; 
         }
 
         .description h3 {
@@ -113,36 +116,27 @@ const App = () => {
         }
 
         .image-container {
-          text-align: center;
+          max-width: 100%;
         }
 
-        .visi-misi {
-          margin-top: 40px;
+        .mt-5 {
+          margin-top: 20px;
         }
 
-        .visi-misi-container {
-          display: flex;
-          align-items: center;
+        @media (max-width: 768px) {
+          .content {
+            flex-direction: column;
+          }
+
+          .image-container {
+            margin-bottom: 20px;
+          }
         }
 
-        .visi {
-          flex: 2;
-          text-align: left;
-          margin-left: 20px;
-        }
-
-        .visi h3 {
-          font-size: 1.5rem;
-          margin-bottom: 10px;
-        }
-
-        .visi p {
-          margin-bottom: 10px;
-        }
-
-        .visi ul {
-          list-style-type: disc;
-          padding-left: 20px;
+        @media (max-width: 480px) {
+          .content {
+            width: 100%;
+          }
         }
       `}</style>
     </>
