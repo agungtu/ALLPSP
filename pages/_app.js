@@ -39,12 +39,10 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>
-        FEES BAKERY
-        </title>
+        <title>FEES BAKERY</title>
 
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-              <img src="/images/.png" alt="Logo" hidden />
+        {/* <img src="/images/.png" alt="Logo" hidden /> */}
       </Head>
 
       <Component {...pageProps} />
