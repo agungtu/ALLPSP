@@ -39,7 +39,7 @@ const Pricing = () => {
               anda!
               <span>Dengan pelanggan harian mencapai {customer_count} </span>
               {STORE_BRANCHES.map((item, i) => (
-                <div>{item}</div>
+                <span>{item}</span>
               ))}
             </p>
           </div>
