@@ -3,17 +3,31 @@ import Image from "next/image";
 import Link from "next/link";
 
 const Blog = () => {
-  return (
+  const titleBlog = "TESTIMONI"
+  const deskripsi = "FESS Bakery tempat di mana cita rasa dan kelezatan berpadu menjadi satu. Kami adalah toko roti yang berkomitmen untuk menyajikan roti dan kue dengan kualitas terbaik yang dibuat dengan bahan-bahan  pilihan dan resep tradisional"
+
+  const nama = {
+    pertama: "Agatha Clarissa",
+    kedua: "Anna Putri",
+    ketiga: "Banna Putri",
+};
+  const tanggal = {
+    pertama:  " 03 Februari / sabtu / 2024 ",
+    kedua:  " 15 April / senin / 2024 ",
+    ketiga:  " 25 Mei / sabtu / 2024 ",
+
+  };
+
+  const saran1 = "Sebagai pecinta roti, saya selalu mencari tempat dengan roti yang fresh dan enak, dan saya menemukannya di sini. Roti mereka adalah yang terbaik yang pernah saya coba. Atmosfer tokonya juga sangat nyaman untuk bersantai dan menikmati kopi. Sungguh pengalaman yang menyenangkan!"
+  const saran2 = "Toko roti ini benar-benar permata tersembunyi! Roti croissant-nya luar biasa, renyah di luar dan lembut didalam. Saya juga mencoba kue bolu mereka dan rasanya sangat lezat. Harga yang ditawarkan sangat terjangkau untuk kualitas yang didapat. Sangat direkomendasikan!"
+  const saran3 = "Roti di sini benar-benar lezat! Teksturnya empuk dan rasanya sangat enak. Favorit saya adalah roti cokelatnya, yang selalu membuat saya kembali lagi untuk membelinya. Pelayanannya juga sangat ramah dan cepat. Pasti akan merekomendasikan toko roti ini kepada teman-teman dan keluarga!"
+return (
     <>
       <section id="blog" className="blog-section">
         <div className="container">
           <div className="section-title">
-            <h2 className="text-white">TESTIMONI</h2>
-            <p className="text-white">
-              FESS Bakery tempat di mana cita rasa dan kelezatan berpadu menjadi
-              satu. Kami adalah toko roti yang berkomitmen untuk menyajikan roti
-              dan kue dengan kualitas terbaik yang dibuat dengan bahan-bahan
-              pilihan dan resep tradisional.
+            <h2 className="text-white">{titleBlog}</h2>
+            <p className="text-white">{deskripsi}
             </p>
           </div>
 
@@ -36,29 +50,12 @@ const Blog = () => {
               <div className="col-lg-7">
                 <div className="blog-info">
                   <h6 className="blog-title">
-                    <Link href="/blog/details">Agatha Clarissa</Link>
+                    <Link href="/blog/details">{nama.pertama}</Link>
                   </h6>
-
-                  <ul className="post-admin">
-                    <li>
-                      03 <Link href="#">Februari</Link>
-                    </li>
-                    <li>Sabtu</li>
-                    <li>2024</li>
+                  <ul className="post-admin">{tanggal.pertama}
                   </ul>
-
-                  <p>
-                    "Sebagai pecinta roti, saya selalu mencari tempat dengan
-                    roti yang fresh dan enak, dan saya menemukannya di sini.
-                    Roti mereka adalah yang terbaik yang pernah saya coba.
-                    Atmosfer tokonya juga sangat nyaman untuk bersantai dan
-                    menikmati kopi. Sungguh pengalaman yang menyenangkan!"
+                  <p>{saran1}
                   </p>
-
-                  {/* <Link href="/blog/details" className="default-button">
-                    Read More
-                    <i className="icofont-swoosh-right"></i>
-                  </Link> */}
                 </div>
               </div>
             </div>
@@ -83,23 +80,13 @@ const Blog = () => {
               <div className="col-lg-7">
                 <div className="blog-info">
                   <h6 className="blog-title">
-                    <Link href="/blog/details">Anna Putri</Link>
+                    <Link href="/blog/details">{nama.kedua}</Link>
                   </h6>
 
-                  <ul className="post-admin">
-                    <li>
-                      15 <Link href="#">April</Link>
-                    </li>
-                    <li>Senin</li>
-                    <li>2024</li>
+                  <ul className="post-admin">{tanggal.kedua}
                   </ul>
 
-                  <p>
-                    "Toko roti ini benar-benar permata tersembunyi! Roti
-                    croissant-nya luar biasa, renyah di luar dan lembut di
-                    dalam. Saya juga mencoba kue bolu mereka dan rasanya sangat
-                    lezat. Harga yang ditawarkan sangat terjangkau untuk
-                    kualitas yang didapat. Sangat direkomendasikan!"
+                  <p>{saran2}
                   </p>
                 </div>
               </div>
@@ -125,23 +112,13 @@ const Blog = () => {
               <div className="col-lg-7">
                 <div className="blog-info">
                   <h6 className="blog-title">
-                    <Link href="/blog/details">Banna Putri</Link>
+                    <Link href="/blog/details">{nama.ketiga}</Link>
                   </h6>
 
-                  <ul className="post-admin">
-                    <li>
-                      15 <Link href="#">April</Link>
-                    </li>
-                    <li>Senin</li>
-                    <li>2024</li>
+                  <ul className="post-admin">{tanggal.ketiga}
                   </ul>
 
-                  <p>
-                    "Toko roti ini benar-benar permata tersembunyi! Roti
-                    croissant-nya luar biasa, renyah di luar dan lembut di
-                    dalam. Saya juga mencoba kue bolu mereka dan rasanya sangat
-                    lezat. Harga yang ditawarkan sangat terjangkau untuk
-                    kualitas yang didapat. Sangat direkomendasikan!"
+                  <p>{saran3}
                   </p>
                 </div>
               </div>
