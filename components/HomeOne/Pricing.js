@@ -3,6 +3,21 @@ import Link from "next/link";
 import Image from "next/image";
 
 const Pricing = () => {
+  const titlePricing = "FESS Cake & Bakery";
+  const customer_count = 100;
+  const STORE_BRANCHES = [
+    "CANDI",
+    "BANGKONG",
+    "PANDANARAN",
+    "PETERONGAN",
+    "GAJAH MADA",
+    "TLOGOSARI",
+  ];
+  const menus = {
+    pertama: "MAKANAN RINGAN 1",
+    kedua: "KUE KERING",
+    ketiga: "CAKE",
+  };
   return (
     <>
       <section id="pricing" className="pricing-section">
@@ -13,7 +28,7 @@ const Pricing = () => {
             data-aos-duration="800"
             data-aos-delay="100"
           >
-            <h2 style={{ color: "#c19a6b" }}>FESS Cake & Bakery</h2>
+            <h2 style={{ color: "#c19a6b" }}>{titlePricing}</h2>
             <p
               className="mt-4 justify-content-center"
               style={{ color: "#c19a6b" }}
@@ -22,6 +37,10 @@ const Pricing = () => {
               dengan kualitas premium, serta harga yang sangat terjangkau,
               Karena kami percaya kelezatan sejati tidak harus menguras kantong
               anda!
+              <span>Dengan pelanggan harian mencapai {customer_count} </span>
+              {STORE_BRANCHES.map((item, i) => (
+                <div>{item}</div>
+              ))}
             </p>
           </div>
 
@@ -36,7 +55,7 @@ const Pricing = () => {
                 <div className="price-header">
                   <h3 style={{ color: "#c19a6b" }}>Menu</h3>
                   <h4 className="price-value">
-                    <span className="h3">MAKANAN RINGAN</span> &nbsp;
+                    <span className="h3">{menus.pertama}</span> &nbsp;
                   </h4>
                 </div>
 
