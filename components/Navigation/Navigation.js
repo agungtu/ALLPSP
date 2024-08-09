@@ -97,7 +97,7 @@ const Navigation = () => {
             onClick={toggleNavbar}
             offset={() => 100}
             className="nav-link active"
-            href="/blog/AboutMe"
+            href="/blog/AboutMeSalwa"
           >
             Tentang Saya
           </Link>

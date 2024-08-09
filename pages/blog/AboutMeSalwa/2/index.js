@@ -1,11 +1,10 @@
 import React from "react";
 import Link from "next/link";
-import AboutMeContent from  "../../../components/AboutMe/AboutMeContent";
-import Footer from "../../../components/Common/Footer";
 
-const AboutMe = () => {
+
+const AboutMeSalwa= () => {
   return (
-  <>
+    <>
       <section
         className="top-banner-area"
       >
@@ -14,20 +13,20 @@ const AboutMe = () => {
             <div className="row align-items-center">
               <div className="col-lg-6">
                 <Link href="/" className="logo">
-                  Tentang Saya
+                  Tentang saya
                 </Link>
-                {/* <h2 className="banner-title">Page Branch</h2> */}
+                <h2 className="banner-title">Page Branch</h2>
               </div>
 
               <div className="col-6 text-end">
-                <Link href="/blog/About/" className="nav-text">
-                  Tentang Saya
+                <Link href="/blog/branch/" className="nav-text">
+                  Tentang
                 </Link>
                 <ol className="breadcrumb">
                 <li>
                   <Link href="/">Home</Link>
                 </li>
-                <li className="active">Salwa</li>
+                <li className="active">Biodata</li>
               </ol>
               </div>
             </div>
@@ -49,13 +48,9 @@ const AboutMe = () => {
         </div> 
       </section>
 
-      <AboutMeContent/>
-
-      <Footer/>
-
-    
-     </>
+     
+    </>
   );
 };
 
-export default AboutMe;
+export default AboutMeSalwa;
