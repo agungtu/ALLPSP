@@ -16,7 +16,7 @@ const alertContent = () => {
   });
 };
 
-  // Form initial state
+// Form initial state
 const INITIAL_STATE = {
   nama: "",
   email: "",
@@ -26,6 +26,22 @@ const INITIAL_STATE = {
 };
 
 const ContactForm = () => {
+  const titlecontact = "Hubungi Kami";
+  const textcontact =
+    " Kami berkomitmen untuk merespons pesan Anda secepat mungkin dan memastikan bahwa setiap pertanyaan atau masalah yang Anda hadapi ditangani dengan baik. Terima kasih atas dukungan dan kepercayaan Anda kepada kami. Kami sangat menghargai setiap masukan, pertanyaan, dan saran dari Anda. Jangan ragu untuk menghubungi kami melalui cara berikut :";
+
+  const titlecontactinfo = {
+    pertama: "Alamat kantor:",
+    kedua: "Alamat E-mail:",
+    ketiga: "Nomor Telepon:",
+  };
+
+  const textcontactinfo = {
+    pertama: "Jl. Pamularsih Raya, Bongsari, Semarang Barat, Central Java",
+    kedua: "fessbakery@gmail.com",
+    ketiga: "+6285787653299",
+  };
+
   const [contact, setContact] = useState(INITIAL_STATE);
 
   const handleChange = (e) => {
@@ -58,46 +74,37 @@ const ContactForm = () => {
       >
         <div className="container">
           <div className="section-title">
-            <h2>HUbungi Kami</h2>
-            <p>
-              Kami berkomitmen untuk merespons pesan Anda secepat mungkin dan
-              memastikan bahwa setiap pertanyaan atau masalah yang Anda hadapi
-              ditangani dengan baik. Terima kasih atas dukungan dan kepercayaan
-              Anda kepada kami.
-              Kami sangat menghargai setiap masukan, pertanyaan, dan saran dari
-              Anda. Jangan ragu untuk menghubungi kami melalui cara berikut :
-            </p>
+            <h2>{titlecontact}</h2>
+            <p>{textcontact}</p>
           </div>
 
           <div className="row justify-content-center">
             <div className="col-md-4 col-lg-4 col-sm-6">
               <div className="single-contact-info">
                 <i className="icofont-location-pin"></i>
-                <h3>Alamat kantor:</h3>
-                <p>
-                  Jl. Pamularsih Raya, Bongsari, Semarang Barat, Central Java
-                </p>
+                <h3>{titlecontactinfo.pertama}</h3>
+                <p>{textcontactinfo.pertama}</p>
               </div>
             </div>
 
             <div className="col-md-4 col-lg-4 col-sm-6">
               <div className="single-contact-info">
                 <i className="icofont-envelope"></i>
-                <h3>Alamat E-mail:</h3>
-                <p>fessbakery@gmail.com</p>
+                <h3>{titlecontactinfo.kedua}</h3>
+                <p>{textcontactinfo.kedua}</p>
               </div>
             </div>
 
             <div className="col-md-4 col-lg-4 col-sm-6">
               <div className="single-contact-info">
                 <i className="icofont icofont-phone"></i>
-                <h3>Nomor Telepon:</h3>
-                <p>+6285787653299</p>
+                <h3>{titlecontactinfo.ketiga}</h3>
+                <p>{textcontactinfo.ketiga}</p>
               </div>
             </div>
           </div>
 
-         {/* <div className="row">
+          {/* <div className="row">
             <div className="col-lg-12 col-md-12">
               <div className="contact-form">
                 <form onSubmit={handleSubmit}>

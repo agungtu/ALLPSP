@@ -114,6 +114,18 @@ const Navigation = () => {
           </Link>
         </li>
         
+        <li className="nav-item">
+          
+          <Link
+            onClick={toggleNavbar}
+            offset={() => 100}
+            className="nav-link active"
+            href="/blog/AboutMeFauzi"
+          >
+            Tentang Fauzi
+          </Link>
+        </li>
+        
       </ul>
     );
   };
