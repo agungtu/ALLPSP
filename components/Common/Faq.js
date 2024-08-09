@@ -106,9 +106,7 @@ const Faq = () => {
                       </AccordionItemButton>
                     </AccordionItemHeading>
                     <AccordionItemPanel>
-                      <p>
                       <p> {answer.keempat} </p>
-                      </p>
                     </AccordionItemPanel>
                   </AccordionItem>
 
