@@ -91,6 +91,17 @@ const Navigation = () => {
             Tentang Kami
           </Link>
         </li>
+
+        <li className="nav-item">
+          <Link
+            onClick={toggleNavbar}
+            offset={() => 100}
+            className="nav-link active"
+            href="/blog/AboutmeFauzi"
+          >
+            Tentang Fauzi
+          </Link>
+        </li>
       </ul>
     );
   };
