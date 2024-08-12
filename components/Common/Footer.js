@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <>
       <footer id="footer">
-        {/* NewsletterForm */}
+
         <NewsletterForm />
 
         <div className="footer-bottom" style={{backgroundColor: '#c19a6b'}}>
