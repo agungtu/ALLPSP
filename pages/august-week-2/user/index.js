@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import Footer from "../../../components/Branch/Footer";
+import Footer from "../../../components/Common/Footer";
 import BranchContent from "../../../components/Branch/BranchContent";
 
 const branch = () => {
@@ -187,7 +187,9 @@ const branch = () => {
         </div>
       </section>
       <section>
-        <div className="container">User</div>
+        <div className="container" style={{ minHeight: "52vh" }}>
+          User
+        </div>
       </section>
 
       <Footer />
