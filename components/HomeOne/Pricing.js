@@ -70,7 +70,6 @@ const Pricing = () => {
                     />
                     <li>cookies</li>
                   </div>
-
                   <div className="col-md-4">
                     <Image
                       src="/images/pricing/brwnies.png"
