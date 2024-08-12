@@ -240,9 +240,9 @@ const Pricing = () => {
           <div className="col-md-12 ">
             <div
               className="single-price-package"
-            // data-aos="fade-in"
-            // data-aos-duration="800"
-            // data-aos-delay="200"
+              // data-aos="fade-in"
+              // data-aos-duration="800"
+              // data-aos-delay="200"
             >
               <div className="price-header">
                 <h3 style={{ color: "#c19a6b" }}>MENU</h3>
