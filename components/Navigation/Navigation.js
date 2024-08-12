@@ -4,13 +4,11 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 import Link from "next/link";
 
 const Navigation = () => {
-  const [collapsed, setCollapsed] = useState(true); 
+  const [collapsed, setCollapsed] = useState(true);
 
-   
   const toggleNavbar = () => {
     setCollapsed(!collapsed);
   };
-
 
   useEffect(() => {
     const handleScroll = () => {
@@ -50,7 +48,7 @@ const Navigation = () => {
 
   const renderMenus = () => {
     return (
-      <ul className="navbar-nav ms-auto" >
+      <ul className="navbar-nav ms-auto">
         <li className="nav-item">
           <Link
             onClick={toggleNavbar}
@@ -65,7 +63,7 @@ const Navigation = () => {
           <Link
             onClick={toggleNavbar}
             offset={() => 100}
-            className="nav-link active"
+            className="nav-link "
             href="/blog/details"
           >
             Promosi
@@ -75,7 +73,7 @@ const Navigation = () => {
           <Link
             onClick={toggleNavbar}
             offset={() => 100}
-            className="nav-link active"
+            className="nav-link "
             href="/blog/branch"
           >
             Cabang
@@ -85,48 +83,109 @@ const Navigation = () => {
           <Link
             onClick={toggleNavbar}
             offset={() => 100}
-            className="nav-link active"
+            className="nav-link "
             href="/blog/About"
           >
             Tentang Kami
           </Link>
         </li>
-        <li className="nav-item">
+        <li className="nav-item dropdown">
           <Link
             onClick={toggleNavbar}
             offset={() => 100}
-            className="nav-link active"
-            href="/blog/AboutMeElisa"
+            className="nav-link  dropdown-toggle"
+            href={`#`}
+            id="navbarDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
           >
-            Tentang Saya
+            August week 1
           </Link>
+
+          <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li>
+              <Link
+                onClick={toggleNavbar}
+                offset={() => 100}
+                className="dropdown-item"
+                href="/blog/AboutMeElisa"
+              >
+                Tentang Elisa
+              </Link>
+            </li>
+
+            <li>
+              <Link
+                onClick={toggleNavbar}
+                offset={() => 100}
+                className="dropdown-item"
+                href="/blog/AboutMeSalwa"
+              >
+                Tentang Salwa
+              </Link>
+            </li>
+
+            <li>
+              <Link
+                onClick={toggleNavbar}
+                offset={() => 100}
+                className="dropdown-item"
+                href="/blog/AboutmeFauzi"
+              >
+                Tentang Fauzi
+              </Link>
+            </li>
+          </ul>
         </li>
-        
-        <li className="nav-item">
-          
+
+        <li className="nav-item dropdown">
           <Link
             onClick={toggleNavbar}
             offset={() => 100}
-            className="nav-link active"
-            href="/blog/AboutMeSalwa"
+            className="nav-link  dropdown-toggle"
+            href={`#`}
+            id="navbarDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
           >
-            Tentang Saya
+            August week 2
           </Link>
+
+          <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li>
+              <Link
+                onClick={toggleNavbar}
+                offset={() => -30}
+                className="dropdown-item"
+                href={`/august-week-2/product`}
+              >
+                Product
+              </Link>
+            </li>
+            <li>
+              <Link
+                onClick={toggleNavbar}
+                offset={() => -30}
+                className="dropdown-item"
+                href={`/august-week-2/user`}
+              >
+                User
+              </Link>
+            </li>
+            <li>
+              <Link
+                onClick={toggleNavbar}
+                offset={() => -30}
+                className="dropdown-item"
+                href={`/august-week-2/post-comment`}
+              >
+                Post Comment
+              </Link>
+            </li>
+          </ul>
         </li>
-        
-        <li className="nav-item">
-          
-          
-          <Link
-            onClick={toggleNavbar}
-            offset={() => 100}
-            className="nav-link active"
-            href="/blog/AboutmeFauzi"
-          >
-            Tentang Fauzi
-          </Link>
-        </li>
-        
       </ul>
     );
   };
@@ -164,7 +223,6 @@ const Navigation = () => {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          
 
           <div className={classOne} id="navbarSupportedContent">
             {renderMenus()}
