@@ -5,7 +5,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
     <>
-      <Footer id="footer">
+      <footer id="footer">
         <NewsletterForm />
 
         <div className="footer-bottom" style={{ backgroundColor: "#c19a6b" }}>
@@ -64,7 +64,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </Footer>
+      </footer>
     </>
   );
 };
