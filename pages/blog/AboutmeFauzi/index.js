@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import Footer from "../../../components/common/Footer";
+import Footer from "../../../components/Common/Footer";
 import AboutMeContent from "../../../components/AboutMeFauzi/AboutMeContentFauzi";
 
 const AboutmeFauzi = () => {
