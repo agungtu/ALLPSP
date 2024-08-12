@@ -110,7 +110,7 @@ const Navigation = () => {
             className="nav-link active"
             href="/blog/AboutMeSalwa"
           >
-            Tentang Saya
+            Tentang Salwa
           </Link>
         </li>
         
@@ -151,6 +151,7 @@ const Navigation = () => {
             width={120}
             height={125}
           />
+
 
           <button
             onClick={toggleNavbar}
