@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
-import Footer from "../../../components/common/Footer";
 import AboutMeContent from "../../../components/AboutMeFauzi/AboutMeContentFauzi";
+import Footer from "../../../components/Common/Footer";
 
 const AboutmeFauzi = () => {
   return (
@@ -48,7 +48,6 @@ const AboutmeFauzi = () => {
       </section>
 
       <AboutMeContent />
-
       <Footer />
     </>
   );
