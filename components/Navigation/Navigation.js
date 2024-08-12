@@ -99,7 +99,7 @@ const Navigation = () => {
             className="nav-link active"
             href="/blog/AboutMeSalwa"
           >
-            Tentang Saya
+            Tentang Salwa
           </Link>
         </li>
         
