@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import Footer from "../../../components/Common/Footer";
 import BranchContent from "../../../components/Branch/BranchContent";
 
@@ -187,10 +188,279 @@ const branch = () => {
         </div>
       </section>
       <section>
-        <div className="container" style={{ minHeight: "52vh" }}>
-          post comment
+
+        <div className="post-container">
+          <div className="post-header">
+            <img src="/images/avatar/user.avatar.jfif" alt="User avatar" className="avatar" />
+            <div className="post-info">
+              <h4>Salwa Aulia</h4>
+              <span>5 hari lalu</span>
+               </div>
+          </div>
+        <div className="post-content">
+          <p>
+          Setiap kali saya mencoba roti dari sini, saya selalu terkesan dengan kualitas dan rasanya. Teksturnya sempurna dan selalu fresh. Tempat ini benar-benar favorit saya! ❤
+          </p>
+        </div>
+        <div className="post-actions">
+          <span>&#128077;</span>
+          <span>&#128172;</span>
+          < span>&#128256;</span>
+          <span className="like-count">saya, fauzi, putri dan 1058 lainya</span>
+          <span className="comment-count">3 comment</span>
+          <span className="share-count">2 shares</span>
+        </div>
+        <div className="comments-section">
+          <div className="comment">
+            <img src="/images/avatar/fauzi.avatar.jfif" alt="tony avatar" className="comment-avatar" />
+            <div className="comment-text">
+              <h5>Fauzi Saputra</h5>
+              <span>4 hari lalu</span>
+              <p>Stafnya sangat ramah dan selalu menyambut dengan senyuman. Mereka juga cepat dalam melayani, sehingga saya tidak pernah perlu menunggu lama 😉🤞</p>
+              <button className="comment-reply">Like . Reply</button>
+            </div>
+          </div>
+          <div className="comment">
+            <img src="/images/avatar/putri.avatar.jfif" alt="leah avatar" className="comment-avatar" />
+            <div className="comment-text">
+              <h5>Putri Zalova</h5>
+              <span>4 hari lalu</span>
+              <p>Roti di sini benar-benar berkualitas tinggi, tapi harganya masih sangat terjangkau. Saya merasa mendapatkan lebih dari yang saya bayar. Pasti akan kembali lagi 🙌</p>
+              <button className="comment-reply">Reply</button>
+            </div>
+          </div>
+          <div className="comment reply-comment">
+            <img src="/images/avatar/helena.avatar.jfif" alt="Helena Avatar" className="comment-avatar" />
+            <div className="comment-text">
+              <h5>Helena Hernandez</h5>
+              <span>2 hari lalu</span>
+              <p>Saya suka disini ada berbagai macam roti mulai dari roti manis hingga roti gurih. Setiap datang, saya selalu menemukan sesuatu yang baru untuk dicoba. Rekomendasi banget 😊</p>
+              <button className="comment-reply">Like . Reply</button>
+              <div className="reply">
+                <h6>FESS BAKERY</h6>
+                <span>1 hari lalu</span>
+                <p>Thanks!! 😍</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="comment-input">
+          <img src="/images/avatar/simple.avatar.jfif" alt="User Avatar" className="comment-avatar" />
+          <input type="text" placeholder="Write a comment...                                                                                                                          😀   📷"/>
+        </div>
         </div>
       </section>
+
+      <style jsx>{`
+      .post-container {
+        width: 100%;
+        max-width: 800px; 
+        margin: 100px auto;
+        padding: 30px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      }
+      
+      .post-header {
+        display: flex;
+        align-items: center;
+      }
+      
+      .avatar {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin-right: 15px;        
+      }
+      
+      .post-info h4 {
+        margin: 0;
+        font-size: 20px; 
+      }
+      
+      .post-info span {
+        font-size: 14px;
+        color: #888;
+      }
+      
+      .post-content {
+        margin: 15px 0; 
+      }
+      
+      .post-content p {
+        margin: 0;
+        font-size: 16px; 
+      }
+      
+      .hastag {
+        color: #007bff;
+      }
+      
+      .post-actions {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 15px;
+        font-size: 14px;
+        flex-wrap: wrap;
+      }
+      
+      .action-button {
+        font-size: 14px; 
+        margin-right: 15px; 
+        margin-bottom: 10px;
+      }
+      
+      .like-count,
+      .comment-count,
+      .share-count {
+        margin-top: 10px;
+        font-size: 14px; 
+      }
+      
+      .comments-section {
+        margin-top: 20px; 
+      }
+      
+      .comment {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 15px;
+      }
+      
+      .comment-avatar {
+        width: 40px; 
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 15px;
+      }
+      
+      .comment-text {
+        background: #f9f9f9;
+        padding: 15px; 
+        border-radius: 10px;
+        width: 100%;
+      }
+      
+      .comment-text h5 {
+        margin: 0 0 8px;
+        font-size: 16px; 
+      }
+      
+      .comment-text span {
+        font-size: 12px; 
+        color: #888;
+      }
+      
+      .comment-text p {
+        margin: 8px 0;
+        font-size: 14px; 
+      }
+      
+      .comment-reply {
+        font-size: 13px; 
+        margin-top: 10px;
+      }
+      
+      .reply-comment {
+        margin-left: 50px; 
+      }
+      
+      .reply {
+        margin-top: 15px; 
+        padding-left: 15px; 
+        border-left: 3px solid #ddd; 
+      }
+      
+      .reply h6 {
+        margin: 0;
+        font-size: 15px; 
+      }
+      
+      .comment-input {
+        display: flex;
+        align-item: center;
+        margin-top: 20px;
+        border-top: 1px solid #ddd;
+        padding-top: 15px;
+      }
+      
+      .comment-input input {
+        border: 1px solid #ddd;
+        border-radius: 20px;
+        padding: 8px 15px; 
+        width: 100%;
+        margin-left: 15px; 
+      }
+      
+      @media screen and (max-width: 768px) {
+        .post-actions {
+          justify-content: center;
+          text-align: center;
+        }
+      
+        .action-button {
+          margin-right: 10px;
+        }
+      
+        .like-count,
+        .comment-count,
+        .share-count {
+          font-size: 14px;
+        }
+      
+        .comment {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      
+        .reply-comment {
+          margin-left: 30px;
+        }
+      
+        .post-header {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      
+        .post-info h4 {
+          font-size: 18px;
+        }
+      
+        .post-info span {
+          font-size: 14px;
+        }
+      
+        .comment-text h5 {
+          font-size: 14px;
+        }
+      
+        .comment-text p {
+          font-size: 14px;
+        }
+      }
+      
+      @media screen and (max-width: 480px) {
+        .post-container {
+          padding: 20px;
+        }
+      
+        .post-content p {
+          font-size: 14px;
+        }
+      
+        .comment-text h5 {
+          font-size: 14px;
+        }
+      
+        .comment-text p {
+          font-size: 13px;
+        }
+      }
+       `}</style>
+      
 
       <Footer />
     </>
