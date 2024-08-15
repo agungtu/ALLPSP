@@ -165,10 +165,14 @@ const branch = () => {
           <div className="header">
             <div className="row align-items-center">
               <div className="col-lg-6">
-                <Link href="/" className="logo">
-                  User
+                <Link href={`/august-week-2/user`} className="logo">
+                  <img
+                    src="/images/profilesergi.png"
+                    width={100}
+                    height={100}
+                    alt="Sergi Roberto"
+                  />
                 </Link>
-                <h2 className="banner-title">User page</h2>
               </div>
 
               <div className="col-6 text-end">
@@ -187,10 +191,96 @@ const branch = () => {
         </div>
       </section>
       <section>
-        <div className="container" style={{ minHeight: "52vh" }}>
-          User
+        <div className="container">
+          <div className="row">
+            <div className="col-md-4">
+              <img
+                src="/images/SergiRoberto.jpg"
+                className="rounded float-start img-fluid"
+                alt="Sergi Roberto"
+              />
+            </div>
+            <div className="col-md-8 d-flex flex-column justify-content-between">
+              <div>
+                <h1>Sergi Roberto</h1>
+                <a href="https://www.fcbarcelona.com/en/" target="blank_">
+                  Pemain Sepak Bola
+                </a>
+              </div>
+
+              <ul>
+                <li>Penampilan: 300+</li>
+                <li>Gol: 15</li>
+                <li>Assist: 30</li>
+                <li>Trofi: 6x La Liga, 2x Liga Champions, 5x Copa del Rey</li>
+              </ul>
+
+              <div>
+                <h4 style={{ color: "#777f8b" }}>Rankings</h4>
+                <h2>9.5 &#127775;&#127775;&#127775;&#127775;&#127775;</h2>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
+
+      <div className="container">
+        <div className="row">
+          <div className="col-md-6">
+            <div className="info-content">
+              <p style={{ color: "#a4a8ad" }}>Pekerjaan</p>
+              <h4>Pemain Sepak Bola FC Barcelona</h4>
+              <p>Les Corts, 08028 Barcelona, Spanyol</p>
+              <h4>Perusahaan</h4>
+              <p>
+                FC Barcelona, atau Barça, adalah klub sepak bola Spanyol yang
+                didirikan pada 1899. Terkenal dengan gaya permainan tiki-taka
+                dan prestasi internasionalnya, klub ini juga dikenal karena
+                akademi La Masia yang melahirkan banyak pemain berbakat.
+              </p>
+            </div>
+            <div className="info-content">
+              <p style={{ color: "#a4a8ad" }}>Skills</p>
+              <ul>
+                <li>Vision</li>
+                <li>Dribbling</li>
+                <li>Passing</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="col-md-6">
+            <div className="info-content">
+              <p style={{ color: "#a4a8ad" }}>Contact Information</p>
+              <p>
+                Phone: <a href="tel:+34 902 1899 00">+34 902 1899 00</a>
+              </p>
+              <p>Address: Reus, Spanyol</p>
+              <p>
+                Email:{" "}
+                <a href="mailto:sergiroberto@gmail.com">
+                  sergiroberto@gmail.com
+                </a>
+              </p>
+              <p>
+                Instagram:{" "}
+                <a
+                  href="https://www.instagram.com/sergiroberto/"
+                  target="_blank"
+                >
+                  {" "}
+                  sergiroberto
+                </a>
+              </p>
+            </div>
+            <div className="info-content">
+              <p style={{ color: "#a4a8ad" }}>Basic Information</p>
+              <p>Tanggal Lahir: 9 February, 1992</p>
+              <p>Hobby: Sepak Bola</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <Footer />
     </>
