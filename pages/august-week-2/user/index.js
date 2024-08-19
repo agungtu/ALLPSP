@@ -65,6 +65,54 @@ const branch = () => {
       weight: 3,
     },
     user: {
+      name: "Sergi Roberto",
+      job: "Pemain Sepak Bola",
+      linkjob: "https://www.fcbarcelona.com/en/",
+      gambar: {
+        pertama: "/images/profilesergi.png",
+        kedua: "/images/SergiRoberto.jpg",
+      },
+      statistik: {
+        satu: "Penampilan 300+",
+        dua: "Gol: 15",
+        tiga: "Assist 30",
+        empat: "Trofi: 6x La Liga, 2x Liga Champions, 5x Copa del Rey",
+        peringkat: "Rangkings",
+        nilai: "9.5",
+        star: " &#127775;&#127775;&#127775;&#127775;&#127775;",
+      },
+      pekerjaan: {
+        title: "Pekerjaan",
+        pekerjaan: "Pemain Sepak Bola FC Barcelona",
+        alamat: "Les Corts, 08028 Barcelona, Spanyol",
+        perusahaan: "perusahaan",
+        deskripsi:
+          "FC Barcelona, atau Barça, adalah klub sepak bola Spanyol yang didirikan pada 1899. Terkenal dengan gaya permainan tiki-taka dan prestasi internasionalnya, klub ini juga dikenal karena akademi La Masia yang melahirkan banyak pemain berbakat.",
+      },
+      skills: {
+        title: "Skills",
+        skill1: "Vision",
+        skill2: "Dribbling",
+        skill3: "Passing",
+      },
+      contact: {
+        title: "Contact Information",
+        phonetitle: "Phone:",
+        phone: "+34 902 1899 00",
+        phonelink: "tel:+34 902 1899 00",
+        address: "Address: Reus, Spanyol",
+        emailtitle: "Email:",
+        email: "sergiroberto@gmail.com",
+        emaillink: "mailto:sergiroberto@gmail.com",
+        instagramtitle: "Instagram:",
+        instagram: "@sergiroberto",
+        instagramlink: "https://www.instagram.com/sergiroberto/",
+      },
+      basicinfo: {
+        title: "Basic Information",
+        birthDate: "Tanggal Lahir: 9 February, 1992",
+        hobby: "Hobby: Sepak Bola",
+      },
       address: {
         address: "626 Main Street",
         city: "Phoenix",
@@ -167,7 +215,7 @@ const branch = () => {
               <div className="col-lg-6">
                 <Link href={`/august-week-2/user`} className="logo">
                   <img
-                    src="/images/profilesergi.png"
+                    src={data.user.gambar.pertama}
                     width={100}
                     height={100}
                     alt="Sergi Roberto"
@@ -195,29 +243,34 @@ const branch = () => {
           <div className="row">
             <div className="col-md-4">
               <img
-                src="/images/SergiRoberto.jpg"
+                src={data.user.gambar.kedua}
                 className="rounded float-start img-fluid"
                 alt="Sergi Roberto"
               />
             </div>
             <div className="col-md-8 d-flex flex-column justify-content-between">
               <div>
-                <h1>Sergi Roberto</h1>
-                <a href="https://www.fcbarcelona.com/en/" target="blank_">
-                  Pemain Sepak Bola
+                <h1>{data.user.name}</h1>
+                <a href={data.user.linkjob} target="blank_">
+                  {data.user.job}
                 </a>
               </div>
 
               <ul>
-                <li>Penampilan: 300+</li>
-                <li>Gol: 15</li>
-                <li>Assist: 30</li>
-                <li>Trofi: 6x La Liga, 2x Liga Champions, 5x Copa del Rey</li>
+                <li>{data.user.statistik.satu}</li>
+                <li>{data.user.statistik.dua}</li>
+                <li>{data.user.statistik.tiga}</li>
+                <li>{data.user.statistik.empat}</li>
               </ul>
 
               <div>
-                <h4 style={{ color: "#777f8b" }}>Rankings</h4>
-                <h2>9.5 &#127775;&#127775;&#127775;&#127775;&#127775;</h2>
+                <h4 style={{ color: "#777f8b" }}>
+                  {data.user.statistik.peringkat}
+                </h4>
+                <h2>
+                  {data.user.statistik.nilai}{" "}
+                  &#127775;&#127775;&#127775;&#127775;&#127775;
+                </h2>
               </div>
             </div>
           </div>
@@ -228,55 +281,50 @@ const branch = () => {
         <div className="row">
           <div className="col-md-6">
             <div className="info-content">
-              <p style={{ color: "#a4a8ad" }}>Pekerjaan</p>
-              <h4>Pemain Sepak Bola FC Barcelona</h4>
-              <p>Les Corts, 08028 Barcelona, Spanyol</p>
-              <h4>Perusahaan</h4>
-              <p>
-                FC Barcelona, atau Barça, adalah klub sepak bola Spanyol yang
-                didirikan pada 1899. Terkenal dengan gaya permainan tiki-taka
-                dan prestasi internasionalnya, klub ini juga dikenal karena
-                akademi La Masia yang melahirkan banyak pemain berbakat.
-              </p>
+              <p style={{ color: "#a4a8ad" }}>{data.user.pekerjaan.title}</p>
+              <h4>{data.user.pekerjaan.pekerjaan}</h4>
+              <p>{data.user.pekerjaan.alamat}</p>
+              <h4>{data.user.pekerjaan.perusahaan}</h4>
+              <p>{data.user.pekerjaan.deskripsi}</p>
             </div>
             <div className="info-content">
-              <p style={{ color: "#a4a8ad" }}>Skills</p>
+              <p style={{ color: "#a4a8ad" }}>{data.user.skills.title}</p>
               <ul>
-                <li>Vision</li>
-                <li>Dribbling</li>
-                <li>Passing</li>
+                <li>{data.user.skills.skill1}</li>
+                <li>{data.user.skills.skill2}</li>
+                <li>{data.user.skills.skill3}</li>
               </ul>
             </div>
           </div>
 
           <div className="col-md-6">
             <div className="info-content">
-              <p style={{ color: "#a4a8ad" }}>Contact Information</p>
+              <p style={{ color: "#a4a8ad" }}>{data.user.contact.title}</p>
               <p>
-                Phone: <a href="tel:+34 902 1899 00">+34 902 1899 00</a>
+                {data.user.contact.phonetitle}{" "}
+                <a href={data.user.contact.phonelink}>
+                  {data.user.contact.phone}
+                </a>
               </p>
-              <p>Address: Reus, Spanyol</p>
+              <p>{data.user.contact.address}</p>
               <p>
-                Email:{" "}
-                <a href="mailto:sergiroberto@gmail.com">
-                  sergiroberto@gmail.com
+                {data.user.contact.emailtitle}{" "}
+                <a href={data.user.contact.emaillink}>
+                  {data.user.contact.email}
                 </a>
               </p>
               <p>
-                Instagram:{" "}
-                <a
-                  href="https://www.instagram.com/sergiroberto/"
-                  target="_blank"
-                >
+                {data.user.contact.instagramtitle}{" "}
+                <a href={data.user.contact.instagramlink} target="_blank">
                   {" "}
-                  sergiroberto
+                  {data.user.contact.instagram}
                 </a>
               </p>
             </div>
             <div className="info-content">
-              <p style={{ color: "#a4a8ad" }}>Basic Information</p>
-              <p>Tanggal Lahir: 9 February, 1992</p>
-              <p>Hobby: Sepak Bola</p>
+              <p style={{ color: "#a4a8ad" }}>{data.user.basicinfo.title}</p>
+              <p>{data.user.basicinfo.birthDate}</p>
+              <p>{data.user.basicinfo.hobby}</p>
             </div>
           </div>
         </div>
