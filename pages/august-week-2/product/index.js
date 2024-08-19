@@ -1,26 +1,36 @@
 import React from "react";
 import Link from "next/link";
 import Footer from "../../../components/Common/Footer";
-import BranchContent from "../../../components/Branch/BranchContent";
+
 
 const branch = () => {
   let data = {
     product: {
       availabilityStatus: "In Stock",
-      brand: "Glamour Beauty",
-      category: "beauty",
-      description:
-        "The Eyeshadow Palette with Mirror offers a versatile range of eyeshadow shades for creating stunning eye looks. With a built-in mirror, it's convenient for on-the-go makeup application.",
+      brand: "FESS Bakery | Croissant Klasik | Croissant Mentega",
+      category: "Makanan",
+      description: {
+        pertama: " Croissant ini adalah perpaduan sempurna antara tekstur berlapis dan renyah, dengan aroma mentega yang menggoda dan rasa mewah di setiap gigitannya",
+        kedua: "Dibalut dalam lapisan yang keemasan, croissant ini memiliki tekstur lumer di mulut dan rasa bermentega yang memanjakan",
+        ketiga: "Setiap croissant dipanggang hingga sempurna, menghasilkan lapisan berlapis yang menggoda dengan sentuhan kerenyahan yang istimewa."
+      },
       dimensions: {
         depth: 29.13,
         height: 8.63,
         width: 12.42,
       },
+      date: "2024-08-02",
+      masa: "5 hari",
       discountPercentage: 5.5,
+      berat: "150 gram",
       id: 2,
-      images: [
-        "https://cdn.dummyjson.com/products/images/beauty/Eyeshadow%20Palette%20with%20Mirror/1.png",
-      ],
+      photo: {
+        satu: "/images/butter-croissant (1).jpg",
+        dua: "/images/butter-croissant.jpg ",
+        tiga: "/images/studio-background-drink-brown-golden.jpg",
+        empat: "/images/fresh-butter-whole-wheat-croissant.jpg",
+      },
+
       meta: {
         barcode: "2817839095220",
         createdAt: "2024-05-23T08:56:21.618Z",
@@ -28,7 +38,8 @@ const branch = () => {
         updatedAt: "2024-05-23T08:56:21.618Z",
       },
       minimumOrderQuantity: 32,
-      price: 19.99,
+      size: "Sedang",
+      price: "Rp.50.000",
       rating: 3.28,
       returnPolicy: "30 days return policy",
       reviews: [
@@ -161,7 +172,8 @@ const branch = () => {
   return (
     <>
       <section className="top-banner-area">
-        <div className="container">
+
+        <div className="container" >
           <div className="header">
             <div className="row align-items-center">
               <div className="col-lg-6">
@@ -187,10 +199,190 @@ const branch = () => {
         </div>
       </section>
       <section>
-        <div className="container" style={{ minHeight: "52vh" }}>
-          Product
+        <div className="container" >
+          <div class="row col" >
+            <div class="col-md-6"  >
+              <div id="carouselControls" className="carousel slide" >
+                <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                      <img src={data.product.photo.satu} class="d-block w-100" alt="item" />
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5 class="text-muted">Croissant renyah dan lembut</h5>
+
+                      </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                      <img src={data.product.photo.dua} class="d-block w-100" alt="..." />
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5 class="text-muted">Roti lembut pilihan terbaik.</h5>
+
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src={data.product.photo.tiga} class="d-block w-100" alt="..." />
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5 class="text-muted">Kelezatan croissant hangat.</h5>
+
+                      </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                      <img src={data.product.photo.empat} class="d-block w-100" alt="..." />
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5 class="text-muted">Lezat dan menggugah selera.</h5>
+
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <h2 style={{ color: "#8D493A", marginTop: "40px", marginbottom: "40px" }}>{data.product.brand}</h2>
+              <div className="flex flex-column">
+
+                <div style={{ backgroundColor: "#FFF7FC", padding: "1rem" }}>
+                  <h2 style={{ color: "#a11e0a" }}>{data.product.price}</h2>
+                  <p></p>
+                  <div class="d-flex">
+                    <div class="flex-shrink-0">
+                      <span><img src="/images/- informasi garansi.png" alt="Return" style={{ width: "40px", height: "40px", marginRight: "20px" }} /> </span>
+
+                    </div>
+                    <div class="flex-grow-1 ms-3">
+                      <p>Garansi 100% jika produk tidak sesuai .</p>
+                      Garansi uang kembali jika produk tidak sesuai
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex flex-nowrap">
+                  <div class="order-1 p-2">Pengiriman : </div>
+                  <div class="order-2 p-2"><img src="/images/download.png" alt="Return" style={{ marginRight: "10px", width: "40px", height: "40px", marginRight: "5px" }} /></div>
+                  <div class="order-3 p-2">
+                    Gratis Ongkir di Kab. Semarang
+                  </div>
+                </div>
+
+                <div class="d-flex" style={{ textAlign: "left" }} >
+                  <div class="p-2 flex-fill">Stock</div>
+
+                  <div class="p-2 flex-fill">Tersisa {data.product.stock} buah</div>
+                </div>
+
+
+
+
+
+
+
+              </div>
+            </div>
+
+            {/* <section class="page-product-shop">
+              <h2>huu</h2>
+            </section> */}
+            <section className="page-product">
+
+              <div className="page-product-content">
+                <div className="page-detail page-product-detail">
+                  <div
+                    data-aos="fade-right"
+                    data-aos-duration="800"
+                    data-aos-delay="100"
+                  >
+                    <h3 style={{ color: "#333", backgroundColor: "#FBF6E2", fontSize: "1.25rem", fontWeight: "500", padding: "1rem", textTransform: "capitalize", margin: "0 0 1rem 0", boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)" }}>
+                      Spesifikasi Produk
+                    </h3>
+                    <div  >
+                      {[
+                        { label: "Merek", value: data.product.brand },
+                        { label: "Stok", value: data.product.stock },
+                        { label: "Kategori", value: data.product.category },
+                        { label: "Ukuran", value: data.product.size },
+                        { label: "Masa Penyimpanan", value: data.product.masa },
+                        { label: "Berat", value: data.product.berat },
+                        { label: "Tanggal Kadaluarsa", value: data.product.date }
+                      ].map((item, index) => (
+                        <div style={{ display: "flex", flexWrap: "wrap", marginBottom: "1rem" }} key={index}>
+                          <label style={{ paddingRight: "0.75rem", fontWeight: "bold", color: "#555" }}>{item.label}:</label>
+                          <div style={{ color: "#777" }}>{item.value}</div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                  <div
+                    data-aos="fade-left"
+                    data-aos-duration="800"
+                    data-aos-delay="100"
+                  >
+                    <h3 style={{ color: "#333", backgroundColor: "#FBF6E2", fontSize: "1.25rem", fontWeight: "500", padding: "1rem", textTransform: "capitalize", margin: "0 0 1rem 0", boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)" }}>
+                      Deskripsi Produk
+                    </h3>
+                    <div style={{ margin: "1.5rem 0", color: "#555" }}>
+
+                      {[
+                        data.product.description.pertama,
+                        data.product.description.kedua,
+                        data.product.description.ketiga
+                      ].map((desc, index) => (
+                        <p class="text-muted" key={index} >{desc}</p>
+                      ))}
+                    </div>
+                  </div>
+                  <div
+                    data-aos="fade-right"
+                    data-aos-duration="800"
+                    data-aos-delay="200"
+                  >
+                    <h3 style={{ color: "#333", backgroundColor: "#fcf3cf", fontSize: "1.25rem", fontWeight: "500", padding: "1rem", textTransform: "capitalize", margin: "0 0 1rem 0", boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)" }}>
+                      Penilaian Produk
+                    </h3>
+                    <div class="container text-center">
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <h1>4.9/ 5</h1>
+                        
+                        </div>
+
+                      </div>
+                    </div>
+
+
+                    {/* <div style={{ margin: "1.5rem 0", color: "#555" }}>
+                      {[
+                        data.product.description.pertama,
+                        data.product.description.kedua,
+                        data.product.description.ketiga
+                      ].map((desc, index) => (
+                        <p class="text-muted" key={index} >{desc}</p>
+                      ))}
+                    </div> */}
+                  </div>
+                </div>
+              </div>
+
+            </section>
+
+          </div>
         </div>
-      </section>
+
+
+      </section >
 
       <Footer />
     </>
