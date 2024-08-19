@@ -52,17 +52,17 @@ const App = () => {
                   </p>
                 ))}
               </div>
-              
+
             </div>
             <div class="col-md-auto">
-                <div className="foto-img">
-                  <Image
+              <div className="foto-img">
+                <Image
                   src={dataElisa.photoUrl}
                   width={370}
                   height={450}
-                  />
-                </div>
+                />
               </div>
+            </div>
           </div>
         </div>
       </section>
