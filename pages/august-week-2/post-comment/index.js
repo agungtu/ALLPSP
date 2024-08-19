@@ -1,9 +1,40 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import Footer from "../../../components/Common/Footer";
 import BranchContent from "../../../components/Branch/BranchContent";
 
 const branch = () => {
+  const namaorg = {
+    satu: "Salwa Aulia",
+    dua: "Fauzi Saputra",
+    tiga: "Putri Zalova",
+    empat: "Helena Hernandez",
+  }
+  const judul = "FESS BAKERY"
+  const deskripsi = {
+    suka: "saya, fauzi, putri dan 1058 lainya",
+    comment: "3 comment",
+    share: "2 shares",
+    likereply: "Like . Reply",
+    reply: "Reply",
+    likereply2: "Like . Reply",
+  }
+  const hari = {
+    pertama: "5 hari lalu",
+    kedua: "4 hari lalu",
+    ketiga: "4 hari lalu",
+    keempat: "2 hari lalu",
+    kelima: "1 hari lalu",
+  }
+  const text = { 
+    komen1: " Setiap kali saya mencoba roti dari sini, saya selalu terkesan dengan kualitas dan rasanya. Teksturnya sempurna dan selalu fresh. Tempat ini benar-benar favorit saya! ❤",
+    komen2: "Stafnya sangat ramah dan selalu menyambut dengan senyuman. Mereka juga cepat dalam melayani, sehingga saya tidak pernah perlu menunggu lama 😉🤞",
+    komen3: "Roti di sini benar-benar berkualitas tinggi, tapi harganya masih sangat terjangkau. Saya merasa mendapatkan lebih dari yang saya bayar. Pasti akan kembali lagi 🙌",
+    komen4: "Saya suka disini ada berbagai macam roti mulai dari roti manis hingga roti gurih. Setiap datang, saya selalu menemukan sesuatu yang baru untuk dicoba. Rekomendasi banget 😊",
+    komen5: "Thanks!! 😍",
+  }
+
   let data = {
     product: {
       availabilityStatus: "In Stock",
@@ -187,10 +218,279 @@ const branch = () => {
         </div>
       </section>
       <section>
-        <div className="container" style={{ minHeight: "52vh" }}>
-          post comment
+
+        <div className="post-container">
+          <div className="post-header">
+            <img src="/images/avatar/user.avatar.jfif" alt="User avatar" className="avatar" />
+            <div className="post-info">
+              <h4>{namaorg.satu}</h4>
+              <span>{hari.pertama}</span>
+               </div>
+          </div>
+        <div className="post-content">
+          <p>
+         {text.komen1}
+          </p>
+        </div>
+        <div className="post-actions">
+          <span>&#128077;</span>
+          <span>&#128172;</span>
+          < span>&#128256;</span>
+          <span className="like-count">{deskripsi.suka}</span>
+          <span className="comment-count">{deskripsi.comment}</span>
+          <span className="share-count">{deskripsi.share}</span>
+        </div>
+        <div className="comments-section">
+          <div className="comment">
+            <img src="/images/avatar/fauzi.avatar.jfif" alt="tony avatar" className="comment-avatar" />
+            <div className="comment-text">
+              <h5>{namaorg.dua}</h5>
+              <span>{hari.kedua}</span>
+              <p>{text.komen2}</p>
+              <button className="comment-reply">{deskripsi.likereply}</button>
+            </div>
+          </div>
+          <div className="comment">
+            <img src="/images/avatar/putri.avatar.jfif" alt="leah avatar" className="comment-avatar" />
+            <div className="comment-text">
+              <h5>{namaorg.tiga}</h5>
+              <span>{hari.ketiga}</span>
+              <p>{text.komen3}</p>
+              <button className="comment-reply">{deskripsi.reply}</button>
+            </div>
+          </div>
+          <div className="comment reply-comment">
+            <img src="/images/avatar/helena.avatar.jfif" alt="Helena Avatar" className="comment-avatar" />
+            <div className="comment-text">
+              <h5>{namaorg.empat}</h5>
+              <span>{hari.keempat}</span>
+              <p>{text.komen4}</p>
+              <button className="comment-reply">{deskripsi.likereply2}</button>
+              <div className="reply">
+                <h6>{judul}</h6>
+                <span>{hari.kelima}</span>
+                <p>{text.komen5}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="comment-input">
+          <img src="/images/avatar/simple.avatar.jfif" alt="User Avatar" className="comment-avatar" />
+          <input type="text" placeholder="Write a comment...                                                                                                                          😀   📷"/>
+        </div>
         </div>
       </section>
+
+      <style jsx>{`
+      .post-container {
+        width: 100%;
+        max-width: 800px; 
+        margin: 100px auto;
+        padding: 30px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      }
+      
+      .post-header {
+        display: flex;
+        align-items: center;
+      }
+      
+      .avatar {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin-right: 15px;        
+      }
+      
+      .post-info h4 {
+        margin: 0;
+        font-size: 20px; 
+      }
+      
+      .post-info span {
+        font-size: 14px;
+        color: #888;
+      }
+      
+      .post-content {
+        margin: 15px 0; 
+      }
+      
+      .post-content p {
+        margin: 0;
+        font-size: 16px; 
+      }
+      
+      .hastag {
+        color: #007bff;
+      }
+      
+      .post-actions {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 15px;
+        font-size: 14px;
+        flex-wrap: wrap;
+      }
+      
+      .action-button {
+        font-size: 14px; 
+        margin-right: 15px; 
+        margin-bottom: 10px;
+      }
+      
+      .like-count,
+      .comment-count,
+      .share-count {
+        margin-top: 10px;
+        font-size: 14px; 
+      }
+      
+      .comments-section {
+        margin-top: 20px; 
+      }
+      
+      .comment {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 15px;
+      }
+      
+      .comment-avatar {
+        width: 40px; 
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 15px;
+      }
+      
+      .comment-text {
+        background: #f9f9f9;
+        padding: 15px; 
+        border-radius: 10px;
+        width: 100%;
+      }
+      
+      .comment-text h5 {
+        margin: 0 0 8px;
+        font-size: 16px; 
+      }
+      
+      .comment-text span {
+        font-size: 12px; 
+        color: #888;
+      }
+      
+      .comment-text p {
+        margin: 8px 0;
+        font-size: 14px; 
+      }
+      
+      .comment-reply {
+        font-size: 13px; 
+        margin-top: 10px;
+      }
+      
+      .reply-comment {
+        margin-left: 50px; 
+      }
+      
+      .reply {
+        margin-top: 15px; 
+        padding-left: 15px; 
+        border-left: 3px solid #ddd; 
+      }
+      
+      .reply h6 {
+        margin: 0;
+        font-size: 15px; 
+      }
+      
+      .comment-input {
+        display: flex;
+        align-item: center;
+        margin-top: 20px;
+        border-top: 1px solid #ddd;
+        padding-top: 15px;
+      }
+      
+      .comment-input input {
+        border: 1px solid #ddd;
+        border-radius: 20px;
+        padding: 8px 15px; 
+        width: 100%;
+        margin-left: 15px; 
+      }
+      
+      @media screen and (max-width: 768px) {
+        .post-actions {
+          justify-content: center;
+          text-align: center;
+        }
+      
+        .action-button {
+          margin-right: 10px;
+        }
+      
+        .like-count,
+        .comment-count,
+        .share-count {
+          font-size: 14px;
+        }
+      
+        .comment {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      
+        .reply-comment {
+          margin-left: 30px;
+        }
+      
+        .post-header {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      
+        .post-info h4 {
+          font-size: 18px;
+        }
+      
+        .post-info span {
+          font-size: 14px;
+        }
+      
+        .comment-text h5 {
+          font-size: 14px;
+        }
+      
+        .comment-text p {
+          font-size: 14px;
+        }
+      }
+      
+      @media screen and (max-width: 480px) {
+        .post-container {
+          padding: 20px;
+        }
+      
+        .post-content p {
+          font-size: 14px;
+        }
+      
+        .comment-text h5 {
+          font-size: 14px;
+        }
+      
+        .comment-text p {
+          font-size: 13px;
+        }
+      }
+       `}</style>
+      
 
       <Footer />
     </>
