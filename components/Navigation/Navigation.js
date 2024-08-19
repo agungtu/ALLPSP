@@ -186,6 +186,34 @@ const Navigation = () => {
             </li>
           </ul>
         </li>
+
+        <li className="nav-item dropdown">
+          <Link
+            onClick={toggleNavbar}
+            offset={() => 100}
+            className="nav-link  dropdown-toggle"
+            href={`#`}
+            id="navbarDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            August week 3
+          </Link>
+
+          <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li>
+              <Link
+                onClick={toggleNavbar}
+                offset={() => -30}
+                className="dropdown-item"
+                href={`/august-week-3/example`}
+              >
+                Example
+              </Link>
+            </li>
+          </ul>
+        </li>
       </ul>
     );
   };
