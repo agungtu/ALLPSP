@@ -5,6 +5,36 @@ import Footer from "../../../components/Common/Footer";
 import BranchContent from "../../../components/Branch/BranchContent";
 
 const branch = () => {
+  const namaorg = {
+    satu: "Salwa Aulia",
+    dua: "Fauzi Saputra",
+    tiga: "Putri Zalova",
+    empat: "Helena Hernandez",
+  }
+  const judul = "FESS BAKERY"
+  const deskripsi = {
+    suka: "saya, fauzi, putri dan 1058 lainya",
+    comment: "3 comment",
+    share: "2 shares",
+    likereply: "Like . Reply",
+    reply: "Reply",
+    likereply2: "Like . Reply",
+  }
+  const hari = {
+    pertama: "5 hari lalu",
+    kedua: "4 hari lalu",
+    ketiga: "4 hari lalu",
+    keempat: "2 hari lalu",
+    kelima: "1 hari lalu",
+  }
+  const text = { 
+    komen1: " Setiap kali saya mencoba roti dari sini, saya selalu terkesan dengan kualitas dan rasanya. Teksturnya sempurna dan selalu fresh. Tempat ini benar-benar favorit saya! ❤",
+    komen2: "Stafnya sangat ramah dan selalu menyambut dengan senyuman. Mereka juga cepat dalam melayani, sehingga saya tidak pernah perlu menunggu lama 😉🤞",
+    komen3: "Roti di sini benar-benar berkualitas tinggi, tapi harganya masih sangat terjangkau. Saya merasa mendapatkan lebih dari yang saya bayar. Pasti akan kembali lagi 🙌",
+    komen4: "Saya suka disini ada berbagai macam roti mulai dari roti manis hingga roti gurih. Setiap datang, saya selalu menemukan sesuatu yang baru untuk dicoba. Rekomendasi banget 😊",
+    komen5: "Thanks!! 😍",
+  }
+
   let data = {
     product: {
       availabilityStatus: "In Stock",
@@ -193,53 +223,53 @@ const branch = () => {
           <div className="post-header">
             <img src="/images/avatar/user.avatar.jfif" alt="User avatar" className="avatar" />
             <div className="post-info">
-              <h4>Salwa Aulia</h4>
-              <span>5 hari lalu</span>
+              <h4>{namaorg.satu}</h4>
+              <span>{hari.pertama}</span>
                </div>
           </div>
         <div className="post-content">
           <p>
-          Setiap kali saya mencoba roti dari sini, saya selalu terkesan dengan kualitas dan rasanya. Teksturnya sempurna dan selalu fresh. Tempat ini benar-benar favorit saya! ❤
+         {text.komen1}
           </p>
         </div>
         <div className="post-actions">
           <span>&#128077;</span>
           <span>&#128172;</span>
           < span>&#128256;</span>
-          <span className="like-count">saya, fauzi, putri dan 1058 lainya</span>
-          <span className="comment-count">3 comment</span>
-          <span className="share-count">2 shares</span>
+          <span className="like-count">{deskripsi.suka}</span>
+          <span className="comment-count">{deskripsi.comment}</span>
+          <span className="share-count">{deskripsi.share}</span>
         </div>
         <div className="comments-section">
           <div className="comment">
             <img src="/images/avatar/fauzi.avatar.jfif" alt="tony avatar" className="comment-avatar" />
             <div className="comment-text">
-              <h5>Fauzi Saputra</h5>
-              <span>4 hari lalu</span>
-              <p>Stafnya sangat ramah dan selalu menyambut dengan senyuman. Mereka juga cepat dalam melayani, sehingga saya tidak pernah perlu menunggu lama 😉🤞</p>
-              <button className="comment-reply">Like . Reply</button>
+              <h5>{namaorg.dua}</h5>
+              <span>{hari.kedua}</span>
+              <p>{text.komen2}</p>
+              <button className="comment-reply">{deskripsi.likereply}</button>
             </div>
           </div>
           <div className="comment">
             <img src="/images/avatar/putri.avatar.jfif" alt="leah avatar" className="comment-avatar" />
             <div className="comment-text">
-              <h5>Putri Zalova</h5>
-              <span>4 hari lalu</span>
-              <p>Roti di sini benar-benar berkualitas tinggi, tapi harganya masih sangat terjangkau. Saya merasa mendapatkan lebih dari yang saya bayar. Pasti akan kembali lagi 🙌</p>
-              <button className="comment-reply">Reply</button>
+              <h5>{namaorg.tiga}</h5>
+              <span>{hari.ketiga}</span>
+              <p>{text.komen3}</p>
+              <button className="comment-reply">{deskripsi.reply}</button>
             </div>
           </div>
           <div className="comment reply-comment">
             <img src="/images/avatar/helena.avatar.jfif" alt="Helena Avatar" className="comment-avatar" />
             <div className="comment-text">
-              <h5>Helena Hernandez</h5>
-              <span>2 hari lalu</span>
-              <p>Saya suka disini ada berbagai macam roti mulai dari roti manis hingga roti gurih. Setiap datang, saya selalu menemukan sesuatu yang baru untuk dicoba. Rekomendasi banget 😊</p>
-              <button className="comment-reply">Like . Reply</button>
+              <h5>{namaorg.empat}</h5>
+              <span>{hari.keempat}</span>
+              <p>{text.komen4}</p>
+              <button className="comment-reply">{deskripsi.likereply2}</button>
               <div className="reply">
-                <h6>FESS BAKERY</h6>
-                <span>1 hari lalu</span>
-                <p>Thanks!! 😍</p>
+                <h6>{judul}</h6>
+                <span>{hari.kelima}</span>
+                <p>{text.komen5}</p>
               </div>
             </div>
           </div>
