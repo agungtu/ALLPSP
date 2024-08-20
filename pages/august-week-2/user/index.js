@@ -224,7 +224,7 @@ const branch = () => {
               </div>
 
               <div className="col-6 text-end">
-                <Link href="/blog/branch/" className="nav-text">
+                <Link href={`/august-week-2/user`} className="nav-text">
                   User
                 </Link>
                 <ol className="breadcrumb">
