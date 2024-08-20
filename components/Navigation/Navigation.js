@@ -212,6 +212,16 @@ const Navigation = () => {
                 Example
               </Link>
             </li>
+            <li>
+              <Link
+                onClick={toggleNavbar}
+                offset={() => -30}
+                className="dropdown-item"
+                href={`/august-week-3/post`}
+              >
+                Post
+              </Link>
+            </li>
           </ul>
         </li>
       </ul>
