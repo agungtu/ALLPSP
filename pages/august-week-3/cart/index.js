@@ -16,7 +16,7 @@ const Branch = () => {
 
   const getAllData = async () => {
     await fetch(
-      "https://dummyjson.com/products?limit=30&skip=80&select=title,price"
+      "https://dummyjson.com/products?limit=20&skip=80&select=title,price"
     )
       .then((res) => res.json())
       .then((val) => {
@@ -55,39 +55,50 @@ const Branch = () => {
 
       <section className="content-section">
         <div className="container">
-          <button onClick={() => getData()}>PROFILE</button>
-          {userData && (
-            <ul>
-              <li>Id: {userData.id}</li>
-              <li>
-                Name: {userData.firstName} {userData.lastName}
-              </li>
-              <li>Email: {userData.email}</li>
-              <li>Phone: {userData.phone}</li>
-              <li>birthDate: {userData.birthDate}</li>
-              <li>Gender: {userData.gender}</li>
-              <li>Height: {userData.height}</li>
-              <li>Weight: {userData.weight}</li>
-              <li>Address: {userData.address.address}</li>
-              <li>City: {userData.address.city}</li>
-              <li>State: {userData.address.state}</li>
-            </ul>
-          )}
+          <div className="row">
+            <div className="col-md-4">
+              <img width={260} src={"/images/🐐_.jpg"}></img>
+            </div>
+            
+            <div className="col-md-6 border-cart">
+            <h3>Profile</h3>
+              <button className="cart-button" onClick={() => getData()}>
+                Show Profile
+              </button>
+              
+              {userData && (
+                <ul>
+                  <li>Id: {userData.id}</li>
+                  <li>
+                    Name: {userData.firstName} {userData.lastName}
+                  </li>
+                  <li>Email: {userData.email}</li>
+                  <li>Phone: {userData.phone}</li>
+                  <li>birthDate: {userData.birthDate}</li>
+                  <li>Gender: {userData.gender}</li>
+                  <li>Height: {userData.height}</li>
+                  <li>Weight: {userData.weight}</li>
+                </ul>
+              )}
+            </div>
 
-          <button onClick={() => getAllData()}>Products</button>
-          <table>
-            <tr>
-              <th>Id</th>
-              <th>Produk</th>
-              <th>Harga</th>
-            </tr>
-            {produkData.map((produk, index) => (
-              <tr key={index}>
-                <td>{produk.id}</td> <td>{produk.title}</td>
-                <th>${produk.price}</th>
-              </tr>
-            ))}
-          </table>
+            <div className="col-md-4">
+              <button className="cart-button" onClick={() => getAllData()}>
+                Show Products
+              </button>
+            </div>
+            <div className="col-md-6 border-cart">
+              <h3>Produk</h3>
+              <table className="table-cart">
+                {produkData.map((produk, index) => (
+                  <tr key={index}>
+                    <td>{produk.id}</td> <td>{produk.title}</td>
+                    <td>${produk.price}</td>
+                  </tr>
+                ))}
+              </table>
+            </div>
+          </div>
         </div>
       </section>
 
