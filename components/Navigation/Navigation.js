@@ -222,6 +222,14 @@ const Navigation = () => {
               >
                ToDo
               </Link>
+              <Link
+                onClick={toggleNavbar}
+                offset={() => -30}
+                className="dropdown-item"
+                href={`/august-week-3/cart`}
+              >
+                Cart
+              </Link>
             </li>
           </ul>
         </li>
