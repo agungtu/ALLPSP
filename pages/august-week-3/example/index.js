@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Footer from "../../../components/Common/Footer";
+// import styles from "./Example.module.css";
+import { useRouter } from "next/navigation";
 
-const branch = () => {
+const Example = () => {
+  const router = useRouter();
   const [storeData, setStoreData] = useState({});
   const [storeDataAll, setStoreDataAll] = useState([]);
   const [todoList, setTodoList] = useState([
@@ -87,15 +90,14 @@ const branch = () => {
   };
 
   const getAllData = async () => {
-    await fetch("https://dummyjson.com/products")
+    await fetch("https://dummyjson.com/users/6/carts")
       .then((res) => {
         console.log(res, "res");
         return res.json();
       })
       .then((val) => {
         console.log(val, "val");
-        setStoreDataAll(val.products);
-        // setStoreData(val);
+        setStoreDataAll(val.carts);
       });
   };
 
@@ -107,20 +109,20 @@ const branch = () => {
             <div className="row align-items-center">
               <div className="col-lg-6">
                 <Link href="/" className="logo">
-                  Example
+                  Cart
                 </Link>
-                <h2 className="banner-title">Example page</h2>
+                <h2 className="banner-title">Cart page</h2>
               </div>
 
               <div className="col-6 text-end">
                 <Link href="/blog/branch/" className="nav-text">
-                  Example
+                  Cart
                 </Link>
                 <ol className="breadcrumb">
                   <li>
                     <Link href="/">Home</Link>
                   </li>
-                  <li className="active">Example</li>
+                  <li className="active">Cart</li>
                 </ol>
               </div>
             </div>
@@ -130,13 +132,13 @@ const branch = () => {
       <section>
         <div className="container">
           <div class="row col">
-            <h1>Example</h1>
-            <button onClick={() => getDescription()}>description 2</button>
-            <button onClick={() => getDescription2()}>description 3</button>
-            <button onClick={() => getDescription3()}>
+            <h1>Cart</h1>
+            {/* <button className='my-button' onClick={() => getDescription()}>description 2</button>
+            <button className='my-button' onClick={() => getDescription2()}>description 3</button>
+            <button className='my-button' onClick={() => getDescription3()}>
               description asynchronous
-            </button>
-            <button onClick={() => getData()}>get data</button>
+            </button> */}
+            {/* <button className='my-button' onClick={() => getData()}>get data</button>
             <h2 id="nama"></h2>
             <h2 id="nama2"></h2>
             <div>
@@ -146,21 +148,41 @@ const branch = () => {
                   <p>{item.comment}</p>
                 </>
               ))}
-            </div>
-            <button onClick={() => getAllData()}>get all data</button>
+            </div> */}
+            <button className="btn btn-warning" onClick={() => getAllData()}>
+              get all data
+            </button>
             <table>
-              {storeDataAll.map((item) => {
+              {storeDataAll.map((item, index) => {
                 return (
                   <tr key={item.title}>
                     <td>
                       <img width={25} src={item.thumbnail}></img>
                     </td>
-                    <td>{item.title}</td>
+                    <td>{index + 1}</td>
+                    <td>{item.totalProducts} product</td>
+                    <td>
+                      {new Intl.NumberFormat("en-IN", {
+                        maximumSignificantDigits: 3,
+                        style: "currency",
+                        currency: "USD",
+                      }).format(item.discountedTotal)}
+                    </td>
+                    <td>
+                      <button
+                        className="btn btn-warning"
+                        onClick={() =>
+                          router.push("/august-week-3/example/" + item.id)
+                        }
+                      >
+                        detail
+                      </button>
+                    </td>
                   </tr>
                 );
               })}
             </table>
-            <div>
+            <div hidden>
               <h2>TODO LIST</h2>
               <input
                 type="text"
@@ -169,8 +191,12 @@ const branch = () => {
                   setInputData(event.target.value);
                 }}
               ></input>{" "}
-              <button onClick={() => saveTodo()}>Save</button>
-              <button onClick={saveTodo}>Save 2</button>
+              <button className="btn btn-warning" onClick={() => saveTodo()}>
+                Save
+              </button>
+              <button className="btn btn-warning" onClick={saveTodo}>
+                Save 2
+              </button>
               <div>
                 <ol>
                   {todoList.map((item, index) => {
@@ -202,4 +228,4 @@ const branch = () => {
   );
 };
 
-export default branch;
+export default Example;
