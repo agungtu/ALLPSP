@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Footer from "../../../components/Common/Footer";
+import { useRouter } from "next/navigation";
 
 const Branch = () => {
+  const router = useRouter();
   const [userData, setUserData] = useState({});
   const [produkData, setProdukData] = useState([]);
 
@@ -16,7 +18,7 @@ const Branch = () => {
 
   const getAllData = async () => {
     await fetch(
-      "https://dummyjson.com/products?limit=20&skip=80&select=title,price"
+      "https://dummyjson.com/products?limit=10&skip=0"
     )
       .then((res) => res.json())
       .then((val) => {
@@ -57,7 +59,7 @@ const Branch = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-4">
-              <img width={260} src={"/images/🐐_.jpg"}></img>
+              <img className="rounded" width={260} src={"/images/🐐_.jpg"}></img>
             </div>
             
             <div className="col-md-6 border-cart">
@@ -94,6 +96,16 @@ const Branch = () => {
                   <tr key={index}>
                     <td>{produk.id}</td> <td>{produk.title}</td>
                     <td>${produk.price}</td>
+                    <td>
+                      <button
+                        className="btn btn-warning"
+                        onClick={() =>
+                          router.push("/august-week-3/cart/" + produk.id)
+                        }
+                      >
+                        detail
+                      </button>
+                    </td>
                   </tr>
                 ))}
               </table>
