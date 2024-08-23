@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Footer from "../../../components/Common/Footer";
+import { useRouter } from "next/navigation";
 
 const Branch = () => {
+  const router = useRouter();
   const [userData, setUserData] = useState({});
   const [todosData, setTodosData] = useState([]);
 
@@ -16,7 +18,8 @@ const Branch = () => {
 
   const getAllData = async () => {
     await fetch(
-      "https://dummyjson.com/todos"
+      
+     `https://dummyjson.com/todos?limit=10&skip=0`
 
     )
       .then((res) => res.json())
@@ -98,13 +101,17 @@ const Branch = () => {
                   {todosData.map((item) => {
                     return (
                       <tr key={item}>
-                        <b style={{
-                          textDecoration: item.completed ? 'line-through' : 'none',
-                          color: item.completed ? 'green' : 'red'
-                        }}>
-                          {item.todo}
-                        </b>
-
+                        <td>{item.todo} </td>
+                        <td>
+                      <button
+                        className="btn btn-warning" style={{color: "white"}}
+                        onClick={() =>
+                          router.push("/august-week-3/ToDo/" + item.id)
+                        }
+                      >
+                        detail
+                      </button>
+                    </td>
                       </tr>
                     );
                   })}
